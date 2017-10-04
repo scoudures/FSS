@@ -7,6 +7,7 @@
 </asp:Content>
 <asp:Content ID="Contenido" ContentPlaceHolderID="Contenido" runat="server">
     <article>
+        <br />
       <asp:Panel runat="server" CssClass="panelTexto" HorizontalAlign="Center">
       <fss:mietiqueta ID="titError404" runat="server" Text="" CssClass="titulo" Style="color:red">ERROR 404</fss:mietiqueta> <br />
       <fss:mietiqueta ID="subtitError404" runat="server" Text="" CssClass="subtitulo">La pagina a la que intenta acceder no existe.</fss:mietiqueta> <br />
