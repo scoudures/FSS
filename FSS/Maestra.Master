@@ -1,0 +1,171 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Maestra.master.vb" Inherits="FSS.Maestra" %>
+<%@ Register assembly="FSS" namespace="FSS" TagPrefix="fss" %>
+<!DOCTYPE html>
+<html lang="es-AR">
+<head runat="server">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>FSS</title>
+	<script type="text/javascript" >
+
+	    function cerrarpagina() {
+	        window.opener = top;
+	        window.close();
+	        return false;
+	    }
+		</script>
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<%--<link rel="stylesheet" href="css/misestilos.css">--%>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<form id="form1" runat="server">
+	<section class="main container">
+		<div class="row">       
+	<asp:Panel ID="PanelCont" runat="server">
+	<%--Para ver el nombre de la pagina activa--%>
+	<h6 class="text-right text-primary"><asp:ContentPlaceHolder ID="Titulo" runat="server"></asp:ContentPlaceHolder></h6>
+	<%-- header de la master --%>
+	<header>
+		<nav class="navbar navbar-custom navbar-static-top" role="navigation" id="menu">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fss">
+						<span class="sr-only">Desplegar / Ocultar Menu</span>
+						<span class="icon-bar bg-primary"></span>
+						<span class="icon-bar bg-primary"></span>
+						<span class="icon-bar bg-primary"></span>
+					</button>
+					<%--<a href="Inicio.aspx" class="navbar-brand">Inici</a>--%>
+                    <fss:miLink ID="menuInicio" runat="server" PostBackUrl="Inicio.aspx" CssClass="navbar-brand linkboton" CausesValidation="false" >Inicio</fss:miLink>
+				</div>
+				<!-- Menu -->
+				<div class="collapse navbar-collapse" id="navegacion-fss">
+					<ul class="nav navbar-nav">
+						<%--<li runat="server"><fss:miLink ID="menuInicio" runat="server" PostBackUrl="Inicio.aspx" CssClass="linkboton" CausesValidation="false" >Inicio</fss:miLink></li>--%>
+                        <li runat="server"><fss:miLink ID="menuCatalogo" runat="server" PostBackUrl="Catalogo.aspx?Linea=Botas" CssClass="linkboton" CausesValidation="false">Catalogo</fss:miLink></li>
+                        <li runat="server"><fss:miLink ID="menuCIPA" runat="server" PostBackUrl="CalculoCIPA.aspx" CssClass="linkboton hidden-xs hidden-sm" CausesValidation="false" >CIPA</fss:miLink></li>
+                        <li runat="server"><fss:miLink ID="menuVideos" runat="server" PostBackUrl="Videos.aspx" CssClass="linkboton" CausesValidation="false" >Videos</fss:miLink></li>
+                        <li runat="server"><fss:miLink ID="LinkValores" runat="server" PostBackUrl="Valores.aspx" CssClass="linkboton" CausesValidation="false">Nuestros Valores</fss:miLink></li>
+                        <li runat="server"><fss:miLink ID="linkQuienesSomos" runat="server" PostBackUrl="QuienesSomos.aspx" CssClass="linkboton" CausesValidation="false" Width="150px">Quienes Somos</fss:miLink></li>
+
+						<%--<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+								Categorias <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Categoria #1</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Categoria #2</a></li>
+								<li><a href="#">Categoria #3</a></li>
+								<li><a href="#">Categoria #4</a></li>
+							</ul>
+						</li>--%>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+		<%-- Separador --%>
+	<section class="jumbotron-custom">
+			<h3 class="text-primary"><fss:miEtiqueta id="encabezado" runat="server" Text="FSS La tienda on-line para el patinador" CssClass="titulo"></fss:miEtiqueta></h3>
+	</section>
+<%-- ------------------------- --%>
+	<%-- Contenido de cada pagina --%>
+			<section class="posts col-md-9 text-primary">
+				<asp:ContentPlaceHolder ID="Contenido" runat="server">
+				</asp:ContentPlaceHolder>
+			</section>
+<%-- ------------------------- --%>
+		<%-- Menu lateral --%>
+			<aside class="col-md-3 hidden-xs hidden-sm" id="lateral">
+				<%--<fss:mietiqueta ID="UsuarioLogueado" runat="server" Text="" CssClass="logueado"></fss:mietiqueta>--%>
+				<div class="list-group">
+				<asp:Label ID="UsuarioLogueado" runat="server" Text="" CssClass="logueado"></asp:Label>
+				<br />
+				<br />
+				<asp:ListBox ID="lstIdioma" runat="server" AutoPostBack="true" CausesValidation="false" CssClass="btn-block text-center text-primary"></asp:ListBox>
+				<br />
+				<br />
+				<fss:miboton ID="menuLogin" runat="server" Text="Ingresar" CssClass="boton btn btn-primary btn-block"  CausesValidation="false"/>
+				<fss:miboton ID="menuSalir" runat="server" Text="Salir" CssClass="boton btn btn-primary btn-block" Visible="false"  CausesValidation="false"/>
+				<br />
+				<br />
+					<%--<a href="#" class="list-group-item active">   </a>
+					<a href="#" class="list-group-item">CSS</a>
+					<a href="#" class="list-group-item">Cursos</a>
+					<a href="#" class="list-group-item">Desarrollo Web</a>
+					<a href="#" class="list-group-item">Elementos Web</a>
+					<a href="#" class="list-group-item">Jquery</a>
+					<a href="#" class="list-group-item">Recursos y Herramientas</a>--%>
+					<asp:Panel ID="Cliente" runat="server" class="list-group-item panel-noborder">
+					<fss:miboton ID="menuAjustes" runat="server" Text="Ajustes" CssClass="boton btn btn-primary btn-block" CausesValidation="false"/>
+					<br />
+					<fss:miboton ID="menuCuenta" runat="server" Text="Cuenta" CssClass="boton btn btn-primary btn-block" CausesValidation="false"/>
+					<br />
+					<fss:miboton ID="menuDetalle" runat="server" Text="Detalle Pedido" CssClass="boton btn btn-primary btn-block" CausesValidation="false"/>
+					</asp:Panel>
+					<asp:Panel ID="Vendedor" runat="server" class="list-group-item panel-noborder">
+					<fss:miboton ID="menuCliente" runat="server" Text="Cliente" CssClass="boton btn btn-primary btn-block" CausesValidation="false"/>
+					<br />
+					<fss:miboton ID="menuVendedor" runat="server" Text="Vendedor" CssClass="boton btn btn-primary btn-block" CausesValidation="false"/>
+					<br />
+					<fss:miboton ID="menuOrdenes" runat="server" Text="Ordenes" CssClass="boton btn btn-primary btn-block" CausesValidation="false"/>
+					<br />
+					<fss:miboton ID="menuProducto" runat="server" Text="Producto" CssClass="boton btn btn-primary btn-block" CausesValidation="false"/>
+					<br />
+					<fss:miboton ID="menuImagenes" runat="server" Text="Gestor Imagenes" CssClass="boton btn btn-primary btn-block" CausesValidation="false"/>
+					</asp:Panel>
+					<asp:Panel ID="Administrador" runat="server" class="list-group-item panel-noborder">
+					<fss:miboton ID="menuBackup" runat="server" Text="Backup/Restore" CssClass="boton btn btn-primary btn-block" CausesValidation="false"/>
+					<br />
+					<fss:miboton ID="menuBitacora" runat="server" Text="Bitacora" CssClass="boton btn btn-primary btn-block" CausesValidation="false"/>
+					<br />
+					<fss:miboton ID="menuIdioma" runat="server" Text="Idioma" CssClass="boton btn btn-primary btn-block" CausesValidation="false"/>
+					<br />
+					<fss:miboton ID="menuDVV" runat="server" Text="Integridad" CssClass="boton btn btn-primary btn-block" CausesValidation="false"/>
+					<br />
+					<fss:miboton ID="menuPerfiles" runat="server" Text="Perfiles" CssClass="boton btn btn-primary btn-block" CausesValidation="false"/>
+					<br />
+					<fss:miboton ID="menuUsuario" runat="server" Text="Usuarios" CssClass="boton btn btn-primary btn-block" CausesValidation="false"/>
+					</asp:Panel>       
+					</div>
+				<asp:ContentPlaceHolder ID="Menu" runat="server">
+				</asp:ContentPlaceHolder>
+			</aside>
+</asp:Panel>
+	
+			</div>
+	</section>
+        <div class="container">
+			<div class="row">
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+<%-- footer de la master --%>
+		<footer id="pie">
+		<div class="container">
+			<div class="row">
+                <hr style="border-bottom-color:blue;border-bottom-style:double" />
+				<div class="col-xs-6">
+					<p class="text-primary">info.fss@gmail.com</p>
+				</div>
+				<div class="col-xs-6">
+					<ul class="list-inline text-right">
+						<li><fss:miboton ID="menuRegistro" runat="server" Text="Registrarse" CssClass="boton btn  btn-link" CausesValidation="false"/></li>
+						<li><fss:miBoton ID="menuContacto" runat="server"  CssClass="boton btn  btn-link" CausesValidation="false" Text="Contacto"/></li>
+						<li><fss:miBoton ID="LinkRecomendacion" runat="server" CssClass="boton btn  btn-link" CausesValidation="false" Text="Recomendaciones"/></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+		<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+  </form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+--************************************************************************
+-- En el Source (SI EL CAMPO ES SOLO DE LECTURA NO VA "EditItemTemplate")
+--************************************************************************
+
+<asp:GridView ID="grdENTIDAD" runat="server" CssClass="grilla" AllowPaging="true" PageSize="15" AutoGenerateEditButton="True" AutoGenerateColumns="False">
+        <AlternatingRowStyle BackColor="Wheat" />
+            <Columns>
+                <asp:TemplateField HeaderText="TITULO">
+                    <FooterTemplate>
+                    </FooterTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="lblATRIBUTO" runat="server" Text='<%# Bind("ATRIBUTO")%>'></asp:Label>
+                    </ItemTemplate>
+	            <EditItemTemplate>
+                        <asp:TextBox ID="txtATRIBUTO" runat="server" Text='<%# Bind("ATRIBUTO")%>'></asp:TextBox>
+                    </EditItemTemplate>
+                 </asp:TemplateField>
+            </Columns>
+    </asp:GridView>
+
+--************************************************************************
+-- En el Code Behind
+--************************************************************************
+1) para obtener el datasource => Private Sub listarENTIDAD()
+        miLista = miENTIDADN.listar()
+        grdENTIDAD.DataSource = miLista
+        DataBind()
+
+2) para paginar la grilla => evento PageIndexChanging
+   Try
+            grdENTIDAD.PageIndex = e.NewPageIndex
+            listarENTIDAD()
+        Catch ex As ent.miClaseExcepcion
+            TratarErrorEnCatch("ENTIDAD", ex)
+        End Try
+3) para permitir la edicion => evento RowEditing
+   Try
+            grdENTIDAD.EditIndex = e.NewEditIndex
+            listarENTIDAD()
+        Catch ex As ent.miClaseExcepcion
+            TratarErrorEnCatch("ENTIDAD", ex)
+        End Try
+4) para cancelar la edicion => evento RowCancelingEdit
+   Try
+            grdENTIDAD.EditIndex = -1
+            listarENTIDAD()
+        Catch ex As ent.miClaseExcepcion
+            TratarErrorEnCatch("ENTIDAD", ex)
+        End Try
+5) para hacer el update => evento RowUpdating 
+        Try
+	    Dim texto1 As String = CType(grdENTIDAD.Rows(e.RowIndex).FindControl("LblATRIBUTO"), Label).Text
+            Dim texto2 As String = CType(grdENTIDAD.Rows(e.RowIndex).FindControl("txtATRIBUTO"), TextBox).Text
+            miENTIDADN.actualizar(texto1, texto2)
+            'para  finalizar la edicion y que el boton actualizar vuelva a ser editar
+            grdENTIDAD.EditIndex = -1
+            listarENTIDAD()
+        Catch ex As ent.miClaseExcepcion
+            TratarErrorEnCatch("ENTIDAD", ex)
+        End Try

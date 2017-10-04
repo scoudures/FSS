@@ -1,0 +1,26 @@
+EnableEventValidation = "false"
+
+<asp:Button ID="imprPantalla" runat="server" Text="Imprimir Pantalla" CssClass="boton" CausesValidation="false" />
+--***************************************************************************************************************
+Imports System.IO
+Imports iTextSharp.text
+Imports iTextSharp.text.html.simpleparser
+Imports iTextSharp.text.pdf
+
+ Protected Sub imprimirPantalla_Click(sender As Object, e As EventArgs) Handles imprPantalla.Click
+        Response.ContentType = "application/pdf"
+        Response.AddHeader("content-disposition", "attachment;filename=ImpirmirPantalla.pdf")
+        Response.Cache.SetCacheability(HttpCacheability.NoCache)
+        Dim sw As New StringWriter()
+        Dim hw As New HtmlTextWriter(sw)
+        Me.Page.RenderControl(hw)
+        Dim sr As New StringReader(sw.ToString())
+        Dim pdfDoc As New Document(PageSize.A4, 10.0F, 10.0F, 100.0F, 0.0F)
+        Dim htmlparser As New HTMLWorker(pdfDoc)
+        PdfWriter.GetInstance(pdfDoc, Response.OutputStream)
+        pdfDoc.Open()
+        htmlparser.Parse(sr)
+        pdfDoc.Close()
+        Response.Write(pdfDoc)
+        Response.[End]()
+    End Sub

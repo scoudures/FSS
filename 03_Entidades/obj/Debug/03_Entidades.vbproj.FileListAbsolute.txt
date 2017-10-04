@@ -1,0 +1,24 @@
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\03_Entidades\bin\Debug\03_Entidades.dll
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\03_Entidades\bin\Debug\03_Entidades.pdb
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\03_Entidades\bin\Debug\03_Entidades.xml
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\03_Entidades\obj\Debug\_03_Entidades.Resources.resources
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\03_Entidades\obj\Debug\03_Entidades.vbproj.GenerateResource.Cache
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\03_Entidades\obj\Debug\03_Entidades.dll
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\03_Entidades\obj\Debug\03_Entidades.xml
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\03_Entidades\obj\Debug\03_Entidades.pdb
+G:\FSS\03_Entidades\bin\Debug\03_Entidades.dll
+G:\FSS\03_Entidades\bin\Debug\03_Entidades.pdb
+G:\FSS\03_Entidades\bin\Debug\03_Entidades.xml
+G:\FSS\03_Entidades\obj\Debug\_03_Entidades.Resources.resources
+G:\FSS\03_Entidades\obj\Debug\03_Entidades.vbproj.GenerateResource.Cache
+G:\FSS\03_Entidades\obj\Debug\03_Entidades.dll
+G:\FSS\03_Entidades\obj\Debug\03_Entidades.xml
+G:\FSS\03_Entidades\obj\Debug\03_Entidades.pdb
+C:\FSS\03_Entidades\bin\Debug\03_Entidades.dll
+C:\FSS\03_Entidades\bin\Debug\03_Entidades.pdb
+C:\FSS\03_Entidades\bin\Debug\03_Entidades.xml
+C:\FSS\03_Entidades\obj\Debug\_03_Entidades.Resources.resources
+C:\FSS\03_Entidades\obj\Debug\03_Entidades.vbproj.GenerateResource.Cache
+C:\FSS\03_Entidades\obj\Debug\03_Entidades.dll
+C:\FSS\03_Entidades\obj\Debug\03_Entidades.xml
+C:\FSS\03_Entidades\obj\Debug\03_Entidades.pdb

@@ -1,0 +1,56 @@
+c:\users\sol\documents\visual studio 2013\Projects\FSS\FSS\bin\FSS.dll.config
+c:\users\sol\documents\visual studio 2013\Projects\FSS\FSS\bin\FSS.dll
+c:\users\sol\documents\visual studio 2013\Projects\FSS\FSS\bin\FSS.pdb
+c:\users\sol\documents\visual studio 2013\Projects\FSS\FSS\bin\FSS.xml
+c:\users\sol\documents\visual studio 2013\Projects\FSS\FSS\bin\02_Negocio.dll
+c:\users\sol\documents\visual studio 2013\Projects\FSS\FSS\bin\03_Entidades.dll
+c:\users\sol\documents\visual studio 2013\Projects\FSS\FSS\bin\02_Negocio.pdb
+c:\users\sol\documents\visual studio 2013\Projects\FSS\FSS\bin\02_Negocio.xml
+c:\users\sol\documents\visual studio 2013\Projects\FSS\FSS\bin\03_Entidades.pdb
+c:\users\sol\documents\visual studio 2013\Projects\FSS\FSS\bin\03_Entidades.xml
+c:\users\sol\documents\visual studio 2013\Projects\FSS\FSS\obj\Debug\FSS.vbprojResolveAssemblyReference.cache
+c:\users\sol\documents\visual studio 2013\Projects\FSS\FSS\obj\Debug\FSS.Resources.resources
+c:\users\sol\documents\visual studio 2013\Projects\FSS\FSS\obj\Debug\FSS.vbproj.GenerateResource.Cache
+c:\users\sol\documents\visual studio 2013\Projects\FSS\FSS\obj\Debug\FSS.dll
+c:\users\sol\documents\visual studio 2013\Projects\FSS\FSS\obj\Debug\FSS.xml
+c:\users\sol\documents\visual studio 2013\Projects\FSS\FSS\obj\Debug\FSS.pdb
+G:\FSS\FSS\bin\FSS.dll.config
+G:\FSS\FSS\bin\FSS.dll
+G:\FSS\FSS\bin\FSS.pdb
+G:\FSS\FSS\bin\FSS.xml
+G:\FSS\FSS\bin\02_Negocio.dll
+G:\FSS\FSS\bin\03_Entidades.dll
+G:\FSS\FSS\bin\04_Datos.dll
+G:\FSS\FSS\bin\02_Negocio.pdb
+G:\FSS\FSS\bin\02_Negocio.xml
+G:\FSS\FSS\bin\03_Entidades.pdb
+G:\FSS\FSS\bin\03_Entidades.xml
+G:\FSS\FSS\bin\04_Datos.pdb
+G:\FSS\FSS\bin\04_Datos.xml
+G:\FSS\FSS\obj\Debug\FSS.vbprojResolveAssemblyReference.cache
+G:\FSS\FSS\obj\Debug\FSS.Resources.resources
+G:\FSS\FSS\obj\Debug\FSS.vbproj.GenerateResource.Cache
+G:\FSS\FSS\obj\Debug\FSS.dll
+G:\FSS\FSS\obj\Debug\FSS.xml
+G:\FSS\FSS\obj\Debug\FSS.pdb
+G:\FSS\FSS\bin\AjaxControlToolkit.dll
+C:\FSS\FSS\bin\FSS.dll.config
+C:\FSS\FSS\bin\FSS.dll
+C:\FSS\FSS\bin\FSS.pdb
+C:\FSS\FSS\bin\FSS.xml
+C:\FSS\FSS\bin\02_Negocio.dll
+C:\FSS\FSS\bin\03_Entidades.dll
+C:\FSS\FSS\bin\AjaxControlToolkit.dll
+C:\FSS\FSS\bin\04_Datos.dll
+C:\FSS\FSS\bin\02_Negocio.pdb
+C:\FSS\FSS\bin\02_Negocio.xml
+C:\FSS\FSS\bin\03_Entidades.pdb
+C:\FSS\FSS\bin\03_Entidades.xml
+C:\FSS\FSS\bin\04_Datos.pdb
+C:\FSS\FSS\bin\04_Datos.xml
+C:\FSS\FSS\obj\Debug\FSS.vbprojResolveAssemblyReference.cache
+C:\FSS\FSS\obj\Debug\FSS.Resources.resources
+C:\FSS\FSS\obj\Debug\FSS.vbproj.GenerateResource.Cache
+C:\FSS\FSS\obj\Debug\FSS.dll
+C:\FSS\FSS\obj\Debug\FSS.xml
+C:\FSS\FSS\obj\Debug\FSS.pdb

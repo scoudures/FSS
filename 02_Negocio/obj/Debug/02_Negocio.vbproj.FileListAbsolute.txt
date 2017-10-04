@@ -1,0 +1,45 @@
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\02_Negocio\bin\Debug\02_Negocio.dll
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\02_Negocio\bin\Debug\02_Negocio.pdb
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\02_Negocio\bin\Debug\02_Negocio.xml
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\02_Negocio\bin\Debug\03_Entidades.dll
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\02_Negocio\bin\Debug\04_Datos.dll
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\02_Negocio\bin\Debug\03_Entidades.pdb
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\02_Negocio\bin\Debug\03_Entidades.xml
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\02_Negocio\bin\Debug\04_Datos.pdb
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\02_Negocio\bin\Debug\04_Datos.xml
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\02_Negocio\obj\Debug\02_Negocio.vbprojResolveAssemblyReference.cache
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\02_Negocio\obj\Debug\_02_Negocio.Resources.resources
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\02_Negocio\obj\Debug\02_Negocio.vbproj.GenerateResource.Cache
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\02_Negocio\obj\Debug\02_Negocio.dll
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\02_Negocio\obj\Debug\02_Negocio.xml
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\02_Negocio\obj\Debug\02_Negocio.pdb
+G:\FSS\02_Negocio\bin\Debug\02_Negocio.dll
+G:\FSS\02_Negocio\bin\Debug\02_Negocio.pdb
+G:\FSS\02_Negocio\bin\Debug\02_Negocio.xml
+G:\FSS\02_Negocio\bin\Debug\03_Entidades.dll
+G:\FSS\02_Negocio\bin\Debug\04_Datos.dll
+G:\FSS\02_Negocio\bin\Debug\03_Entidades.pdb
+G:\FSS\02_Negocio\bin\Debug\03_Entidades.xml
+G:\FSS\02_Negocio\bin\Debug\04_Datos.pdb
+G:\FSS\02_Negocio\bin\Debug\04_Datos.xml
+G:\FSS\02_Negocio\obj\Debug\02_Negocio.vbprojResolveAssemblyReference.cache
+G:\FSS\02_Negocio\obj\Debug\_02_Negocio.Resources.resources
+G:\FSS\02_Negocio\obj\Debug\02_Negocio.vbproj.GenerateResource.Cache
+G:\FSS\02_Negocio\obj\Debug\02_Negocio.dll
+G:\FSS\02_Negocio\obj\Debug\02_Negocio.xml
+G:\FSS\02_Negocio\obj\Debug\02_Negocio.pdb
+C:\FSS\02_Negocio\bin\Debug\02_Negocio.dll
+C:\FSS\02_Negocio\bin\Debug\02_Negocio.pdb
+C:\FSS\02_Negocio\bin\Debug\02_Negocio.xml
+C:\FSS\02_Negocio\bin\Debug\03_Entidades.dll
+C:\FSS\02_Negocio\bin\Debug\04_Datos.dll
+C:\FSS\02_Negocio\bin\Debug\03_Entidades.pdb
+C:\FSS\02_Negocio\bin\Debug\03_Entidades.xml
+C:\FSS\02_Negocio\bin\Debug\04_Datos.pdb
+C:\FSS\02_Negocio\bin\Debug\04_Datos.xml
+C:\FSS\02_Negocio\obj\Debug\02_Negocio.vbprojResolveAssemblyReference.cache
+C:\FSS\02_Negocio\obj\Debug\_02_Negocio.Resources.resources
+C:\FSS\02_Negocio\obj\Debug\02_Negocio.vbproj.GenerateResource.Cache
+C:\FSS\02_Negocio\obj\Debug\02_Negocio.dll
+C:\FSS\02_Negocio\obj\Debug\02_Negocio.xml
+C:\FSS\02_Negocio\obj\Debug\02_Negocio.pdb

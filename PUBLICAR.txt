@@ -1,0 +1,32 @@
+PASOS PARA PUBLICAR PROYECTO TFI EN LAB 3ER PISO
+
+0- Copiar carpeta con proyecto en el DISCO D y dar permiso de control total a TODOS!,
+   si se copia en el C:\ no deja hacer backup
+
+1- Çrear las carpetas D:\PaginaTFI y D:\BKP_FSS, dar permisos a todos los usuarios(TODOS dar control total) en ambas
+2- Cambiar en el Sql server el modo de autenticacion a modo mixto, (windows y sql)
+3- Reiniciar el servicio
+4- Crear el login en el servidor sql. 
+    Usuario:FSS
+    pass:123
+    deshabilitar checks
+    Asignar rol sysadmin
+
+5- Crear base de datos FSS
+6- Ejecutar el script de creacion de la base FSS
+7- Ejecutar el script de backup/restore en la master
+8- Crear carpeta en al cual se va a publicar la aplicacion
+   C:\inetpub\wwwroot\tfi (la última vez usé D:\PaginaTFI)
+
+9- cambiar los string de conexion (base y master), poner el nombre del servidor sql del laboratorio
+   Datasource= .\sql_uai
+   user= FSS
+   pass= 123
+
+10- instalar framework .NET 4.5 del IIS, desde panel de control, agregar y quitar programas, caracteristicas de windows
+
+11- Publicar aplicacion en el iis. Ir al default web site (imagen1) y asignar el directorio D:\paginatfi (imagen2)
+12- poner como doc predeterminado principal.apsx y habilitar examen de directorio.
+13- Crear el archivo "D:\PaginaTFI\DAL.log"
+14- Después de publicar, crear la carpeta "D:\PaginaTFI\Negocio\ImagenesProductos" (esto se borra cada vez que se publica)
+15- Copiar las imagenes en "D:\PaginaTFI\Negocio\ImagenesProductos"

@@ -1,0 +1,36 @@
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\04_Datos\bin\Debug\04_Datos.dll
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\04_Datos\bin\Debug\04_Datos.pdb
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\04_Datos\bin\Debug\04_Datos.xml
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\04_Datos\bin\Debug\03_Entidades.dll
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\04_Datos\bin\Debug\03_Entidades.pdb
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\04_Datos\bin\Debug\03_Entidades.xml
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\04_Datos\obj\Debug\04_Datos.vbprojResolveAssemblyReference.cache
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\04_Datos\obj\Debug\_04_Datos.Resources.resources
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\04_Datos\obj\Debug\04_Datos.vbproj.GenerateResource.Cache
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\04_Datos\obj\Debug\04_Datos.dll
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\04_Datos\obj\Debug\04_Datos.xml
+c:\Users\Sol\documents\visual studio 2013\Projects\FSS\04_Datos\obj\Debug\04_Datos.pdb
+G:\FSS\04_Datos\bin\Debug\04_Datos.dll
+G:\FSS\04_Datos\bin\Debug\04_Datos.pdb
+G:\FSS\04_Datos\bin\Debug\04_Datos.xml
+G:\FSS\04_Datos\bin\Debug\03_Entidades.dll
+G:\FSS\04_Datos\bin\Debug\03_Entidades.pdb
+G:\FSS\04_Datos\bin\Debug\03_Entidades.xml
+G:\FSS\04_Datos\obj\Debug\04_Datos.vbprojResolveAssemblyReference.cache
+G:\FSS\04_Datos\obj\Debug\_04_Datos.Resources.resources
+G:\FSS\04_Datos\obj\Debug\04_Datos.vbproj.GenerateResource.Cache
+G:\FSS\04_Datos\obj\Debug\04_Datos.dll
+G:\FSS\04_Datos\obj\Debug\04_Datos.xml
+G:\FSS\04_Datos\obj\Debug\04_Datos.pdb
+C:\FSS\04_Datos\bin\Debug\04_Datos.dll
+C:\FSS\04_Datos\bin\Debug\04_Datos.pdb
+C:\FSS\04_Datos\bin\Debug\04_Datos.xml
+C:\FSS\04_Datos\bin\Debug\03_Entidades.dll
+C:\FSS\04_Datos\bin\Debug\03_Entidades.pdb
+C:\FSS\04_Datos\bin\Debug\03_Entidades.xml
+C:\FSS\04_Datos\obj\Debug\04_Datos.vbprojResolveAssemblyReference.cache
+C:\FSS\04_Datos\obj\Debug\_04_Datos.Resources.resources
+C:\FSS\04_Datos\obj\Debug\04_Datos.vbproj.GenerateResource.Cache
+C:\FSS\04_Datos\obj\Debug\04_Datos.dll
+C:\FSS\04_Datos\obj\Debug\04_Datos.xml
+C:\FSS\04_Datos\obj\Debug\04_Datos.pdb

@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8ED0D054-50DA-48EE-9B92-52549D7108FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>_04_Datos</RootNamespace>
+    <AssemblyName>04_Datos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>04_Datos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>04_Datos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Negocio\CodigoPostalM.vb" />
+    <Compile Include="Negocio\ColorM.vb" />
+    <Compile Include="Negocio\ConsultaM.vb" />
+    <Compile Include="Negocio\DomicilioM.vb" />
+    <Compile Include="Negocio\EnvioM.vb" />
+    <Compile Include="Negocio\FacturaM.vb" />
+    <Compile Include="Negocio\LineaM.vb" />
+    <Compile Include="Negocio\LocalidadM.vb" />
+    <Compile Include="Negocio\MarcaM.vb" />
+    <Compile Include="Negocio\NivelM.vb" />
+    <Compile Include="Negocio\NoticiaM.vb" />
+    <Compile Include="Negocio\PagoM.vb" />
+    <Compile Include="Negocio\PedidoM.vb" />
+    <Compile Include="Negocio\PedidoTemporalM.vb" />
+    <Compile Include="Negocio\ProductoM.vb" />
+    <Compile Include="Negocio\ProvinciaM.vb" />
+    <Compile Include="Negocio\PuntajeM.vb" />
+    <Compile Include="Negocio\RecomendacionM.vb" />
+    <Compile Include="Negocio\TalleM.vb" />
+    <Compile Include="Negocio\VendedorM.vb" />
+    <Compile Include="Negocio\VideoM.vb" />
+    <Compile Include="Tecnicos\Acceso.vb" />
+    <Compile Include="Tecnicos\BackupM.vb" />
+    <Compile Include="Tecnicos\BitacoraM.vb" />
+    <Compile Include="Negocio\ClienteM.vb" />
+    <Compile Include="Tecnicos\Encriptador.vb" />
+    <Compile Include="Tecnicos\FamiliaM.vb" />
+    <Compile Include="Tecnicos\IdiomaM.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Tecnicos\PermisoM.vb" />
+    <Compile Include="Tecnicos\SucesoM.vb" />
+    <Compile Include="Tecnicos\TraductorM.vb" />
+    <Compile Include="Tecnicos\UsuarioM.vb" />
+    <Compile Include="Tecnicos\Verificador.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="_Diagramas\Acceso_EscribirLog.sequencediagram.layout">
+      <DependentUpon>Acceso_EscribirLog.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Diagramas\Acceso_Escribir.sequencediagram.layout">
+      <DependentUpon>Acceso_Escribir.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Diagramas\Acceso_leer_3.sequencediagram.layout">
+      <DependentUpon>Acceso_leer_3.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Diagramas\Mensajero_EscribirBitacora_2.sequencediagram.layout">
+      <DependentUpon>Mensajero_EscribirBitacora_2.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_Diagramas\Acceso_EscribirLog.sequencediagram" />
+    <None Include="_Diagramas\Acceso_Escribir.sequencediagram" />
+    <None Include="_Diagramas\Acceso_leer_3.sequencediagram" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="_Diagramas\Mensajero_EscribirBitacora_2.sequencediagram" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\03_Entidades\03_Entidades.vbproj">
+      <Project>{daf9d26e-6032-42bc-87e1-861b264213ee}</Project>
+      <Name>03_Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

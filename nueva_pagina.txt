@@ -1,0 +1,64 @@
+<%@ Page Title="FSS" Language="vb" AutoEventWireup="false" MasterPageFile="~/Maestra.Master" CodeBehind="Inicio_OLD.aspx.vb" Inherits="FSS.Formulario_web1" %>
+<%@ Register assembly="FSS" namespace="FSS" TagPrefix="fss" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Titulo" ContentPlaceHolderID="Titulo" runat="server">
+<fss:mietiqueta ID="menuPAGINA" runat="server" Text="PAGINA"></fss:mietiqueta>
+</asp:Content>
+<asp:Content ID="Contenido" ContentPlaceHolderID="Contenido" runat="server">
+<article>
+<asp:Panel ID="Panel1" runat="server" Width="600px" HorizontalAlign="Center"></asp:Panel><br /><br />
+</article>
+</asp:Content>
+<asp:Content ID="Menu" ContentPlaceHolderID="Menu" runat="server">
+</asp:Content>
+--************************************************************************
+-- en la base de datos
+--************************************************************************
+1) Agregar la leyenda, agregar las 3 traducciones.
+2) Editar la tabla permiso, sacarle el identity al Codigo de Permiso.
+3) Insertar el nombre de la pagina en la tabla Permiso con id<100
+4) Insertar la pagina nueva como hijo del sistema (CodPadre=0 y CodPermiso<100)=> Permiso Compuesto
+5) Si el permiso lo tienen que tener todos => Insertar CodPadre=501 y CodPermiso= pagina nueva
+6) Para cada control, insertar un registro en la tabla permiso con id>100 y id<500 => Permiso Simple
+7) Insertar la asociacion pagina+control (CodPadre=Pagina y CodPermiso=control)
+8) Editar de nuevo la tabla permiso, ponerle el identity al Codigo de Permiso.
+--************************************************************************
+-- los permisos simples tienen 	que estar asociados al permiso compuesto correspondiente
+-- Ver qué permisos compuestos tienen que estar en el perfil default
+-- el usuario invitado tiene que tener asignado el perfil default
+--************************************************************************
+-- En el Code Behind
+--************************************************************************
+Imports neg = _02_Negocio
+Imports ent = _03_Entidades
+Public Class PAGINANUEVA
+    Inherits PaginaBase
+
+--************************************************************************
+--EN EL EVENTO page_error
+TratarErrorSinTry("PAGINA")
+--************************************************************************
+--EN ELEVENTO PRE-RENDER DE TODAS LAS PAGINAS
+--(EN LAS PAGINAS QUE SON PUBLICAS comentar el control de autenticacion)
+--************************************************************************
+	Try
+            ControlarAutenticacion("PAGINA")
+            ControlarConsistencia("PAGINA")
+        Catch ex As ent.miClaseExcepcion
+            TratarErrorEnCatch("PAGINA", ex)
+        Catch ex2 As Exception
+            TratarErrorEnCatch("PAGINA", ex2)
+        End Try
+--************************************************************************
+-- Todos los Sub o function van entre TRY-CATCH con este codigo
+--************************************************************************
+	Catch ex As ent.miClaseExcepcion
+            TratarErrorEnCatch("PAGINA", ex)
+        Catch ex2 As Exception
+            TratarErrorEnCatch("PAGINA", ex2)
+--************************************************************************
+-- Si uso validadores, poner esto en el load de la pagina
+--************************************************************************
+'para que no fallen los validadores
+Page.UnobtrusiveValidationMode = System.Web.UI.UnobtrusiveValidationMode.None
