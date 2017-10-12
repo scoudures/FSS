@@ -25,6 +25,9 @@ Public Class NoticiaN
     Public Function getByCodigo(ByRef unaNoticia As ent.Noticia) As ent.Noticia
         Return miMapper.getByCodigo(unaNoticia)
     End Function
+    Public Function NoticiaSelect(ByRef unaNoticia As ent.Noticia) As ent.Noticia
+        Return miMapper.NoticiaSelect(unaNoticia)
+    End Function
 
     Public Function listarTodo() As List(Of ent.Noticia)
         Try

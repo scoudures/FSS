@@ -70,4 +70,13 @@ Public Class IdiomaN
             Throw ex2
         End Try
     End Function
+    Public Function nuevaTraduccionNoticia(ByRef unIdioma As ent.Idioma, ByRef unaNoticia As ent.Noticia, ByVal lasLeyendas As List(Of ent.Leyenda)) As Integer
+        Try
+            Return miMapper.nuevaTraduccionNoticia(unIdioma, unaNoticia, lasLeyendas)
+        Catch ex As ent.miClaseExcepcion
+            Throw ex
+        Catch ex2 As Exception
+            Throw ex2
+        End Try
+    End Function
 End Class

@@ -32,24 +32,6 @@ Partial Public Class Inexistente
     Protected WithEvents PanelCont As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''Control menuError.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents menuError As Global.FSS.miEtiqueta
-
-    '''<summary>
-    '''Control encabezado.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents encabezado As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''Control menuInicio.
     '''</summary>
     '''<remarks>
@@ -86,15 +68,6 @@ Partial Public Class Inexistente
     Protected WithEvents menuVideos As Global.FSS.miLink
 
     '''<summary>
-    '''Control linkQuienesSomos.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents linkQuienesSomos As Global.FSS.miLink
-
-    '''<summary>
     '''Control LinkValores.
     '''</summary>
     '''<remarks>
@@ -104,13 +77,22 @@ Partial Public Class Inexistente
     Protected WithEvents LinkValores As Global.FSS.miLink
 
     '''<summary>
+    '''Control encabezado.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents encabezado As Global.FSS.miEtiqueta
+
+    '''<summary>
     '''Control titError404.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents titError404 As Global.FSS.miEtiqueta
+    Protected WithEvents titError404 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''Control subtitError404.
@@ -119,7 +101,7 @@ Partial Public Class Inexistente
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents subtitError404 As Global.FSS.miEtiqueta
+    Protected WithEvents subtitError404 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''Control subsubtitError.
@@ -128,68 +110,122 @@ Partial Public Class Inexistente
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents subsubtitError As Global.FSS.miEtiqueta
+    Protected WithEvents subsubtitError As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control Mietiqueta1.
+    '''Control Label1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Mietiqueta1 As Global.FSS.miEtiqueta
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control Mietiqueta2.
+    '''Control Label2.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Mietiqueta2 As Global.FSS.miEtiqueta
+    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control Mietiqueta3.
+    '''Control Label3.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Mietiqueta3 As Global.FSS.miEtiqueta
+    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control Mietiqueta4.
+    '''Control Label4.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Mietiqueta4 As Global.FSS.miEtiqueta
+    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control Mietiqueta5.
+    '''Control Label5.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Mietiqueta5 As Global.FSS.miEtiqueta
+    Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control Mietiqueta6.
+    '''Control Label6.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Mietiqueta6 As Global.FSS.miEtiqueta
+    Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control Panel1.
+    '''Control UsuarioLogueado.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Panel1 As Global.System.Web.UI.WebControls.Panel
+    Protected WithEvents UsuarioLogueado As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control lstIdioma.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lstIdioma As Global.System.Web.UI.WebControls.ListBox
+
+    '''<summary>
+    '''Control menuLogin.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents menuLogin As Global.FSS.miBoton
+
+    '''<summary>
+    '''Control menuSalir.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents menuSalir As Global.FSS.miBoton
+
+    '''<summary>
+    '''Control menuRegistro.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents menuRegistro As Global.FSS.miBoton
+
+    '''<summary>
+    '''Control menuContacto.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents menuContacto As Global.FSS.miBoton
+
+    '''<summary>
+    '''Control LinkRecomendacion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents LinkRecomendacion As Global.FSS.miBoton
 End Class

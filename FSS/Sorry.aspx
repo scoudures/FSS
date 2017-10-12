@@ -1,70 +1,62 @@
 ﻿<%@ Page Title="FSS" Language="vb" AutoEventWireup="false" CodeBehind="Sorry.aspx.vb" Inherits="FSS.Sorry" %>
 <%@ Register assembly="FSS" namespace="FSS" TagPrefix="fss" %>
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="es-AR">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>FSS</title>
-    <link href="Estilos/misestilos.css" rel="stylesheet" />
-    <script type="text/javascript" >
-        function cerrarpagina() {
-            window.opener = top;
-            window.close(); 
-            return false;
-        }
-        </script>
-    <style>
-        #contenedor_ {
-  width: 990px;
-  margin: 5px auto 5px auto; /* superior, derecho, inferior, izquierdo*/
-  text-align: center;
-  align-items:center;
-}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>FSS</title>
+	<script type="text/javascript" >
 
-#cabecera_ {
-  background: #FFFBB9;
-  border: 1px solid #999999;
-  border-radius: 5px; /* esquinas redondeadas */
-  box-shadow: rgb(150,150,150) 5px 5px 10px;
-  margin: 5px auto 5px 5px; /* superior, derecho, inferior, izquierdo*/
-  padding: 5px; /* superior, derecho, inferior, izquierdo (si solo se define un valor, sera asignado a todos los espacios alrededor del contenido del elemento)*/
-  width: 990px;
-
-}
-article {
-  background: #FFFBCC;
-  border: 1px solid #999999;
-  padding: 10px;
-  margin-bottom: 10px;
-  overflow:scroll;
-    width: 990px;
-}
-        #pie_ {
-  clear: both; /* restaura el flujo normal del documento, empuja los elementos haciendo que las cajas flotantes ocupen un area real de la pantalla */
-  text-align: center;
-  border-top: 2px solid #999999;
-  border-radius: 10px; /* esquinas redondeadas */
-  width: 1009px;
-  height:80px;
-  background: url('../Imagenes/logosabajo.jpg') no-repeat right 50%;
-  background-size: cover;  
-}</style>
-    </head>
+	    function cerrarpagina() {
+	        window.opener = top;
+	        window.close();
+	        return false;
+	    }
+		</script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<%--<link rel="stylesheet" href="css/misestilos.css">--%>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
 <body>
-    <form id="form1" runat="server">
-    <div id="contenedor_">
-        <asp:Panel ID="PanelCont" runat="server">
-                <%--la pagina actual--%>
-                <h3><fss:mietiqueta ID="menuError" runat="server" Text="Error"></fss:mietiqueta></h3>
-                
-                <%-- Cabecera de la pagina --%>
-                <header id="cabecera_">
-                <asp:label id="encabezado" runat="server" Text="FSS La tienda on-line para el patinador" CssClass="titulo"></asp:label>
-                </header>
-                <section id="seccion">
-                       <article>
-                            <asp:Panel runat="server" CssClass="panelTexto" HorizontalAlign="Center">
+	<form id="form1" runat="server">
+	<section class="main container">
+		<div class="row">       
+	<asp:Panel ID="PanelCont" runat="server">
+	<header>
+		<nav class="navbar navbar-custom navbar-static-top" role="navigation" id="menu">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fss">
+						<span class="sr-only">Desplegar / Ocultar Menu</span>
+						<span class="icon-bar bg-primary"></span>
+						<span class="icon-bar bg-primary"></span>
+						<span class="icon-bar bg-primary"></span>
+					</button>
+					<%--<a href="Inicio.aspx" class="navbar-brand">Inici</a>--%>
+                    <fss:miLink ID="menuInicio" runat="server" PostBackUrl="Inicio.aspx" CssClass="navbar-brand linkboton" CausesValidation="false" >Inicio</fss:miLink>
+				</div>
+				<!-- Menu -->
+				<div class="collapse navbar-collapse" id="navegacion-fss">
+					<ul class="nav navbar-nav">
+						<%--<li runat="server"><fss:miLink ID="menuInicio" runat="server" PostBackUrl="Inicio.aspx" CssClass="linkboton" CausesValidation="false" >Inicio</fss:miLink></li>--%>
+                        <li runat="server"><fss:miLink ID="menuCatalogo" runat="server" PostBackUrl="Catalogo.aspx?Linea=Botas" CssClass="linkboton" CausesValidation="false">Catalogo</fss:miLink></li>
+                        <li runat="server"><fss:miLink ID="menuCIPA" runat="server" PostBackUrl="CalculoCIPA.aspx" CssClass="linkboton hidden-xs hidden-sm" CausesValidation="false" >CIPA</fss:miLink></li>
+                        <li runat="server"><fss:miLink ID="menuVideos" runat="server" PostBackUrl="Videos.aspx" CssClass="linkboton" CausesValidation="false" >Videos</fss:miLink></li>
+                        <li runat="server"><fss:miLink ID="LinkValores" runat="server" PostBackUrl="Valores.aspx" CssClass="linkboton" CausesValidation="false">Nuestros Valores</fss:miLink></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+		<%-- Separador --%>
+	<section class="jumbotron-custom">
+			<h3 class="text-primary"><fss:miEtiqueta id="encabezado" runat="server" Text="FSS La tienda on-line para el patinador" CssClass="titulo"></fss:miEtiqueta></h3>
+	</section>
+<%-- ------------------------- --%>
+	<%-- Contenido de cada pagina --%>
+			<section class="posts col-md-9 text-primary">
+                <article style="text-align:center">
                                 <asp:label ID="titEsp" runat="server" Text="" CssClass="titulo" Style="color:red">LO SENTIMOS</asp:label> <br />
                                 <asp:label ID="subtitEsp" runat="server" Text="" CssClass="subtitulo">Ha ocurrido un error inesperado, esta página se encuentra fuera de servicio.</asp:label> <br />
                                 <asp:label ID="subsubtitEsp" runat="server" Text="" CssClass="subsubtitulo">Si necesita asistencia, por favor contacte al soporte tecnico soporte@fss.com.ar</asp:label>
@@ -80,13 +72,55 @@ article {
                                 <asp:label ID="subsubtitPort" runat="server" Text="" CssClass="subsubtitulo">Se precisar de ajuda, entre em contato com o suporte técnico soporte@fss.com.ar</asp:label>
                                 <br />
                                 <br />
-                        </asp:Panel>
-                        <asp:Panel ID="Panel1" runat="server"></asp:Panel><br /><br />
-                    </article>                
-                </section>
-        <footer id="pie_"> </footer>
+                </article>
+			</section>
+<%-- ------------------------- --%>
+		<%-- Menu lateral --%>
+			<aside class="col-md-3 hidden-xs hidden-sm" id="lateral">
+				<%--<fss:mietiqueta ID="UsuarioLogueado" runat="server" Text="" CssClass="logueado"></fss:mietiqueta>--%>
+				<div class="list-group">
+				<asp:Label ID="UsuarioLogueado" runat="server" Text="" CssClass="logueado"></asp:Label>
+				<br />
+				<br />
+				<asp:ListBox ID="lstIdioma" runat="server" AutoPostBack="true" CausesValidation="false" CssClass="btn-block text-center text-primary"></asp:ListBox>
+				<br />
+				<br />
+				<fss:miboton ID="menuLogin" runat="server" Text="Ingresar" CssClass="boton btn btn-primary btn-block"  CausesValidation="false"/>
+				<fss:miboton ID="menuSalir" runat="server" Text="Salir" CssClass="boton btn btn-primary btn-block" Visible="false"  CausesValidation="false"/>
+				<br />
+				<br />
+			</aside>
 </asp:Panel>
-</div>
-</form>
+	
+			</div>
+	</section>
+        <div class="container">
+			<div class="row">
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+<%-- footer de la master --%>
+		<footer id="pie">
+		<div class="container">
+			<div class="row">
+                <hr style="border-bottom-color:blue;border-bottom-style:double" />
+				<div class="col-xs-6">
+					<p class="text-primary">info.fss@gmail.com</p>
+				</div>
+				<div class="col-xs-6">
+					<ul class="list-inline text-right">
+						<li><fss:miboton ID="menuRegistro" runat="server" Text="Registrarse" CssClass="boton btn  btn-link" CausesValidation="false"/></li>
+						<li><fss:miBoton ID="menuContacto" runat="server"  CssClass="boton btn  btn-link" CausesValidation="false" Text="Contacto"/></li>
+						<li><fss:miBoton ID="LinkRecomendacion" runat="server" CssClass="boton btn  btn-link" CausesValidation="false" Text="Recomendaciones"/></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+		<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+  </form>
 </body>
 </html>

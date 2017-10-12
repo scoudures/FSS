@@ -124,4 +124,25 @@ Public Class NoticiaM
         End Try
         Return lista
     End Function
+    Public Function NoticiaSelect(ByRef unaNoticia As ent.Noticia) As ent.Noticia
+        Dim lista As New List(Of ent.Noticia)
+        Try
+            Dim params(3) As SqlParameter
+            params(0) = miAcceso.constructor("@titulo", unaNoticia.Titulo)
+            params(1) = miAcceso.constructor("@subtitulo", unaNoticia.Subtitulo)
+            params(2) = miAcceso.constructor("@texto", unaNoticia.Texto)
+            params(3) = miAcceso.constructor("@Rutaimagen", unaNoticia.RutaImagen)
+
+            Dim dt As DataTable = miAcceso.leer("Noticia_Select", params)
+            For Each fila As DataRow In dt.Rows
+                unaNoticia.CodigoNoticia = CInt(fila("CodigoNoticia"))
+            Next
+        Catch ex As ent.miClaseExcepcion
+            Throw ex
+        Catch ex2 As Exception
+            Throw ex2
+        End Try
+        Return unaNoticia
+    End Function
+
 End Class

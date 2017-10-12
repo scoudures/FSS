@@ -30,6 +30,11 @@ Public Class Traductor
             'If InStr(c.ID, "Contenido_RepeaterLinea_LinkLinea_") > 0 Then
             If InStr(c.ID, "LinkLinea") > 0 Then
                 leye.texto = obtenerLeyenda(TryCast(c, System.Web.UI.WebControls.HyperLink).Target, unUsuario)
+            ElseIf InStr(c.ID, "Noticia") > 0 Then
+                'leye.texto = obtenerLeyenda(TryCast(c, System.Web.UI.WebControls.Label).CssClass, unUsuario
+                Dim inicio As String
+                inicio = c.ID.Substring(0, InStr(c.ID, "Noticia") - 1)
+                leye.texto = obtenerLeyenda(inicio + "_" + TryCast(c, System.Web.UI.WebControls.HyperLink).Target, unUsuario)
             Else
                 leye.texto = obtenerLeyenda(c.ID, unUsuario)
             End If

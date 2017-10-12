@@ -17,10 +17,11 @@
             <ItemTemplate>
                 <article>
                 <header>
-                    <h2 style="background-color:gray; color:white; font-weight:bold"><asp:Label ID="LblTitulo" runat="server" Text='<%# Eval("titulo")%>'></asp:Label></h2><br /><br />
-                    <h4><asp:Label ID="LblSubtitulo" runat="server" Text='<%# Eval("subtitulo")%>'></asp:Label></h4><br /><br />
+                    <%--<h2 style="background-color:gray; color:white; font-weight:bold"><fss:miEtiqueta2 ID="tituloNoticia" runat="server" CssClass="Titulo_<%# Eval("CodigoNoticia")%>-" Text='<%# Eval("titulo")%>'></fss:miEtiqueta2></h2><br /><br />--%>
+                    <h2 style="background-color:gray; color:white; font-weight:bold"><fss:miLink2 ID="TituloNoticia" Enabled="false" Font-Underline="false" ForeColor="White"  runat="server" Target='<%# Eval("CodigoNoticia")%>' Text='<%# Eval("titulo")%>' ></fss:miLink2></h2><br /><br />
+                    <h4><fss:miLink2 ID="SubtituloNoticia" Enabled="false" Font-Underline="false" runat="server" Target='<%# Eval("CodigoNoticia")%>' Text='<%# Eval("subtitulo")%>'></fss:miLink2></h4><br /><br />
                 </header>
-                <p><asp:Label ID="Lbltexto" runat="server" Text='<%# Eval("texto")%>' ></asp:Label></p><br /><br />
+                <p><fss:miLink2 ID="TextoNoticia" Enabled="false" Font-Underline="false" runat="server" Target='<%# Eval("CodigoNoticia")%>' Text='<%# Eval("texto")%>' ></fss:miLink2></p><br /><br />
                     <asp:Image ID="Image1" runat="server" CssClass="center-block img-responsive img-rounded img-thumbnail" ImageUrl='<%# Eval("rutaImagen","~/Imagenes/{0}") %>' /><br />
                 <br />
                 <hr />

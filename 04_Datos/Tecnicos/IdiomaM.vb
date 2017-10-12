@@ -91,4 +91,25 @@ Public Class IdiomaM
         Return resultado
 
     End Function
+    Public Function nuevaTraduccionNoticia(ByRef unIdioma As ent.Idioma, ByRef unaNoticia As ent.Noticia, ByVal lasLeyendas As List(Of ent.Leyenda)) As Integer
+        Dim resultado As Integer
+        Try
+            For Each unaLeyenda As ent.Leyenda In lasLeyendas
+                Dim param(3) As SqlParameter
+                param(0) = miAcceso.constructor("@idioma", unIdioma.nombre)
+                param(1) = miAcceso.constructor("@leyenda", unaLeyenda.tag)
+                param(2) = miAcceso.constructor("@texto", unaLeyenda.texto)
+                param(3) = miAcceso.constructor("@textodefault", unaLeyenda.textodefault)
+                resultado = miAcceso.Escribir("Idioma_InsertTraduccionNoticia", param)
+                miVerificador.DigitosPorTabla("Idioma")
+                miVerificador.DigitosPorTabla("Traduccion")
+            Next
+        Catch ex As ent.miClaseExcepcion
+            Throw ex
+        Catch ex2 As Exception
+            Throw ex2
+        End Try
+        Return resultado
+
+    End Function
 End Class

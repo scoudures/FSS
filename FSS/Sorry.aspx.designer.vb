@@ -32,13 +32,49 @@ Partial Public Class Sorry
     Protected WithEvents PanelCont As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''Control menuError.
+    '''Control menuInicio.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents menuError As Global.FSS.miEtiqueta
+    Protected WithEvents menuInicio As Global.FSS.miLink
+
+    '''<summary>
+    '''Control menuCatalogo.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents menuCatalogo As Global.FSS.miLink
+
+    '''<summary>
+    '''Control menuCIPA.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents menuCIPA As Global.FSS.miLink
+
+    '''<summary>
+    '''Control menuVideos.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents menuVideos As Global.FSS.miLink
+
+    '''<summary>
+    '''Control LinkValores.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents LinkValores As Global.FSS.miLink
 
     '''<summary>
     '''Control encabezado.
@@ -47,7 +83,7 @@ Partial Public Class Sorry
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents encabezado As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents encabezado As Global.FSS.miEtiqueta
 
     '''<summary>
     '''Control titEsp.
@@ -131,11 +167,65 @@ Partial Public Class Sorry
     Protected WithEvents subsubtitPort As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control Panel1.
+    '''Control UsuarioLogueado.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Panel1 As Global.System.Web.UI.WebControls.Panel
+    Protected WithEvents UsuarioLogueado As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control lstIdioma.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lstIdioma As Global.System.Web.UI.WebControls.ListBox
+
+    '''<summary>
+    '''Control menuLogin.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents menuLogin As Global.FSS.miBoton
+
+    '''<summary>
+    '''Control menuSalir.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents menuSalir As Global.FSS.miBoton
+
+    '''<summary>
+    '''Control menuRegistro.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents menuRegistro As Global.FSS.miBoton
+
+    '''<summary>
+    '''Control menuContacto.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents menuContacto As Global.FSS.miBoton
+
+    '''<summary>
+    '''Control LinkRecomendacion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents LinkRecomendacion As Global.FSS.miBoton
 End Class
