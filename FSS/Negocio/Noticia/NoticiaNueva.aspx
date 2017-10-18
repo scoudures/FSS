@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Contenido" runat="server">
    <article>
-     <div style="text-align:center">
+     <div style="text-align:right">
     <asp:label ID="lblNoti" runat="server" Text="Noticia Nueva" CssClass="supertitulo"></asp:label>
     </div>
     <asp:Panel ID="Panel1" runat="server" CssClass="panelTexto" style="text-align:center">

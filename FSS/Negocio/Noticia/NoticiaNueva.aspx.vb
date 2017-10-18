@@ -118,7 +118,7 @@ Public Class NoticiaNueva
             '*******************************************************
             'TRADUCCION AL INGLES
             Dim idioma3 As New Entidades.Idioma
-            idioma3.nombre = "Ingles"
+            idioma3.nombre = "English"
             Dim leyendasIdioma3 As New List(Of Entidades.Leyenda)
             'TITULO
             Dim tituloIdioma3 As New Entidades.Leyenda
