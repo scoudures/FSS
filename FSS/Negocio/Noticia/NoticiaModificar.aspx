@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Contenido" runat="server">
 <article>
-     <div style="text-align:center">
+     <div style="text-align:right">
     <asp:label ID="lblModNoti" runat="server" Text="Modificar Noticia" CssClass="supertitulo"></asp:label>
     </div>
     <asp:Panel ID="Panel1" runat="server" CssClass="panelTexto" style="text-align:center">
@@ -43,7 +43,28 @@
                     </tr>
 
                     </table>
-
+        <br />
+                    <table style="width:90%" >
+                        <tr>
+                            <td style="width:150px"> <asp:Label ID="lblTitPort" runat="server" Text="Titulo en Portugues" Font-Bold="True"></asp:Label></td>
+                            <td style="width:350px "><asp:TextBox Width="100%"  ID="txtTitPort" runat="server" Rows="2" TextMode="MultiLine"></asp:TextBox></td>    
+                            <td style="width:150px"> <asp:Label ID="lblTitEng" runat="server" Text="Titulo en Ingles" Font-Bold="True"></asp:Label></td>
+                            <td style="width:350px "><asp:TextBox Width="100%"  ID="txtTitEng" runat="server" Rows="2" TextMode="MultiLine"></asp:TextBox></td>    
+                        </tr>
+                          <tr>
+                            <td style="width:150px"> <asp:Label ID="lblSubTitPort" runat="server" Text="Subtitulo en Portugues" Font-Bold="True"></asp:Label></td>
+                             <td style="width:350px "><asp:TextBox Width="100%"  ID="txtSubTitPort" runat="server" Rows="2" TextMode="MultiLine"></asp:TextBox></td>    
+                              <td style="width:150px"> <asp:Label ID="lblSubTitEng" runat="server" Text="Subtitulo en Ingles" Font-Bold="True"></asp:Label></td>
+                             <td style="width:350px "><asp:TextBox Width="100%"  ID="txtSubTitEng" runat="server" Rows="2" TextMode="MultiLine"></asp:TextBox></td>    
+                        </tr>
+                        <tr>
+                            <td style="width:150px"> <asp:Label ID="lblTextoPort" runat="server" Text="Texto en Portugues" Font-Bold="True"></asp:Label></td>
+                             <td style="width:350px "><asp:TextBox Width="100%"  ID="txtTextoPort" runat="server" Rows="10" TextMode="MultiLine"></asp:TextBox></td>   
+                            <td style="width:150px"> <asp:Label ID="lblTextoEng" runat="server" Text="Texto en Ingles" Font-Bold="True"></asp:Label></td>
+                             <td style="width:350px "><asp:TextBox Width="100%"  ID="txtTextoEng" runat="server" Rows="10" TextMode="MultiLine"></asp:TextBox></td>     
+                        </tr>
+                    </table>
+                    
 
                         <br />
                        

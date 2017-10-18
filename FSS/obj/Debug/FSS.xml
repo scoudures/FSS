@@ -3854,6 +3854,102 @@ Control ValidationSummary1.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+</member><member name="F:FSS.NoticiaModificar.lblTitPort">
+	<summary>
+Control lblTitPort.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.NoticiaModificar.txtTitPort">
+	<summary>
+Control txtTitPort.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.NoticiaModificar.lblTitEng">
+	<summary>
+Control lblTitEng.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.NoticiaModificar.txtTitEng">
+	<summary>
+Control txtTitEng.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.NoticiaModificar.lblSubTitPort">
+	<summary>
+Control lblSubTitPort.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.NoticiaModificar.txtSubTitPort">
+	<summary>
+Control txtSubTitPort.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.NoticiaModificar.lblSubTitEng">
+	<summary>
+Control lblSubTitEng.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.NoticiaModificar.txtSubTitEng">
+	<summary>
+Control txtSubTitEng.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.NoticiaModificar.lblTextoPort">
+	<summary>
+Control lblTextoPort.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.NoticiaModificar.txtTextoPort">
+	<summary>
+Control txtTextoPort.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.NoticiaModificar.lblTextoEng">
+	<summary>
+Control lblTextoEng.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.NoticiaModificar.txtTextoEng">
+	<summary>
+Control txtTextoEng.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
 </member><member name="F:FSS.NoticiaModificar.btnGuardar">
 	<summary>
 Control btnGuardar.

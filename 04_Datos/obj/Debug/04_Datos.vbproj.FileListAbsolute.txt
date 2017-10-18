@@ -44,3 +44,4 @@ C:\Users\Sol\Documents\FSS\04_Datos\obj\Debug\04_Datos.vbproj.GenerateResource.C
 C:\Users\Sol\Documents\FSS\04_Datos\obj\Debug\04_Datos.dll
 C:\Users\Sol\Documents\FSS\04_Datos\obj\Debug\04_Datos.xml
 C:\Users\Sol\Documents\FSS\04_Datos\obj\Debug\04_Datos.pdb
+C:\Users\Sol\Documents\FSS\04_Datos\obj\Debug\04_Datos.vbprojResolveAssemblyReference.cache

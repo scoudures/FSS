@@ -167,6 +167,114 @@ Partial Public Class NoticiaModificar
     Protected WithEvents ValidationSummary1 As Global.System.Web.UI.WebControls.ValidationSummary
 
     '''<summary>
+    '''Control lblTitPort.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblTitPort As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control txtTitPort.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtTitPort As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control lblTitEng.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblTitEng As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control txtTitEng.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtTitEng As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control lblSubTitPort.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblSubTitPort As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control txtSubTitPort.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtSubTitPort As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control lblSubTitEng.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblSubTitEng As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control txtSubTitEng.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtSubTitEng As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control lblTextoPort.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblTextoPort As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control txtTextoPort.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtTextoPort As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control lblTextoEng.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblTextoEng As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control txtTextoEng.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtTextoEng As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''Control btnGuardar.
     '''</summary>
     '''<remarks>

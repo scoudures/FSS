@@ -79,4 +79,22 @@ Public Class IdiomaN
             Throw ex2
         End Try
     End Function
+    Public Function modificarTraduccionNoticia(ByRef unIdioma As ent.Idioma, ByRef unaNoticia As ent.Noticia, ByVal lasLeyendas As List(Of ent.Leyenda)) As Integer
+        Try
+            Return miMapper.modificarTraduccionNoticia(unIdioma, unaNoticia, lasLeyendas)
+        Catch ex As ent.miClaseExcepcion
+            Throw ex
+        Catch ex2 As Exception
+            Throw ex2
+        End Try
+    End Function
+    Public Function eliminarTraduccionNoticia(ByRef unIdioma As ent.Idioma, ByRef unaNoticia As ent.Noticia, ByVal lasLeyendas As List(Of ent.Leyenda)) As Integer
+        Try
+            Return miMapper.eliminarTraduccionNoticia(unIdioma, unaNoticia, lasLeyendas)
+        Catch ex As ent.miClaseExcepcion
+            Throw ex
+        Catch ex2 As Exception
+            Throw ex2
+        End Try
+    End Function
 End Class
