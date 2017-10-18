@@ -97,4 +97,13 @@ Public Class IdiomaN
             Throw ex2
         End Try
     End Function
+    Public Sub consultarTraduccionNoticia(ByRef unIdioma As ent.Idioma, ByRef unaLeyenda As ent.Leyenda)
+        Try
+            miMapper.consultarTraduccionNoticia(unIdioma, unaLeyenda)
+        Catch ex As ent.miClaseExcepcion
+            Throw ex
+        Catch ex2 As Exception
+            Throw ex2
+        End Try
+    End Sub
 End Class

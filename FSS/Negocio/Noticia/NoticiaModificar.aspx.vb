@@ -46,7 +46,46 @@ Public Class NoticiaModificar
                     TxtTexto.Text = miNoticia.Texto
                     txtRuta.Text = miNoticia.RutaImagen
                     Image1.ImageUrl = "~/Imagenes/" + miNoticia.RutaImagen
-
+                    'cargo las traducciones
+                    miNoticia = NoticiaN.NoticiaSelect(miNoticia)
+                    '*******************************************************
+                    'TRADUCCION AL PORTUGUES
+                    Dim idioma2 As New Entidades.Idioma
+                    idioma2.nombre = "Portugues"
+                    'TITULO
+                    Dim tituloIdioma2 As New Entidades.Leyenda
+                    tituloIdioma2.tag = "Titulo_" + miNoticia.CodigoNoticia.ToString
+                    miIdioma.consultarTraduccionNoticia(idioma2, tituloIdioma2)
+                    txtTitPort.Text = tituloIdioma2.texto
+                    'SUBTITULO
+                    Dim subTituloIdioma2 As New Entidades.Leyenda
+                    subTituloIdioma2.tag = "Subtitulo_" + miNoticia.CodigoNoticia.ToString
+                    miIdioma.consultarTraduccionNoticia(idioma2, subTituloIdioma2)
+                    txtSubTitPort.Text = subTituloIdioma2.texto
+                    'TEXTO
+                    Dim textoIdioma2 As New Entidades.Leyenda
+                    textoIdioma2.tag = "Texto_" + miNoticia.CodigoNoticia.ToString
+                    miIdioma.consultarTraduccionNoticia(idioma2, textoIdioma2)
+                    txtTextoPort.Text = textoIdioma2.texto
+                    '*******************************************************
+                    'TRADUCCION AL INGLES 
+                    Dim idioma3 As New Entidades.Idioma
+                    idioma3.nombre = "English"
+                    'TITULO
+                    Dim tituloIdioma3 As New Entidades.Leyenda
+                    tituloIdioma3.tag = "Titulo_" + miNoticia.CodigoNoticia.ToString
+                    miIdioma.consultarTraduccionNoticia(idioma3, tituloIdioma3)
+                    txtTitEng.Text = tituloIdioma3.texto
+                    'SUBTITULO
+                    Dim subTituloIdioma3 As New Entidades.Leyenda
+                    subTituloIdioma3.tag = "Subtitulo_" + miNoticia.CodigoNoticia.ToString
+                    miIdioma.consultarTraduccionNoticia(idioma3, subTituloIdioma3)
+                    txtSubTitEng.Text = subTituloIdioma3.texto
+                    'TEXTO
+                    Dim textoIdioma3 As New Entidades.Leyenda
+                    textoIdioma3.tag = "Texto_" + miNoticia.CodigoNoticia.ToString
+                    miIdioma.consultarTraduccionNoticia(idioma3, textoIdioma3)
+                    txtTextoEng.Text = textoIdioma3.texto
                 End If
             End If
         Catch ex As Entidades.miClaseExcepcion

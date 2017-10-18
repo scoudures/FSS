@@ -150,5 +150,21 @@ Public Class IdiomaM
         End Try
         Return resultado
     End Function
-
+    Public Sub consultarTraduccionNoticia(ByRef unIdioma As ent.Idioma, ByRef unaLeyenda As ent.Leyenda)
+        Dim lasLeyendas As New List(Of ent.Leyenda)
+        Try
+            Dim param(1) As SqlParameter
+            param(0) = miAcceso.constructor("@idioma", unIdioma.nombre)
+            param(1) = miAcceso.constructor("@tag", unaLeyenda.tag)
+            Dim dt As DataTable = miAcceso.leer("Idioma_SelectTraduccion", param)
+            For Each fila As DataRow In dt.Rows
+                unaLeyenda.textodefault = fila("TextoDefault").ToString
+                unaLeyenda.texto = fila("Texto").ToString
+            Next
+        Catch ex As ent.miClaseExcepcion
+            Throw ex
+        Catch ex2 As Exception
+            Throw ex2
+        End Try
+    End Sub
 End Class
