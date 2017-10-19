@@ -23,13 +23,58 @@ Partial Public Class Login
     Protected WithEvents menuLogin As Global.FSS.miEtiqueta
 
     '''<summary>
-    '''Control lblLogin.
+    '''Control msgModalSiNo.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lblLogin As Global.FSS.miEtiqueta
+    Protected WithEvents msgModalSiNo As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control btnModalSi.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnModalSi As Global.System.Web.UI.HtmlControls.HtmlButton
+
+    '''<summary>
+    '''Control btnModalNo.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnModalNo As Global.System.Web.UI.HtmlControls.HtmlButton
+
+    '''<summary>
+    '''Control msgModal.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents msgModal As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control OK.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents OK As Global.System.Web.UI.HtmlControls.HtmlButton
+
+    '''<summary>
+    '''Control lnkRecuperar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lnkRecuperar As Global.FSS.miLink2
 
     '''<summary>
     '''Control txtLogin.
@@ -38,16 +83,7 @@ Partial Public Class Login
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtLogin As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control lblPassword.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents lblPassword As Global.FSS.miEtiqueta
+    Protected WithEvents txtLogin As Global.System.Web.UI.HtmlControls.HtmlInputText
 
     '''<summary>
     '''Control txtPassword.
@@ -56,7 +92,7 @@ Partial Public Class Login
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtPassword As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtPassword As Global.System.Web.UI.HtmlControls.HtmlInputPassword
 
     '''<summary>
     '''Control btnAceptar.
@@ -75,22 +111,4 @@ Partial Public Class Login
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btnCancelar As Global.FSS.miBoton
-
-    '''<summary>
-    '''Control lnkRecuperar.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents lnkRecuperar As Global.System.Web.UI.WebControls.LinkButton
-
-    '''<summary>
-    '''Control Panel1.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Panel1 As Global.System.Web.UI.WebControls.Panel
 End Class

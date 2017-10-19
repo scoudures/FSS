@@ -13,12 +13,24 @@
 	        window.close();
 	        return false;
 	    }
-		</script>
+</script>
 	<asp:ContentPlaceHolder ID="head" runat="server">
 	</asp:ContentPlaceHolder>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 	<%--<link rel="stylesheet" href="css/misestilos.css">--%>
     <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript">
+        function openModalSiNo() {
+            $('#modalConfirmar').modal('show');
+        }
+   </script>
+    <script type="text/javascript">
+        function openModalOk() {
+            $('#modalMensaje').modal('show');
+        }
+   </script>
 </head>
 <body>
 	<form id="form1" runat="server">
@@ -164,8 +176,8 @@
 			</div>
 		</div>
 	</footer>
-		<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+<%--		<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>--%>
   </form>
 </body>
 </html>

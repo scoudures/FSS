@@ -107,7 +107,7 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\estilos.css" />
-    <Content Include="Error.aspx" />
+    <Content Include="Error_OLD.aspx" />
     <Content Include="Error404.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -259,11 +259,11 @@
     <Compile Include="Controles\miBoton2.vb" />
     <Compile Include="Controles\miEtiqueta2.vb" />
     <Compile Include="Controles\miLink2.vb" />
-    <Compile Include="Error.aspx.designer.vb">
-      <DependentUpon>Error.aspx</DependentUpon>
+    <Compile Include="Error_OLD.aspx.designer.vb">
+      <DependentUpon>Error_OLD.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Error.aspx.vb">
-      <DependentUpon>Error.aspx</DependentUpon>
+    <Compile Include="Error_OLD.aspx.vb">
+      <DependentUpon>Error_OLD.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Error404.aspx.designer.vb">

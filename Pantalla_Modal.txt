@@ -1,0 +1,95 @@
+--***************************************************
+EN LA PAGINA despues de <asp:content>
+--***************************************************
+<!-- Modal Si No -->
+<div id="modalConfirmar" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">FSS</h4>
+      </div>
+      <div class="modal-body">
+          <asp:Label ID="msgModalSiNo" runat="server" Text="Label"></asp:Label>
+      </div>
+      <div class="modal-footer">
+        <button type="button"  ID="btnModalSi" runat="server" class="btn btn-success" data-dismiss="modal"></button>
+        <button type="button"  ID="btnModalNo" runat="server" class="btn btn-danger" data-dismiss="modal"></button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal Mensaje -->
+<div id="modalMensaje" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">FSS</h4>
+      </div>
+      <div class="modal-body">
+          <asp:Label ID="msgModal" runat="server" Text="Label"></asp:Label>
+      </div>
+      <div class="modal-footer">
+        <button type="button"  ID="OK" runat="server" class="btn btn-success" data-dismiss="modal"></button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+--***************************************************
+EN EL CODE BEHIND
+--***************************************************
+#Region "Pantalla Modal"
+
+    Private Sub MostrarMensajeModal(Msg As String, simple As Boolean, Optional traducir As Boolean = True)
+        'traducir los botones
+        OK.InnerText = miTraductor.obtenerLeyenda("OK", miUsuario)
+        btnModalSi.InnerText = miTraductor.obtenerLeyenda("btnModalSi", miUsuario)
+        btnModalNo.InnerText = miTraductor.obtenerLeyenda("btnModalNo", miUsuario)
+        If Not simple Then
+            If traducir Then
+                Try
+                    msgModalSiNo.Text = miTraductor.obtenerLeyenda(Msg, miUsuario)
+                Catch ex As ent.miClaseExcepcion
+                    TratarErrorEnCatch("Pagina", ex)
+                Catch ex2 As Exception
+                    TratarErrorEnCatch("Pagina", ex2)
+                End Try
+            Else
+                msgModalSiNo.Text = Msg
+            End If
+            ScriptManager.RegisterStartupScript(Me, Me.GetType(), "Pop", "openModalSiNo();", True)
+        Else
+            If traducir Then
+                Try
+                    msgModal.Text = miTraductor.obtenerLeyenda(Msg, miUsuario)
+
+                Catch ex As ent.miClaseExcepcion
+                    TratarErrorEnCatch("Pagina", ex)
+                Catch ex2 As Exception
+                    TratarErrorEnCatch("Pagina", ex2)
+                End Try
+            Else
+                msgModal.Text = Msg
+            End If
+            ScriptManager.RegisterStartupScript(Me, Me.GetType(), "Pop", "openModalOk();", True)
+        End If
+
+    End Sub
+
+    Private Sub OK_ServerClick(sender As Object, e As EventArgs) Handles OK.ServerClick
+        'Lo que tenga que hacer con el OK del usuario
+    End Sub
+    Private Sub btnModalSi_ServerClick(sender As Object, e As EventArgs) Handles btnModalSi.ServerClick
+        'Lo que tenga que hacer con el OK del usuario
+    End Sub
+#End Region
+

@@ -6,7 +6,47 @@ FSS
 </name>
 </assembly>
 <members>
-<member name="F:FSS.Cliente.menuCliente">
+<member name="F:FSS._Error.menuError">
+	<summary>
+Control menuError.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS._Error.titError">
+	<summary>
+Control titError.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS._Error.subtitError">
+	<summary>
+Control subtitError.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS._Error.subsubtitError">
+	<summary>
+Control subsubtitError.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS._Error.Panel1">
+	<summary>
+Control Panel1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.Cliente.menuCliente">
 	<summary>
 Control menuCliente.
 </summary>
@@ -4918,9 +4958,49 @@ Control menuLogin.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:FSS.Login.lblLogin">
+</member><member name="F:FSS.Login.msgModalSiNo">
 	<summary>
-Control lblLogin.
+Control msgModalSiNo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.Login.btnModalSi">
+	<summary>
+Control btnModalSi.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.Login.btnModalNo">
+	<summary>
+Control btnModalNo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.Login.msgModal">
+	<summary>
+Control msgModal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.Login.OK">
+	<summary>
+Control OK.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.Login.lnkRecuperar">
+	<summary>
+Control lnkRecuperar.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -4929,14 +5009,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:FSS.Login.txtLogin">
 	<summary>
 Control txtLogin.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:FSS.Login.lblPassword">
-	<summary>
-Control lblPassword.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -4961,22 +5033,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:FSS.Login.btnCancelar">
 	<summary>
 Control btnCancelar.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:FSS.Login.lnkRecuperar">
-	<summary>
-Control lnkRecuperar.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:FSS.Login.Panel1">
-	<summary>
-Control Panel1.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -6968,46 +7024,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member><member name="F:FSS.Bitacora.Panel1">
-	<summary>
-Control Panel1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:FSS._Error.menuError">
-	<summary>
-Control menuError.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:FSS._Error.titError">
-	<summary>
-Control titError.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:FSS._Error.subtitError">
-	<summary>
-Control subtitError.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:FSS._Error.subsubtitError">
-	<summary>
-Control subsubtitError.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:FSS._Error.Panel1">
 	<summary>
 Control Panel1.
 </summary>
