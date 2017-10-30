@@ -69,10 +69,10 @@
                                                 <br />
                                                 <br />
 
-                                                <fss:miBoton2 ID="btnAceptar" runat="server" CausesValidation="true" CssClass="botoncito" style="margin-left:50px" Text="Registrar" />
+                                                <fss:miBoton2 ID="btnAceptar" runat="server" CausesValidation="true" CssClass="btn btn-success" style="margin-left:50px" Text="Registrar" />
                                                 &nbsp;&nbsp;&nbsp;
 
-                                                <fss:miboton2 ID="btnCancelar" CssClass="botoncito" runat="server" Text="Volver" CausesValidation="false"></fss:miboton2>
+                                                <fss:miboton2 ID="btnCancelar" runat="server" Text="Volver" CausesValidation="false" CssClass="btn btn-danger"></fss:miboton2>
                                                 <br/>
                                                 <br/>
 

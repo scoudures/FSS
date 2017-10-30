@@ -132,17 +132,15 @@ Public Class IdiomaM
         End Try
         Return resultado
     End Function
-    Public Function eliminarTraduccionNoticia(ByRef unIdioma As ent.Idioma, ByRef unaNoticia As ent.Noticia, ByVal lasLeyendas As List(Of ent.Leyenda)) As Integer
+    Public Function eliminarTraduccionNoticia(ByRef unaNoticia As ent.Noticia) As Integer
         Dim resultado As Integer
         Try
-            For Each unaLeyenda As ent.Leyenda In lasLeyendas
-                Dim param(1) As SqlParameter
-                param(0) = miAcceso.constructor("@idioma", unIdioma.nombre)
-                param(1) = miAcceso.constructor("@leyenda", unaLeyenda.tag)
-                resultado = miAcceso.Escribir("Idioma_DeleteTraduccionNoticia", param)
-                miVerificador.DigitosPorTabla("Idioma")
-                miVerificador.DigitosPorTabla("Traduccion")
-            Next
+
+            Dim param(0) As SqlParameter
+            param(0) = miAcceso.constructor("@noticia", unaNoticia.CodigoNoticia)
+            resultado = miAcceso.Escribir("Idioma_DeleteTraduccionNoticia", param)
+            miVerificador.DigitosPorTabla("Idioma")
+            miVerificador.DigitosPorTabla("Traduccion")
         Catch ex As ent.miClaseExcepcion
             Throw ex
         Catch ex2 As Exception

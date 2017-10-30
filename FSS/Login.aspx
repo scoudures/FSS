@@ -50,16 +50,32 @@
 
   </div>
 </div>
-    <%--<article style="text-align:center">
+    <article style="text-align:center">
         <asp:Panel runat="server" CssClass="panelTexto" HorizontalAlign="Center">
-        <fss:mietiqueta ID="lblLogin" runat="server" Text="Usuario" CssClass="subtitulo"></fss:mietiqueta>&nbsp;&nbsp;
-        <asp:TextBox ID="txtLogin" runat="server" Text="Administrador"></asp:TextBox> 
-        <br /> <br />  
-        <fss:mietiqueta ID="lblPassword" runat="server" Text="Contraseña" CssClass="subtitulo"></fss:mietiqueta>&nbsp;&nbsp;
-        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" Text="123"></asp:TextBox> 
-        <br /> <br />
-        <fss:miboton ID="btnAceptar" runat="server" Text="Aceptar" CssClass="boton"/>&nbsp;&nbsp;
-        <fss:miboton ID="btnCancelar" runat="server" Text="Cancelar" CssClass="boton"/>
+    <%--<fss:mietiqueta ID="lblLogin" runat="server" Text="Usuario" CssClass="subtitulo"></fss:mietiqueta>&nbsp;&nbsp;
+    <asp:TextBox ID="txtLogin" runat="server" Text="Administrador"></asp:TextBox> 
+    <br /> <br />  
+    <fss:mietiqueta ID="lblPassword" runat="server" Text="Contraseña" CssClass="subtitulo"></fss:mietiqueta>&nbsp;&nbsp;
+    <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" Text="123"></asp:TextBox> 
+    <br /> <br />--%>
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+                <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="txtLogin" runat="server" type="text" class="form-control" name="username" value="Administrador" placeholder="username or email">                                        
+                                    </div>
+                                
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="txtPassword" runat="server" type="password" class="form-control" name="password" placeholder="password">
+                                    </div>
+                                <div style="margin-top:10px" class="form-group">
+        <div class="col-sm-12 controls">
+        <fss:miboton ID="btnAceptar" runat="server" Text="Aceptar" CssClass="btn btn-success"/>&nbsp;&nbsp;
+        <fss:miboton ID="btnCancelar" runat="server" Text="Cancelar" CssClass="btn btn-danger"/>
+        </div>
+        </div>
+        
+        </div>
         <br />
         <br />
         <asp:LinkButton ID="lnkRecuperar" runat="server" PostBackUrl="~/RecuperarCuenta.aspx">Olvidé mi contraseña</asp:LinkButton>
@@ -67,8 +83,8 @@
         <br />
         </asp:Panel>
         <asp:Panel ID="Panel1" runat="server" Width="600px" HorizontalAlign="Center"></asp:Panel>
-     </article>--%>
-    <article>
+     </article>
+    <%--<article>
           <div class="container">    
         <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
             <div class="panel panel-info" >
@@ -95,7 +111,7 @@
                                 <div style="margin-top:10px" class="form-group">
                                     <!-- Button -->
                                     <div class="col-sm-12 controls">
-                                      <fss:miboton ID="btnAceptar" runat="server" Text="Aceptar" CssClass="btn btn-success"/>
+                                      <asp:button ID="btnAceptar" runat="server" Text="Aceptar" CssClass="btn btn-success" />
                                         <fss:miboton ID="btnCancelar" runat="server" Text="Cancelar" CssClass="btn btn-danger"/>
                                     </div>
                                 </div>
@@ -104,7 +120,7 @@
                     </div>  
         </div>
     </div>
-    </article>
+    </article>--%>
 </asp:Content>
 <asp:Content ID="Menu" ContentPlaceHolderID="Menu" runat="server">
 </asp:Content>

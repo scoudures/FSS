@@ -48,9 +48,9 @@
     
     <div style="align-items:center"> 
         <br />
-            <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" CssClass="boton" />
+            <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" CssClass="btn btn-success" />
             &nbsp;&nbsp;
-            <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" CssClass="boton" />
+            <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" CssClass="btn btn-danger" />
         <br />
         </div>
     

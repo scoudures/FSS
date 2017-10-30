@@ -41,9 +41,9 @@
         <asp:Panel ID="Panel1" runat="server" Width="600px" HorizontalAlign="Center">
         <asp:Label ID="lblMsg" runat="server" Text="" CssClass="panelTexto" ForeColor="Red"></asp:Label>
         </asp:Panel><br /><br />
-            <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" CssClass="boton" />
+            <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" CssClass="btn btn-success" />
             &nbsp;&nbsp;
-            <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" CssClass="boton" />
+            <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" CssClass="btn btn-danger" />
         <br />
         
 </article>

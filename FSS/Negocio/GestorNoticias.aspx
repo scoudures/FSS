@@ -5,6 +5,7 @@
 <asp:Content ID="Titulo" ContentPlaceHolderID="Titulo" runat="server">
 <asp:label ID="menuGestorNoticias" runat="server" Text="Gestor de Noticias"></asp:label>
 </asp:Content>
+
 <asp:Content ID="Contenido" ContentPlaceHolderID="Contenido" runat="server">
 <article>
     <div style="text-align:center">
@@ -31,12 +32,12 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Operación" >
                 <ItemTemplate>
-                    <asp:button runat="server" ID="btnModificar" ClientIDMode="Static" Text="Modificar" CssClass="botoncito" CommandName="modificar" CommandArgument='<%# Eval("CodigoNoticia")%>'></asp:button>
-                    <asp:button runat="server" ID="btnEliminar" ClientIDMode="Static" Text="Eliminar" CssClass="botoncito" CommandName="eliminar" CommandArgument='<%# Eval("CodigoNoticia")%>' OnClientClick="return confirm('Realmente desea eliminar la noticia?')"></asp:button>
+                    <asp:button runat="server" ID="btnModificar" ClientIDMode="Static" Text="Modificar" CssClass="btn btn-success" CommandName="modificar" CommandArgument='<%# Eval("CodigoNoticia")%>'></asp:button>
+                    <asp:button runat="server" ID="btnEliminar" ClientIDMode="Static" Text="Eliminar" CssClass="btn btn-danger" CommandName="eliminar" CommandArgument='<%# Eval("CodigoNoticia")%>' OnClientClick="return confirm('Realmente desea eliminar la noticia?')"></asp:button>
                 </ItemTemplate>
                 <ItemStyle HorizontalAlign="center"   />
                 <FooterTemplate>
-                    <asp:Button ID="btnNuevo" CssClass="botoncito" runat="server" Text="Nueva" CommandName="nuevo"   />
+                    <asp:Button ID="btnNuevo" CssClass="btn btn-success" runat="server" Text="Nueva" CommandName="nuevo"   />
                 </FooterTemplate>
                 <FooterStyle HorizontalAlign="Center" />
                 <HeaderStyle HorizontalAlign="Center" />

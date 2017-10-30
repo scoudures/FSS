@@ -68,15 +68,6 @@ Partial Public Class Login
     Protected WithEvents OK As Global.System.Web.UI.HtmlControls.HtmlButton
 
     '''<summary>
-    '''Control lnkRecuperar.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents lnkRecuperar As Global.FSS.miLink2
-
-    '''<summary>
     '''Control txtLogin.
     '''</summary>
     '''<remarks>
@@ -111,4 +102,22 @@ Partial Public Class Login
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btnCancelar As Global.FSS.miBoton
+
+    '''<summary>
+    '''Control lnkRecuperar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lnkRecuperar As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control Panel1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Panel1 As Global.System.Web.UI.WebControls.Panel
 End Class

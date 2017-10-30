@@ -88,9 +88,9 @@ Public Class IdiomaN
             Throw ex2
         End Try
     End Function
-    Public Function eliminarTraduccionNoticia(ByRef unIdioma As ent.Idioma, ByRef unaNoticia As ent.Noticia, ByVal lasLeyendas As List(Of ent.Leyenda)) As Integer
+    Public Function eliminarTraduccionNoticia(ByRef unaNoticia As ent.Noticia) As Integer
         Try
-            Return miMapper.eliminarTraduccionNoticia(unIdioma, unaNoticia, lasLeyendas)
+            Return miMapper.eliminarTraduccionNoticia(unaNoticia)
         Catch ex As ent.miClaseExcepcion
             Throw ex
         Catch ex2 As Exception

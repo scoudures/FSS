@@ -6,47 +6,7 @@ FSS
 </name>
 </assembly>
 <members>
-<member name="F:FSS._Error.menuError">
-	<summary>
-Control menuError.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:FSS._Error.titError">
-	<summary>
-Control titError.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:FSS._Error.subtitError">
-	<summary>
-Control subtitError.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:FSS._Error.subsubtitError">
-	<summary>
-Control subsubtitError.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:FSS._Error.Panel1">
-	<summary>
-Control Panel1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:FSS.Cliente.menuCliente">
+<member name="F:FSS.Cliente.menuCliente">
 	<summary>
 Control menuCliente.
 </summary>
@@ -4998,14 +4958,6 @@ Control OK.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:FSS.Login.lnkRecuperar">
-	<summary>
-Control lnkRecuperar.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
 </member><member name="F:FSS.Login.txtLogin">
 	<summary>
 Control txtLogin.
@@ -5033,6 +4985,22 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:FSS.Login.btnCancelar">
 	<summary>
 Control btnCancelar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.Login.lnkRecuperar">
+	<summary>
+Control lnkRecuperar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.Login.Panel1">
+	<summary>
+Control Panel1.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -6018,6 +5986,46 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:FSS.QuienesSomos.lblTexto4QS">
 	<summary>
 Control lblTexto4QS.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS._Error.menuError">
+	<summary>
+Control menuError.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS._Error.titError">
+	<summary>
+Control titError.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS._Error.subtitError">
+	<summary>
+Control subtitError.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS._Error.subsubtitError">
+	<summary>
+Control subsubtitError.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS._Error.Panel1">
+	<summary>
+Control Panel1.
 </summary>
 	<remarks>
 Campo generado automáticamente.

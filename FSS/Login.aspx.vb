@@ -36,6 +36,7 @@ Public Class Login
         End If
     End Sub
     Protected Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
+
         If CInt(Session("Inconsistente")) = 1 Then
             'Solo puede ingresar el administrador
             If txtLogin.Value = "Administrador" Then
@@ -121,8 +122,7 @@ Public Class Login
 
     Protected Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
         Try
-            'Response.Redirect("~/Inicio.aspx")
-            Response.Redirect("Inicio.aspx")
+            Response.Redirect("~/Inicio.aspx")
         Catch ex As ent.miClaseExcepcion
             TratarErrorEnCatch("Login", ex)
         Catch ex2 As Exception
