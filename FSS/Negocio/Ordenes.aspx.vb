@@ -88,6 +88,7 @@ Public Class Ordenes
     Private Sub grdPedidos_RowCommand(sender As Object, e As GridViewCommandEventArgs) Handles grdPedidos.RowCommand
         Try
             If e.CommandName = "Detalle" Then
+                prepararPantalla()
                 Dim nro As Integer = e.CommandArgument
                 PanelDetalle.Visible = True
                 unPedido.numero = nro
@@ -113,6 +114,24 @@ Public Class Ordenes
         Catch ex2 As Exception
             TratarErrorEnCatch("Ordenes", ex2)
         End Try
+    End Sub
+
+    Private Sub prepararPantalla()
+        'Oculto los botones que despues se van a ver segun el estado
+        btnEnvio.Visible = False
+        btnPago.Visible = False
+        btnFactura.Visible = False
+        btnEliminar.Visible = False
+        btnRectificar.Visible = False
+        btnDespachar.Visible = False
+        btnEntregar.Visible = False
+
+        'Para ver el detalle
+        grdDetalle.Visible = True
+        lblDetalle.Visible = True
+        lblPedido.Visible = True
+        lblTotal.Visible = True
+        Subtotal.Visible = True
     End Sub
     Private Sub ManejarBotonesPara(ByRef miPedido As ent.PedidoCabeceraVista)
         Try
@@ -271,6 +290,13 @@ Public Class Ordenes
         End Try
     End Sub
     Protected Sub lstEstadoPedido_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstEstadoPedido.SelectedIndexChanged
+        'Si consulte un pedido antes, tengo que ocultar todo
+        grdDetalle.Visible = False
+        lblDetalle.Visible = False
+        lblPedido.Visible = False
+        lblTotal.Visible = False
+        Subtotal.Visible = False
+
         listarPedidos(lstEstadoPedido.SelectedItem.ToString)
         grdPedidos.DataBind()
     End Sub

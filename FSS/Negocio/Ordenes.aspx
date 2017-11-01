@@ -15,6 +15,9 @@
                 <asp:DropDownList ID="lstEstadoPedido" runat="server" AutoPostBack="true"></asp:DropDownList>
                 <br />
             </div>
+            <br />
+            <br />
+
             <table runat ="server" height="100%" border="0" style="width: 586px">
                 <tr runat ="server" valign="top">
                 <td runat ="server" width="550">
@@ -45,6 +48,9 @@
                 </tr>
              </table>
         </asp:panel>
+    <br />
+    <br />
+
         <asp:Panel ID="PanelDetalle" runat="server" Visible="false">
             <table>
                 <tr>
@@ -79,10 +85,13 @@
                 </tr>
                 <tr>
                     <td></td>
+                    <td></td>
                     <td>
-                        <div style="text-align:right">
-                        <span class="subtitulo"  >SubTotal: </span>
-                        <asp:Label class="subtitulo" id="lblTotal" runat="server" EnableViewState="false"></asp:Label></div>
+                        <div style="text-align:right"><asp:Label class="subtitulo" id="Subtotal" runat="server" Text="SubTotal: " EnableViewState="false" Enabled="false"></asp:Label></div>
+                    </td>
+                    <td>
+                        <%--<div style="text-align:right"><span class="subtitulo"  >SubTotal: </span></div>--%>
+                        <asp:Label class="subtitulo" id="lblTotal" runat="server" EnableViewState="false"></asp:Label>
                     </td>
                     <td style="width:10%" ></td>
                 </tr>
