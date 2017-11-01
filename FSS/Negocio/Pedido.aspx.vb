@@ -62,8 +62,9 @@ Public Class Pedido
             Response.Redirect("~/Negocio/Detalle.aspx")
         Catch ex As Entidades.miClaseExcepcion
             TratarErrorEnCatch("Pedido", ex)
-        Catch ex2 As Exception
-            TratarErrorEnCatch("Pedido", ex2)
+            'Catch ex2 As Exception
+            'TratarErrorEnCatch("Pedido", ex2)
+            'comento esto porque pedido no puede llamar a detalle
         End Try
     End Sub
 

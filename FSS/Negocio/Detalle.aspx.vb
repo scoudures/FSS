@@ -170,8 +170,8 @@ Public Class Detalle
             End If
         Catch ex As ent.miClaseExcepcion
             TratarErrorEnCatch("DetallePedido", ex)
-        Catch ex2 As Exception
-            TratarErrorEnCatch("DetallePedido", ex2)
+            'Catch ex2 As Exception
+            '    TratarErrorEnCatch("DetallePedido", ex2)
         End Try
     End Sub
     Protected Sub btnCatalogo_Click(sender As Object, e As EventArgs) Handles btnCatalogo.Click

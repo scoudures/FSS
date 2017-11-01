@@ -64,9 +64,9 @@ Public Class Cuenta
             lstEstadoPedido.DataSource = misEstados
             DataBind()
         Catch ex As ent.miClaseExcepcion
-            TratarErrorEnCatch("Recomendacion", ex)
+            TratarErrorEnCatch("Cuenta", ex)
         Catch ex2 As Exception
-            TratarErrorEnCatch("Recomendacion", ex2)
+            TratarErrorEnCatch("Cuenta", ex2)
         End Try
     End Sub
     Private Sub listarPedidos(ByVal unEstado As String)
@@ -122,6 +122,7 @@ Public Class Cuenta
     Private Sub grdPedidos_RowCommand(sender As Object, e As GridViewCommandEventArgs) Handles grdPedidos.RowCommand
         Try
             If e.CommandName = "Detalle" Then
+                ocultarBotones()
                 Dim nro As Integer = e.CommandArgument
                 PanelDetalle.Visible = True
                 unPedido.numero = nro
@@ -147,6 +148,13 @@ Public Class Cuenta
         Catch ex2 As Exception
             TratarErrorEnCatch("Cuenta", ex2)
         End Try
+    End Sub
+    Private Sub ocultarBotones()
+        btnEnvio.Visible = False
+        btnPago.Visible = False
+        btnFactura.Visible = False
+        btnEliminar.Visible = False
+        verFactura.Visible = False
     End Sub
     Private Sub ManejarBotonesPara(ByRef miPedido As ent.PedidoCabeceraVista)
         Try
@@ -282,6 +290,7 @@ Public Class Cuenta
     End Sub
 
     Protected Sub lstEstadoPedido_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstEstadoPedido.SelectedIndexChanged
+        grdDetalle.Visible = False
         listarPedidos(lstEstadoPedido.SelectedItem.ToString)
         grdPedidos.DataBind()
     End Sub

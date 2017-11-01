@@ -155,6 +155,11 @@
     <Content Include="Negocio\Cliente\ClienteNuevo.aspx" />
     <Content Include="Negocio\Cliente\Cuenta.aspx" />
     <Content Include="Negocio\Color.aspx" />
+    <Content Include="Negocio\css\bootstrap-theme.css" />
+    <Content Include="Negocio\css\bootstrap-theme.min.css" />
+    <Content Include="Negocio\css\bootstrap.css" />
+    <Content Include="Negocio\css\bootstrap.min.css" />
+    <Content Include="Negocio\css\estilos.css" />
     <Content Include="Negocio\Factura.aspx" />
     <Content Include="Negocio\GestorImagenes.aspx" />
     <Content Include="Negocio\GestorNoticias.aspx" />
@@ -173,6 +178,10 @@
     <Content Include="Negocio\ImagenesProductos\ProductoSinImagen.jpg" />
     <Content Include="Negocio\ImagenesProductos\RuedasStar.jpg" />
     <Content Include="Negocio\ImagenesProductos\RulemanesSKF.jpg" />
+    <Content Include="Negocio\js\bootstrap.js" />
+    <Content Include="Negocio\js\bootstrap.min.js" />
+    <Content Include="Negocio\js\jquery.js" />
+    <Content Include="Negocio\js\npm.js" />
     <Content Include="Negocio\Linea.aspx" />
     <Content Include="Negocio\Marca.aspx" />
     <Content Include="Negocio\Nivel.aspx" />
@@ -754,6 +763,10 @@
     <Content Include="_Diagramas\Traductor_traducirPara.sequencediagram" />
     <Content Include="_Diagramas\Presentador_mostrarPaginaPara.sequencediagram" />
     <Content Include="_Diagramas\Presentador_mostrarPara.sequencediagram" />
+    <Content Include="Negocio\css\bootstrap-theme.css.map" />
+    <Content Include="Negocio\css\bootstrap-theme.min.css.map" />
+    <Content Include="Negocio\css\bootstrap.css.map" />
+    <Content Include="Negocio\css\bootstrap.min.css.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

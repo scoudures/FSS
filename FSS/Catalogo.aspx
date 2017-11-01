@@ -18,7 +18,7 @@
              <ItemTemplate>
                  <%--&nbsp;&nbsp;<asp:HyperLink ID="LinkLinea" CssClass="botoncito" runat="server" Text='<%#DataBinder.Eval(Container.DataItem, "descripcion")%>' NavigateUrl='<%#"Catalogo.aspx?Linea=" & DataBinder.Eval(Container.DataItem, "descripcion")%>' ></asp:HyperLink>&nbsp;&nbsp;--%>
                  &nbsp;&nbsp;<fss:miLink2 ID="LinkLinea" Target='<%#DataBinder.Eval(Container.DataItem, "descripcion")%>' CssClass="botoncito" runat="server" Text='<%#DataBinder.Eval(Container.DataItem, "descripcion")%>' NavigateUrl='<%#"Catalogo.aspx?Linea=" & DataBinder.Eval(Container.DataItem, "descripcion")%>' Font-Size="Large" ></fss:miLink2>&nbsp;&nbsp;
-
+         
                  <%--<asp:Button ID="btnCateg" runat="server" CssClass="botoncito" Text='<%#DataBinder.Eval(Container.DataItem, "descripcion")%>'  OnClick=""/>--%>
                 <%--<td  width="100px"> <asp:Button ID="btnCateg" runat="server" CssClass="botoncito" Text='<%#DataBinder.Eval(Container.DataItem, "descripcion")%>' /> </td>--%>
             </ItemTemplate>

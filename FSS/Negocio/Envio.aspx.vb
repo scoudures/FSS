@@ -126,8 +126,8 @@ Public Class Envio
             'Response.Write("Pedido" & unPedido.numero.ToString)
         Catch ex As ent.miClaseExcepcion
             TratarErrorEnCatch("Envio", ex)
-        Catch ex2 As Exception
-            TratarErrorEnCatch("Envio", ex2)
+            'Catch ex2 As Exception
+            '    TratarErrorEnCatch("Envio", ex2)
         End Try
     End Sub
     Private Sub cargarDatos()

@@ -34,13 +34,3 @@ C:\FSS\04_Datos\obj\Debug\04_Datos.vbproj.GenerateResource.Cache
 C:\FSS\04_Datos\obj\Debug\04_Datos.dll
 C:\FSS\04_Datos\obj\Debug\04_Datos.xml
 C:\FSS\04_Datos\obj\Debug\04_Datos.pdb
-C:\Users\Sol\Documents\FSS\04_Datos\bin\Debug\04_Datos.dll
-C:\Users\Sol\Documents\FSS\04_Datos\bin\Debug\04_Datos.pdb
-C:\Users\Sol\Documents\FSS\04_Datos\bin\Debug\04_Datos.xml
-C:\Users\Sol\Documents\FSS\04_Datos\bin\Debug\03_Entidades.dll
-C:\Users\Sol\Documents\FSS\04_Datos\bin\Debug\03_Entidades.pdb
-C:\Users\Sol\Documents\FSS\04_Datos\obj\Debug\_04_Datos.Resources.resources
-C:\Users\Sol\Documents\FSS\04_Datos\obj\Debug\04_Datos.vbproj.GenerateResource.Cache
-C:\Users\Sol\Documents\FSS\04_Datos\obj\Debug\04_Datos.dll
-C:\Users\Sol\Documents\FSS\04_Datos\obj\Debug\04_Datos.xml
-C:\Users\Sol\Documents\FSS\04_Datos\obj\Debug\04_Datos.pdb
