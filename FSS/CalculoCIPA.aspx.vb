@@ -298,4 +298,13 @@ Public Class CalculoCIPA
         Response.Redirect("~/CalculoCIPA.aspx")
     End Sub
 
+    Protected Sub menuRegistro_Click(sender As Object, e As EventArgs) Handles menuRegistro.Click
+        Response.Redirect("~/Registro.aspx")
+    End Sub
+    Protected Sub menuContacto_Click(sender As Object, e As EventArgs) Handles menuContacto.Click
+        Response.Redirect("~/Contacto.aspx")
+    End Sub
+    Protected Sub LinkRecomendacion_Click(sender As Object, e As EventArgs) Handles LinkRecomendacion.Click
+        Response.Redirect("~/Recomendacion.aspx")
+    End Sub
 End Class

@@ -104,6 +104,15 @@ Partial Public Class Cuenta
     Protected WithEvents grdDetalle As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
+    '''Control Subtotal.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Subtotal As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Control lblTotal.
     '''</summary>
     '''<remarks>

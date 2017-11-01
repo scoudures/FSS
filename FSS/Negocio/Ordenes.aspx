@@ -26,7 +26,7 @@
                         <asp:BoundField DataField="Cliente" HeaderText="Cliente" />
                         <asp:BoundField DataField="EstadoFormulario" HeaderText="Estado" />
                         <asp:TemplateField HeaderText="Detalle">
-                               <ItemTemplate><asp:Button runat="server" Text="Ver" CssClass="botoncito" CommandName="Detalle" CommandArgument='<%# Eval("Numero")%>' /></ItemTemplate>
+                               <ItemTemplate><asp:Button runat="server" Text="Ver" CssClass="btn btn-default" CommandName="Detalle" CommandArgument='<%# Eval("Numero")%>' /></ItemTemplate>
                         </asp:TemplateField>
                     </Columns>
                     <EditRowStyle BackColor="#2461BF" />
@@ -89,14 +89,14 @@
             </table>
                 <br/>
                 <br/>
-                <asp:Button ID="btnEnvio" CssClass="botoncito" runat="server" Text="Agregar Envio" Width="120px" />
-                <asp:Button ID="btnPago" CssClass="botoncito" runat="server" Text="Pagar" Visible="false"/>
-                <asp:Button ID="btnFactura" CssClass="botoncito" runat="server" Text="Emitir Factura" Width="120px" Visible="false" />
-                <asp:Button ID="btnEliminar" CssClass="botoncito" runat="server" Text="Eliminar" Visible="false" />
+                <asp:Button ID="btnEnvio" CssClass="btn btn-default" runat="server" Text="Agregar Envio" Width="120px" />
+                <asp:Button ID="btnPago" CssClass="btn btn-default" runat="server" Text="Pagar" Visible="false"/>
+                <asp:Button ID="btnFactura" CssClass="btn btn-default" runat="server" Text="Emitir Factura" Width="120px" Visible="false" />
+                <asp:Button ID="btnEliminar" CssClass="btn btn-default" runat="server" Text="Eliminar" Visible="false" />
                 <br /><br />
-                <asp:Button ID="btnRectificar" CssClass="botoncito" runat="server" Text="Rectificar" Visible="false" />
-                <asp:Button ID="btnDespachar" CssClass="botoncito" runat="server" Text="Despachado" Visible="false" />
-                <asp:Button ID="btnEntregar" CssClass="botoncito" runat="server" Text="Entregado" Visible="false" />
+                <asp:Button ID="btnRectificar" CssClass="btn btn-default" runat="server" Text="Rectificar" Visible="false" />
+                <asp:Button ID="btnDespachar" CssClass="btn btn-default" runat="server" Text="Despachado" Visible="false" />
+                <asp:Button ID="btnEntregar" CssClass="btn btn-default" runat="server" Text="Entregado" Visible="false" />
                 <br/>
                 <br />
     </asp:Panel>

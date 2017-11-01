@@ -41,9 +41,9 @@
                     <asp:Label class="subtitulo" id="lblTotal" runat="server" EnableViewState="false"></asp:Label></div>
                     <br/>
                     <br/>
-                    <asp:Button ID="btnActualizar" CssClass="botoncito" runat="server" Text="Actualizar" />
-                    <asp:Button ID="btnConfirmar" CssClass="botoncito" runat="server" Text="Confirmar" />
-                    <asp:Button ID="btnCatalogo" CssClass="botoncito" runat="server" Text="Seguir Comprando" Width="150px" />
+                    <asp:Button ID="btnActualizar" CssClass="btn btn-default" runat="server" Text="Actualizar" />
+                    <asp:Button ID="btnConfirmar" CssClass="btn btn-default" runat="server" Text="Confirmar" />
+                    <asp:Button ID="btnCatalogo" CssClass="btn btn-default" runat="server" Text="Seguir Comprando" Width="150px" />
                     <br/>
                     <br />
                  </td>

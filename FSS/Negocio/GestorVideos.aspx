@@ -26,12 +26,12 @@
             </asp:BoundField>
             <asp:TemplateField HeaderText="Operación" >
                 <ItemTemplate>
-                    <asp:button runat="server" ID="btnModificar" ClientIDMode="Static" Text="Modificar" CssClass="botoncito" CommandName="modificar" CommandArgument='<%# Eval("CodigoVideo")%>'></asp:button>
-                    <asp:button runat="server" ID="btnEliminar" ClientIDMode="Static" Text="Eliminar" CssClass="botoncito" CommandName="eliminar" CommandArgument='<%# Eval("CodigoVideo")%>' OnClientClick="return confirm('Realmente desea eliminar el video?')"></asp:button>
+                    <asp:button runat="server" ID="btnModificar" ClientIDMode="Static" Text="Modificar" CssClass="btn btn-success" CommandName="modificar" CommandArgument='<%# Eval("CodigoVideo")%>'></asp:button>
+                    <asp:button runat="server" ID="btnEliminar" ClientIDMode="Static" Text="Eliminar" CssClass="btn btn-danger" CommandName="eliminar" CommandArgument='<%# Eval("CodigoVideo")%>' OnClientClick="return confirm('Realmente desea eliminar el video?')"></asp:button>
                 </ItemTemplate>
                 <ItemStyle HorizontalAlign="center"   />
                 <FooterTemplate>
-                    <asp:Button ID="btnNuevo" CssClass="botoncito" runat="server" Text="Nuevo" CommandName="nuevo"   />
+                    <asp:Button ID="btnNuevo" CssClass="btn btn-success" runat="server" Text="Nuevo" CommandName="nuevo"   />
                 </FooterTemplate>
                 <FooterStyle HorizontalAlign="Center" />
                 <HeaderStyle HorizontalAlign="Center" />

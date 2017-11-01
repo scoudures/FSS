@@ -30,9 +30,9 @@
         </asp:GridView>
         <br /><br />
         <asp:Label ID="lblMsg" CssClass="panelTexto" runat="server" Text=""> </asp:Label><br /><br />
-    <asp:Button ID="btnNuevo" CssClass="boton" runat="server" Text="Nuevo"  />
-    <asp:button runat="server" ID="btnModificar" Text="Modificar" CssClass="boton" Visible="false"></asp:button>
-    <asp:button runat="server" ID="btnEliminar" Text="Eliminar" CssClass="boton" ClientClick="return confirm('Realmente desea eliminar el Cliente?')" Visible="false"></asp:button>
+    <asp:Button ID="btnNuevo" CssClass="btn btn-default" runat="server" Text="Nuevo"  />
+    <asp:button runat="server" ID="btnModificar" Text="Modificar" CssClass="btn btn-default" Visible="false"></asp:button>
+    <asp:button runat="server" ID="btnEliminar" Text="Eliminar" CssClass="btn btn-default" ClientClick="return confirm('Realmente desea eliminar el Cliente?')" Visible="false"></asp:button>
     </div>
 <asp:Panel ID="Panel1" runat="server" Width="600px" HorizontalAlign="Center"></asp:Panel><br /><br />
 </article>

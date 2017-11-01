@@ -69,8 +69,8 @@
   </asp:Panel>
     <br /><br />
     <asp:Panel ID="Panel1" runat="server" Width="600px" HorizontalAlign="Center"></asp:Panel><br /><br />
-        <asp:Button ID="btnGuardar" CssClass="boton" runat="server" Text="Guardar" CausesValidation="true" />
-        <asp:Button ID="btnCancel" CssClass="boton" runat="server" Text="Cancelar" CausesValidation="false" />
+        <asp:Button ID="btnGuardar" CssClass="btn btn-default" runat="server" Text="Guardar" CausesValidation="true" />
+        <asp:Button ID="btnCancel" CssClass="btn btn-default" runat="server" Text="Cancelar" CausesValidation="false" />
         <br /><br />
 
 </article>

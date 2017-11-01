@@ -1,0 +1,48 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+04_Datos
+</name>
+</assembly>
+<members>
+<member name="P:_04_Datos.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:_04_Datos.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member><member name="P:_04_Datos.My.Resources.Resources.Base">
+	<summary>
+  Busca una cadena traducida similar a FSS.
+</summary>
+</member><member name="P:_04_Datos.My.Resources.Resources.Log">
+	<summary>
+  Busca una cadena traducida similar a C:\PaginaTFI\DAL.log.
+</summary>
+</member><member name="P:_04_Datos.My.Resources.Resources.Pass">
+	<summary>
+  Busca una cadena traducida similar a 123.
+</summary>
+</member><member name="P:_04_Datos.My.Resources.Resources.RutaBKP">
+	<summary>
+  Busca una cadena traducida similar a C:\BKP_FSS\.
+</summary>
+</member><member name="P:_04_Datos.My.Resources.Resources.Servidor">
+	<summary>
+  Busca una cadena traducida similar a ..
+</summary>
+</member><member name="P:_04_Datos.My.Resources.Resources.Usuario">
+	<summary>
+  Busca una cadena traducida similar a fss.
+</summary>
+</member><member name="T:_04_Datos.My.Resources.Resources">
+	<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+</members>
+</doc>

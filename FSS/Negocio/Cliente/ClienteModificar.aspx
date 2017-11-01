@@ -38,15 +38,15 @@
                     <asp:RequiredFieldValidator ControlToValidate="txtEmail" Display="dynamic" Font-Name="verdana" Font-Size="9pt" ForeColor="Red" ErrorMessage="'Campo Email' no puede estar vacio" runat="server" id="RequiredFieldValidator2"></asp:RequiredFieldValidator><br /><br />
                     <br />
                     <br />
-                    <asp:Button ID="btnGuardar" CssClass="botoncito" runat="server" Text="Guardar" CausesValidation="true" />
-                    <asp:Button ID="btnCancelar" CssClass="botoncito" runat="server" Text="Cancelar" style="margin-left:20px" CausesValidation="false" />
+                    <asp:Button ID="btnGuardar" CssClass="btn btn-default" runat="server" Text="Guardar" CausesValidation="true" />
+                    <asp:Button ID="btnCancelar" CssClass="btn btn-default" runat="server" Text="Cancelar" style="margin-left:20px" CausesValidation="false" />
                     <br/><br/>
                     <asp:Panel ID="Panel1" runat="server" Width="600px" HorizontalAlign="Center">
                     <asp:Label ID="lblMsg" CssClass="panelTexto" runat="server" Text=""> </asp:Label><br /><br />
                     </asp:Panel>
                     
-                    <asp:Button ID="btnPass" CssClass="botoncitito" runat="server" Text="Cambiar Contraseña" style="margin-left:250px" Width="150px" CausesValidation="false"/><br /><br />
-                    <asp:Button ID="btnPreg" CssClass="botoncitito" runat="server" Text="Cambiar Pregunta" style="margin-left:250px" Width="150px" CausesValidation="false"/>
+                    <asp:Button ID="btnPass" CssClass="btn btn-default" runat="server" Text="Cambiar Contraseña" style="margin-left:250px" Width="150px" CausesValidation="false"/><br /><br />
+                    <asp:Button ID="btnPreg" CssClass="btn btn-default" runat="server" Text="Cambiar Pregunta" style="margin-left:250px" Width="150px" CausesValidation="false"/>
                     <br /><br />
                 </td>
             </tr>

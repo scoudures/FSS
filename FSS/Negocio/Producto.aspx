@@ -32,13 +32,13 @@
         </asp:Panel>
         <br />
             <br />
-            <asp:Button ID="btnAlta" runat="server" Text="Nuevo" CssClass="boton" />
+            <asp:Button ID="btnAlta" runat="server" Text="Nuevo" CssClass="btn btn-default" />
             &nbsp;&nbsp;
-            <asp:Button ID="btnBaja" runat="server" Text="Eliminar" CssClass="boton" OnClientClick="return confirm('Está seguro que quiere eliminar el producto?')" CausesValidation="false" Visible="false" />
+            <asp:Button ID="btnBaja" runat="server" Text="Eliminar" CssClass="btn btn-default" OnClientClick="return confirm('Está seguro que quiere eliminar el producto?')" CausesValidation="false" Visible="false" />
             &nbsp;&nbsp;
-            <asp:Button ID="btnModificacion" runat="server" Text="Modificar" CssClass="boton" Visible="false" />
+            <asp:Button ID="btnModificacion" runat="server" Text="Modificar" CssClass="btn btn-default" Visible="false" />
             &nbsp;&nbsp;
-            <asp:Button ID="btnStock" runat="server" Text="Stock" CssClass="boton" Visible="false" />
+            <asp:Button ID="btnStock" runat="server" Text="Stock" CssClass="btn btn-default" Visible="false" />
             <br />
             <br />
         

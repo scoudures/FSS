@@ -109,8 +109,8 @@
         </table>
         </asp:Panel></td></tr>
         <tr><td>
-            <asp:Button ID="btnConfirmar" CssClass="boton" runat="server" Text="Confirmar" CausesValidation="true" style="margin-left:50px" Width="98px" />&nbsp;
-            <asp:Button ID="btnCancelar" CssClass="boton" runat="server"  Text="Cancelar" CausesValidation="false" style="margin-left:50px; height: 31px;"  Width="98px"/><br />
+            <asp:Button ID="btnConfirmar" CssClass="btn btn-default" runat="server" Text="Confirmar" CausesValidation="true" style="margin-left:50px" Width="98px" />&nbsp;
+            <asp:Button ID="btnCancelar" CssClass="btn btn-default" runat="server"  Text="Cancelar" CausesValidation="false" style="margin-left:50px; height: 31px;"  Width="98px"/><br />
             <br />
             <br />
         </td></tr>

@@ -28,7 +28,7 @@
                         </tr>
                         <tr>
                                <td style="width:150px"> <asp:Label ID="LblRutaImagen" runat="server" Text="Imagen" Font-Bold="True"></asp:Label></td>
-                             <td style="width:350px "><asp:FileUpload ID="FileUpload1" runat="server" CssClass="botoncito" Width="300px" /> </td>    
+                             <td style="width:350px "><asp:FileUpload ID="FileUpload1" runat="server" CssClass="btn btn-default" Width="300px" /> </td>    
                              <td><asp:RequiredFieldValidator ID="RequiredFieldValidator4" ControlToValidate="FileUpload1" runat="server" Text="*" ErrorMessage="" ForeColor="red" ></asp:RequiredFieldValidator> </td>          
 
                         </tr>

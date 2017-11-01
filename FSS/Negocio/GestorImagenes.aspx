@@ -8,8 +8,8 @@
 <asp:Content ID="Contenido" ContentPlaceHolderID="Contenido" runat="server">
 <article>
  <div style="font-family:Arial">
- <asp:FileUpload ID="FileUpload1" runat="server" CssClass="boton" />
- <fss:miboton ID="btnEnviar" runat="server" Text="Enviar" CssClass="boton"/>
+ <asp:FileUpload ID="FileUpload1" runat="server" CssClass="btn btn-default" />
+ <fss:miboton ID="btnEnviar" runat="server" Text="Enviar" CssClass="btn btn-success"/>
  <br />
  <br />
    <asp:Panel ID="Panel1" runat="server" ScrollBars="Vertical" Width ="600px" Height="300px">

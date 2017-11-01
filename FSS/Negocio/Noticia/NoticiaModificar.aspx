@@ -29,7 +29,7 @@
                                <td style="width:150px"> <asp:Label ID="LblRutaImagen" runat="server" Text="Imagen" Font-Bold="True"></asp:Label></td>
                              <td style="width:350px ">
                                  <asp:TextBox ID="txtRuta" runat="server" Text="" Visible="false"></asp:TextBox>
-                                 <asp:FileUpload ID="FileUpload1" runat="server" CssClass="botoncito"  Width="300px" />
+                                 <asp:FileUpload ID="FileUpload1" runat="server" CssClass="btn btn-default"  Width="300px" />
                                  <br />
                                  <br /> <asp:Image ID="Image1" runat="server" Width ="100px" />
                                  <br />

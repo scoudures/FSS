@@ -15,6 +15,9 @@
                 <asp:DropDownList ID="lstEstadoPedido" runat="server" AutoPostBack="true"></asp:DropDownList>
                 <br />
             </div>
+            <br />
+            <br />
+
             <table runat ="server" height="100%" border="0" style="width: 586px">
                 <tr runat ="server" valign="top">
                 <td runat ="server" width="550">
@@ -25,7 +28,7 @@
                         <asp:BoundField DataField="fechaEmision" HeaderText="Fecha Emision" DataFormatString="{0:d}" />
                         <asp:BoundField DataField="EstadoFormulario" HeaderText="Estado" />
                         <asp:TemplateField HeaderText="Detalle">
-                               <ItemTemplate><asp:Button runat="server" Text="Ver" CssClass="botoncito" CommandName="Detalle" CommandArgument='<%# Eval("Numero")%>' /></ItemTemplate>
+                               <ItemTemplate><asp:Button runat="server" Text="Ver" CssClass="btn btn-default" CommandName="Detalle" CommandArgument='<%# Eval("Numero")%>' /></ItemTemplate>
                         </asp:TemplateField>
                     </Columns>
                     <EditRowStyle BackColor="#2461BF" />
@@ -43,6 +46,8 @@
                 </tr>
              </table>
         </asp:panel>
+        <br />
+        <br />
         <asp:Panel ID="PanelDetalle" runat="server" Visible="false" CssClass="panelTexto">
             <table>
                 <tr>
@@ -77,9 +82,12 @@
                 </tr>
                 <tr>
                     <td></td>
+                    <td></td>
                     <td>
-                        <div style="text-align:right">
-                        <span class="subtitulo"  >SubTotal: </span>
+                        <div style="text-align:right"><asp:Label class="subtitulo" id="Subtotal" runat="server" Text="SubTotal: " EnableViewState="false" Enabled="false"></asp:Label></div>
+                    </td>
+                    <td>
+                        <%--<div style="text-align:right"><span class="subtitulo"  >SubTotal: </span></div>--%>
                         <asp:Label class="subtitulo" id="lblTotal" runat="server" EnableViewState="false"></asp:Label></div>
                     </td>
                     <td style="width:10%" ></td>
@@ -88,12 +96,12 @@
             <br/>
             <br/>
             <br/>
-                <asp:Button ID="btnEnvio" CssClass="botoncito" runat="server" Text="Agregar Envio" Width="120px" />
-                <asp:Button ID="btnPago" CssClass="botoncito" runat="server" Text="Pagar" Visible="false"/>
-                <asp:Button ID="btnFactura" CssClass="botoncito" runat="server" Text="Emitir Factura" Width="120px" Visible="false" />
-                <asp:Button ID="btnEliminar" CssClass="botoncito" runat="server" Text="Eliminar" Visible="false" />
-                <asp:Button ID="imprPantalla" runat="server" Text="Imprimir Pantalla" CssClass="boton" CausesValidation="false" />
-                <asp:Button ID="verFactura" runat="server" Text="ver Factura" CssClass="boton" CausesValidation="false" Visible="false" />    
+                <asp:Button ID="btnEnvio" CssClass="btn btn-default" runat="server" Text="Agregar Envio" Width="120px" />
+                <asp:Button ID="btnPago" CssClass="btn btn-default" runat="server" Text="Pagar" Visible="false"/>
+                <asp:Button ID="btnFactura" CssClass="btn btn-default" runat="server" Text="Emitir Factura" Width="120px" Visible="false" />
+                <asp:Button ID="btnEliminar" CssClass="btn btn-default" runat="server" Text="Eliminar" Visible="false" />
+                <asp:Button ID="imprPantalla" runat="server" Text="Imprimir Pantalla" CssClass="btn btn-default" CausesValidation="false" />
+                <asp:Button ID="verFactura" runat="server" Text="ver Factura" CssClass="btn btn-default" CausesValidation="false" Visible="false" />    
                 <br /><br />
                 <%--ESTO PASA A LA PAGINA ORDENES
                 <asp:Button ID="btnRectificar" CssClass="botoncito" runat="server" Text="Rectificar" Visible="false" />
