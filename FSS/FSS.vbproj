@@ -239,8 +239,6 @@
     <Content Include="Videos.aspx" />
     <Content Include="Videos\Video1.mp4" />
     <Content Include="Videos\video2.mp4" />
-    <Content Include="Videos\Video3.mp4" />
-    <Content Include="Videos\Video4.mp4" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
