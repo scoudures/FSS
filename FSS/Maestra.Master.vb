@@ -71,6 +71,8 @@ Public Class Maestra
     End Sub
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("es-AR")
+        Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("es-AR")
         If CInt(Session("Inconsistente")) <> 1 Then
             Try
                 'en el load me ocupo del estado de los objetos
@@ -140,6 +142,8 @@ Public Class Maestra
         Try
             miMensajero.EscribirBitacora("Cambio de Idioma", miUsuario.login, "Se cambia del idioma " & miUsuario.idioma & " al idioma " & lstIdioma.SelectedItem.ToString)
             miUsuario.idioma = lstIdioma.SelectedItem.ToString
+            Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("es-AR")
+            Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("es-AR")
             miTraductor.traducirPaginaPara(Me, miUsuario)
         Catch ex As Exception
             TratarErrorEnCatch("Master", ex)

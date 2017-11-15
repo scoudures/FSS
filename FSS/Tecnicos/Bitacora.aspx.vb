@@ -44,7 +44,7 @@ Public Class Bitacora
             ControlarConsistencia("Bitacora")
             If Not Page.IsPostBack Then
                 'Listar años
-                For i As Integer = 2016 To 2020
+                For i As Integer = 2017 To 2020
                     lstAnioDesde.Items.Add(i.ToString())
                     lstAnioHasta.Items.Add(i.ToString())
                 Next
@@ -196,7 +196,7 @@ Public Class Bitacora
     End Sub
     Private Sub ListarBitacora()
         Try
-            grdBitacora.DataSource = miBitacora.Listar("20160101", "20170101", "Todos", "Todos")
+            grdBitacora.DataSource = miBitacora.Listar("20170101", "20180101", "Todos", "Todos")
             miMensajero.EscribirBitacora("Consulta Bitacora", miUsuario.login, "Accediento a Bitacora...")
         Catch ex As ent.miClaseExcepcion
             TratarErrorEnCatch("Bitacora", ex)
