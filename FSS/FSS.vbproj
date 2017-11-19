@@ -190,7 +190,6 @@
     <Content Include="Negocio\Ordenes.aspx" />
     <Content Include="Negocio\Pedido.aspx" />
     <Content Include="Negocio\Envio.aspx" />
-    <Content Include="Negocio\Expedicion.aspx" />
     <Content Include="Negocio\Pago.aspx" />
     <Content Include="Negocio\ProductoDetalle.aspx" />
     <Content Include="Negocio\Producto\ProductoAlta.aspx" />
@@ -414,13 +413,6 @@
     </Compile>
     <Compile Include="Negocio\Envio.aspx.vb">
       <DependentUpon>Envio.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Negocio\Expedicion.aspx.designer.vb">
-      <DependentUpon>Expedicion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Negocio\Expedicion.aspx.vb">
-      <DependentUpon>Expedicion.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Negocio\Pago.aspx.designer.vb">
