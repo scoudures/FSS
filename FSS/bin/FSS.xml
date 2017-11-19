@@ -2366,22 +2366,6 @@ Control lblTextoVideo.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:FSS.Videos.lblVideo1">
-	<summary>
-Control lblVideo1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:FSS.Videos.lblNoSoporta">
-	<summary>
-Control lblNoSoporta.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
 </member><member name="F:FSS.Videos.Repeater1">
 	<summary>
 Control Repeater1.

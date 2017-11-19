@@ -14,13 +14,12 @@
     </div>
 
     <br />
-    <asp:Label ID="lblVideo1" Text="Roller Games 2017" runat="server" CssClass="titulo" ></asp:Label><br /><br />
+    <%--<asp:Label ID="lblVideo1" Text="Roller Games 2017" runat="server" CssClass="titulo" ></asp:Label><br /><br />
     <video width="360" height="240" controls= "controls" > 
         <source src="Videos/RollerGames2017.mp4" controls="controls" />
         <fss:mietiqueta2 ID="lblNoSoporta" runat="server" Text="Su navegador no soporta esta funcionalidad."></fss:mietiqueta2>
     </video>
     <br />
-    <%--
     <br />
     <asp:Label ID="lblVideo2" Text="Novara" runat="server" CssClass="titulo"></asp:Label><br /><br />
     <video width="360" height="240" controls= "controls" > 

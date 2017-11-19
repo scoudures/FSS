@@ -38,8 +38,8 @@
                     <asp:RequiredFieldValidator ControlToValidate="txtEmail" Display="dynamic" Font-Name="verdana" Font-Size="9pt" ForeColor="Red" ErrorMessage="'Campo Email' no puede estar vacio" runat="server" id="RequiredFieldValidator2"></asp:RequiredFieldValidator><br /><br />
                     <br />
                     <br />
-                    <asp:Button ID="btnGuardar" CssClass="btn btn-default" runat="server" Text="Guardar" CausesValidation="true" />
-                    <asp:Button ID="btnCancelar" CssClass="btn btn-default" runat="server" Text="Cancelar" style="margin-left:20px" CausesValidation="false" />
+                    <asp:Button ID="btnGuardar" CssClass="btn btn-success" runat="server" Text="Guardar" CausesValidation="true" />
+                    <asp:Button ID="btnCancelar" CssClass="btn btn-danger" runat="server" Text="Cancelar" style="margin-left:20px" CausesValidation="false" />
                     <br/>
                     <br/>
                     <asp:Button ID="btnPass" CssClass="btn btn-default" runat="server" Text="Cambiar Contraseña" style="margin-left:250px" Width="150px" CausesValidation="false"/><br /><br />
@@ -63,8 +63,8 @@
                     <asp:CompareValidator ControlToValidate="ConfirmPassword" ControlToCompare="txtPass" ForeColor="Red" Display="Dynamic" Font-Name="verdana" Font-Size="9pt" ErrorMessage="No coincide la confirmacion" Style="color:red" runat="server" id="CompareValidator1"></asp:CompareValidator><br /><br />
                     <br />
                     <br />
-                    <asp:Button ID="btnGuardarPass" CssClass="botoncito" runat="server" Text="Guardar" CausesValidation="true" />
-                    <asp:Button ID="btnCancelPass" CssClass="botoncito" runat="server" Text="Cancelar" CausesValidation="false" />
+                    <asp:Button ID="btnGuardarPass" CssClass="btn btn-success" runat="server" Text="Guardar" CausesValidation="true" />
+                    <asp:Button ID="btnCancelPass" CssClass="btn btn-danger" runat="server" Text="Cancelar" CausesValidation="false" />
                     <br /><br />
                 </td>
             </tr>
@@ -89,8 +89,8 @@
                     <asp:RequiredFieldValidator ControlToValidate="TxtRespuesta" Display="dynamic" ForeColor="Red" Font-Name="verdana" Font-Size="9pt" ErrorMessage=" no puede estar vacio " runat="server" id="RequiredFieldValidator5"></asp:RequiredFieldValidator><br />
                     <br />
                     <br />
-                    <asp:Button ID="btnGuardarPreg" CssClass="botoncito" runat="server" Text="Guardar" CausesValidation="true" />
-                    <asp:Button ID="btnCancelPreg" CssClass="botoncito" runat="server" Text="Cancelar" CausesValidation="false" />
+                    <asp:Button ID="btnGuardarPreg" CssClass="btn btn-success" runat="server" Text="Guardar" CausesValidation="true" />
+                    <asp:Button ID="btnCancelPreg" CssClass="btn btn-danger" runat="server" Text="Cancelar" CausesValidation="false" />
                     <br /><br />
                 </td>
             </tr>

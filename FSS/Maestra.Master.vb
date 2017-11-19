@@ -251,13 +251,13 @@ Public Class Maestra
     Private Sub TratarErrorEnCatch(ByVal miPagina As String, ByRef ex As ent.miClaseExcepcion)
         miMensajero.EscribirBitacora("Excepcion", "Sistema", "Ocurrió una excepción en la Pagina " & miPagina & " => " & ex.Descripcion & " (" & ex.laexcepcion.Message & ")")
         If ex.Message <> "Subproceso anulado." Then
-            Response.Redirect("~/Error.aspx")
+            Response.Redirect("~/Sorry.aspx")
         End If
     End Sub
     Private Sub TratarErrorEnCatch(ByVal miPagina As String, ByRef ex As Exception)
         miMensajero.EscribirBitacora("Excepcion", "Sistema", "Ocurrió una excepción en la Pagina " & miPagina & " => " & ex.HResult.ToString & " (" & ex.Message & ")")
         If ex.Message <> "Subproceso anulado." Then
-            Response.Redirect("~/Error.aspx")
+            Response.Redirect("~/Sorry.aspx")
         End If
     End Sub
     Private Sub TratarErrorSinTry(ByVal miPagina As String)
@@ -265,7 +265,7 @@ Public Class Maestra
         miMensajero.EscribirBitacora("Excepcion", "Sistema", "Ocurrió una excepción en la Pagina " & miPagina & " => " & miExcepcion.Message)
         Server.ClearError()
         If miExcepcion.Message <> "Subproceso anulado." Then
-            Response.Redirect("~/Error.aspx")
+            Response.Redirect("~/Sorry.aspx")
         End If
     End Sub
 #End Region

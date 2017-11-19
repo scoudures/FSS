@@ -101,7 +101,7 @@ Public Class PaginaBase
             End If
             miMensajero.EscribirBitacora("Excepcion", miUsuario.login, "Ocurrió una excepción GENERAL en la Pagina " & miPagina & " => " & ex.HResult.ToString & " (" & ex.Message & ")")
             If ex.Message <> "Subproceso anulado." Then
-                Response.Redirect("~/Error.aspx")
+                Response.Redirect("~/Sorry.aspx")
             End If
         Finally
             'Response.Redirect("~/Sorry.aspx")
@@ -114,7 +114,7 @@ Public Class PaginaBase
             miMensajero.EscribirBitacora("Excepcion", "Sistema", "Ocurrió una excepción DE ERROR en la Pagina " & miPagina & " => " & miExcepcion.Message)
             Server.ClearError()
         Finally
-            Response.Redirect("~/Error.aspx")
+            Response.Redirect("~/Sorry.aspx")
         End Try
     End Sub
     Public Sub ControlarConsistencia(ByVal miPagina As String)
@@ -131,7 +131,7 @@ Public Class PaginaBase
                     miMensajero.EscribirBitacora("Inconsistencias", "Sistema", "Inconsistencias => Tabla " & tablaErrores.ToString & " - Registro: " & FilaErrores.ToString)
                     Session("Inconsistente") = 1
                     If miUsuario Is Nothing Then
-                        Response.Redirect("~/Error.aspx")
+                        Response.Redirect("~/Sorry.aspx")
                     Else
                         If miUsuario.login = "Administrador" Then
                             Response.Redirect("~/Tecnicos/Integridad.aspx")

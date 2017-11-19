@@ -9,8 +9,8 @@
 <article style="width:650px">
     <div style="text-align:left"><asp:Label ID="LblDatosPAgo" runat="server" cssClass="titulo" Text="Ingrese los datos del Pago:"></asp:Label></div>
     <asp:Panel runat="server" CssClass="panelTexto" HorizontalAlign="Left">
-    <table style="height:100%;width:200px;border:0" >
-        <tr><td><div style="text-align:left"> <asp:Label ID="lblControleDatos" runat="server" Text="Por Favor, controle los datos de su pedido antes de confirmar el envío." CssClass="subsubtitulo"></asp:Label></div></td></tr>
+    <table style="height:100%;width:100%;border:0" >
+        <tr><td><div style="text-align:left"> <asp:Label ID="lblControleDatos" runat="server" Text="Por Favor, controle los datos de su pedido antes de confirmar el pago." CssClass="subsubtitulo"></asp:Label></div></td></tr>
         <tr><td><asp:Panel ID="PanelDetalle" runat="server" Visible="false" CssClass="panelTexto">
                 <table>
                 <tr>
@@ -61,8 +61,8 @@
                 <br />
                 </asp:Panel></td></tr>
         <tr><td><asp:Panel ID="PanelTarjeta" runat="server" CssClass="panelTexto" GroupingText="Detalles del Pago">
-                <img src="../Imagenes/credit-card-logos.png" class="muypequeña" />
-                <img src="../Imagenes/codigo_tarjeta.png" class="muypequeña"/>
+                <img src="../Imagenes/credit-card-logos.png" class="img-responsive"  style="width:75%;text-align:center"/>
+                <img src="../Imagenes/codigo_tarjeta.png" class="img-responsive" style="width:90%; text-align:center"/>
                 <br />
                 <table style="margin-left:50px">
                 <tr><td><br /><asp:Label ID="LblNumeroTarjeta" runat="server" Text="Numero:"></asp:Label>&nbsp;&nbsp;
@@ -185,8 +185,8 @@
                 <ContentTemplate>
                     <asp:Label ID="lblMsg" runat="server" Text="" ForeColor="Red" CssClass="subtitulo"></asp:Label>
                     <br /> <br />
-                    <asp:Button ID="btnConfirmar" CssClass="btn btn-default" runat="server" Text="Confirmar" CausesValidation="true" style="margin-left:50px" Width="90px" />&nbsp;
-                    <asp:Button ID="btnCancelar" CssClass="btn btn-default" runat="server"  Text="Cancelar" CausesValidation="false" style="margin-left:50px" Width="90px"/><br />
+                    <asp:Button ID="btnConfirmar" CssClass="btn btn-success" runat="server" Text="Confirmar" CausesValidation="true" style="margin-left:50px" Width="90px" />&nbsp;
+                    <asp:Button ID="btnCancelar" CssClass="btn btn-danger" runat="server"  Text="Cancelar" CausesValidation="false" style="margin-left:50px" Width="90px"/><br />
                     <br />
                 </ContentTemplate>
             </asp:UpdatePanel>                

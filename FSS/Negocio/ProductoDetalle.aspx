@@ -44,7 +44,7 @@
                 </td>
             </tr>
             <tr>
-                <td><asp:button ID="Agregaralpedido" CssClass="btn btn-default" Width="200px" runat="server" Text="Agregar Al Pedido" ></asp:button> <br/></td>
+                <td><asp:button ID="Agregaralpedido" CssClass="btn btn-success" Width="200px" runat="server" Text="Agregar Al Pedido" ></asp:button> <br/></td>
             </tr>
         </table>
         </asp:Panel>

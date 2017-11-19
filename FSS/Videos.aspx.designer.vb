@@ -41,24 +41,6 @@ Partial Public Class Videos
     Protected WithEvents lblTextoVideo As Global.FSS.miEtiqueta2
 
     '''<summary>
-    '''Control lblVideo1.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents lblVideo1 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Control lblNoSoporta.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents lblNoSoporta As Global.FSS.miEtiqueta2
-
-    '''<summary>
     '''Control Repeater1.
     '''</summary>
     '''<remarks>

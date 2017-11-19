@@ -44,7 +44,7 @@ Public Class Global_asax
             If ex.Message.Contains("no existe") Then
                 Response.Redirect("~/Inexistente.aspx")
             Else
-                Response.Redirect("~/Error.aspx")
+                Response.Redirect("~/Sorry.aspx")
             End If
 
         End If
