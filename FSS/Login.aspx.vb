@@ -68,10 +68,7 @@ Public Class Login
             Try
                 If txtLogin.Value <> "" And txtPassword.Value <> "" Then
                     'Se crea un objeto User
-                    Dim usuarioBuscar As New ent.Usuario
-                    usuarioBuscar.login = txtLogin.Value
-                    usuarioBuscar.pass = txtPassword.Value
-
+                    Dim usuarioBuscar As New ent.Usuario(txtLogin.Value, txtPassword.Value)
                     'Busco el Login
                     Dim miLista As List(Of ent.Usuario)
                     miLista = miUsuarioN.listar(usuarioBuscar)

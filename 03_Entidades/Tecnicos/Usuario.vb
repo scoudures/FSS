@@ -78,5 +78,9 @@
     Sub New()
 
     End Sub
+    Sub New(ByVal unLogin As String, ByVal unaPass As String)
+        Me.login = unLogin
+        Me.pass = unaPass
+    End Sub
 End Class
 

@@ -671,6 +671,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="_Diagramas\Login_btnAceptar_Click.sequencediagram.layout">
+      <DependentUpon>Login_btnAceptar_Click.sequencediagram</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="_Diagramas\Catalogo_Page_Load.sequencediagram.layout">
       <DependentUpon>Catalogo_Page_Load.sequencediagram</DependentUpon>
     </EmbeddedResource>
@@ -735,6 +738,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="_Diagramas\Login_btnAceptar_Click.sequencediagram" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
