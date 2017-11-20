@@ -3,6 +3,7 @@ Imports System.Data.SqlClient
 Public Class PagoM
     Dim miAcceso As New Acceso
     Dim miVerificador As New Verificador
+    Dim miEncriptador As New Encriptador
 
     Public Function Nuevo(ByRef unPedido As ent.Pedido) As Integer
         Dim resultado As Integer
@@ -13,12 +14,12 @@ Public Class PagoM
             params(2) = miAcceso.constructor("@sucursalFormulario", unPedido.sucursal)
             params(3) = miAcceso.constructor("@numeroFormulario", unPedido.numero)
             params(4) = miAcceso.constructor("@pagoTipo", unPedido.pago.descripcion.ToString)
-            params(5) = miAcceso.constructor("@numero", unPedido.pago.numero.ToString)
+            params(5) = miAcceso.constructor("@numero", miEncriptador.EncriptarMD5(unPedido.pago.numero.ToString))
             params(6) = miAcceso.constructor("@vencimiento", unPedido.pago.vencimiento.ToString)
             params(7) = miAcceso.constructor("@cantCuotas", CInt(unPedido.pago.cuotas))
             params(8) = miAcceso.constructor("@subtotal", CDbl(unPedido.pago.total))
             resultado = miAcceso.Escribir("Pago_Insert", params)
-            'miVerificador.DigitosPorTabla("MedioPago")
+            miVerificador.DigitosPorTabla("MedioPago")
             'miVerificador.DigitosPorTabla("Pago")
         Catch ex As ent.miClaseExcepcion
             Throw ex

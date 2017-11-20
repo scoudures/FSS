@@ -73,6 +73,10 @@ Public Class Maestra
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("es-AR")
         Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("es-AR")
+        '************************************************************
+        'si hay inconsistencias, descomentar la siguiente linea
+        '************************************************************
+        'miVerificador.generarDigitos()
         If CInt(Session("Inconsistente")) <> 1 Then
             Try
                 'en el load me ocupo del estado de los objetos

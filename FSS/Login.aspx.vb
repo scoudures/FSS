@@ -1,5 +1,8 @@
 ﻿Imports ent = _03_Entidades
 Imports neg = _02_Negocio
+Imports System.Text
+Imports System.Security.Cryptography
+
 Public Class Login
     Inherits PaginaBase
     Private Sub Login_Error(sender As Object, e As EventArgs) Handles Me.Error
@@ -49,7 +52,7 @@ Public Class Login
                 miLista = miUsuarioN.listar(usuarioBuscar)
                 If miLista.Count > 0 Then
                     'El usuario existe
-                    If miLista.Item(0).pass = usuarioBuscar.pass Then
+                    If miLista.Item(0).pass = Encriptar(usuarioBuscar.pass) Then
                         'la password es correcta
                         Dim unUsuario As New ent.Usuario
                         unUsuario.login = miLista.Item(0).login
@@ -74,7 +77,7 @@ Public Class Login
                     miLista = miUsuarioN.listar(usuarioBuscar)
                     If miLista.Count > 0 Then
                         'El usuario existe
-                        If miLista.Item(0).pass = usuarioBuscar.pass Then
+                        If miLista.Item(0).pass = Encriptar(usuarioBuscar.pass) Then
                             'la password es correcta
                             Dim unUsuario As New ent.Usuario
                             unUsuario.login = miLista.Item(0).login
@@ -126,7 +129,13 @@ Public Class Login
             TratarErrorEnCatch("Login", ex2)
         End Try
     End Sub
-
+    Public Shared Function Encriptar(ByVal cleanString As String) As String
+        Dim clearBytes As [Byte]()
+        clearBytes = New UnicodeEncoding().GetBytes(cleanString)
+        Dim hashedBytes As [Byte]() = CType(CryptoConfig.CreateFromName("MD5"), HashAlgorithm).ComputeHash(clearBytes)
+        Dim hashedText As String = BitConverter.ToString(hashedBytes)
+        Return hashedText
+    End Function
 #Region "Pantalla Modal"
 
     Private Sub MostrarMensajeModal(Msg As String, simple As Boolean, Optional traducir As Boolean = True)

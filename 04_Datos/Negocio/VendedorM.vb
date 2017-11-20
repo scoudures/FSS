@@ -3,6 +3,7 @@ Imports ent = _03_Entidades
 Public Class VendedorM
     Dim miAcceso As New Acceso
     Dim miVerificador As New Verificador
+    Dim miEncriptador As New Encriptador
     Public Function Existe(ByRef miVendedor As ent.Vendedor) As Boolean
         Dim resultado As Boolean
         Try
@@ -26,7 +27,7 @@ Public Class VendedorM
             Dim params(6) As SqlParameter
             params(0) = miAcceso.constructor("@login", isNull(unVendedor.login))
             params(1) = miAcceso.constructor("@dni", isNull(unVendedor.DNI))
-            params(2) = miAcceso.constructor("@pass", isNull(unVendedor.pass))
+            params(2) = miAcceso.constructor("@pass", isNull(miEncriptador.EncriptarMD5(unVendedor.pass)))
             params(3) = miAcceso.constructor("@idioma", isNull(unVendedor.idioma))
             params(4) = miAcceso.constructor("@nombre", isNull(unVendedor.nombre))
             params(5) = miAcceso.constructor("@apellido", isNull(unVendedor.apellido))
@@ -61,7 +62,7 @@ Public Class VendedorM
             Dim params(6) As SqlParameter
             params(0) = miAcceso.constructor("@login", isNull(unVendedor.login))
             params(1) = miAcceso.constructor("@dni", isNull(unVendedor.DNI))
-            params(2) = miAcceso.constructor("@pass", isNull(unVendedor.pass))
+            params(2) = miAcceso.constructor("@pass", isNull(miEncriptador.EncriptarMD5(unVendedor.pass)))
             params(3) = miAcceso.constructor("@idioma", isNull(unVendedor.idioma))
             params(4) = miAcceso.constructor("@nombre", isNull(unVendedor.nombre))
             params(5) = miAcceso.constructor("@apellido", isNull(unVendedor.apellido))
@@ -111,7 +112,7 @@ Public Class VendedorM
         Try
             Dim params(1) As SqlParameter
             params(0) = miAcceso.constructor("@dni", isNull(unVendedor.DNI))
-            params(1) = miAcceso.constructor("@pass", isNull(unVendedor.pass))
+            params(1) = miAcceso.constructor("@pass", isNull(miEncriptador.EncriptarMD5(unVendedor.pass)))
             resultado = miAcceso.Escribir("Vendedor_UpdatePass", params)
             miVerificador.DigitosPorTabla("Usuario")
         Catch ex As ent.miClaseExcepcion

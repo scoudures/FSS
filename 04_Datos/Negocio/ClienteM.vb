@@ -4,6 +4,7 @@ Imports ent = _03_Entidades
 Public Class ClienteM
     Dim miAcceso As New Acceso
     Dim miVerificador As New Verificador
+    Dim miEncriptador As New Encriptador
     Public Function Existe(ByRef miCliente As ent.Cliente) As Boolean
         Dim resultado As Boolean
         Try
@@ -27,7 +28,7 @@ Public Class ClienteM
             Dim params(8) As SqlParameter
             params(0) = miAcceso.constructor("@login", isNull(unCliente.login))
             params(1) = miAcceso.constructor("@dni", isNull(unCliente.DNI))
-            params(2) = miAcceso.constructor("@pass", isNull(unCliente.pass))
+            params(2) = miAcceso.constructor("@pass", isNull(miEncriptador.EncriptarMD5(unCliente.pass)))
             params(3) = miAcceso.constructor("@idioma", isNull(unCliente.idioma))
             params(4) = miAcceso.constructor("@nombre", isNull(unCliente.nombre))
             params(5) = miAcceso.constructor("@apellido", isNull(unCliente.apellido))
@@ -64,7 +65,7 @@ Public Class ClienteM
             Dim params(8) As SqlParameter
             params(0) = miAcceso.constructor("@login", isNull(unCliente.login))
             params(1) = miAcceso.constructor("@dni", isNull(unCliente.DNI))
-            params(2) = miAcceso.constructor("@pass", isNull(unCliente.pass))
+            params(2) = miAcceso.constructor("@pass", isNull(miEncriptador.EncriptarMD5(unCliente.pass)))
             params(3) = miAcceso.constructor("@idioma", isNull(unCliente.idioma))
             params(4) = miAcceso.constructor("@nombre", isNull(unCliente.nombre))
             params(5) = miAcceso.constructor("@apellido", isNull(unCliente.apellido))
@@ -159,7 +160,7 @@ Public Class ClienteM
         Try
             Dim params(1) As SqlParameter
             params(0) = miAcceso.constructor("@dni", isNull(unCliente.DNI))
-            params(1) = miAcceso.constructor("@pass", isNull(unCliente.pass))
+            params(1) = miAcceso.constructor("@pass", isNull(miEncriptador.EncriptarMD5(unCliente.pass)))
             resultado = miAcceso.Escribir("Cliente_UpdatePass", params)
             miVerificador.DigitosPorTabla("Usuario")
         Catch ex As ent.miClaseExcepcion

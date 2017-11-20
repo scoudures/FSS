@@ -3,6 +3,8 @@ Imports ent = _03_Entidades
 Public Class UsuarioM
     Dim miAcceso As New Acceso
     Dim miVerificador As New Verificador
+    Dim miencriptador As New Encriptador
+
     Public Function listar() As List(Of ent.Usuario)
         Dim lista As New List(Of ent.Usuario)
         Try
@@ -69,7 +71,7 @@ Public Class UsuarioM
             Dim params(6) As SqlParameter
             params(0) = miAcceso.constructor("@login", unUsuario.login)
             params(1) = miAcceso.constructor("@dni", unUsuario.DNI)
-            params(2) = miAcceso.constructor("@pass", unUsuario.pass)
+            params(2) = miAcceso.constructor("@pass", miencriptador.EncriptarMD5(unUsuario.pass))
             params(3) = miAcceso.constructor("@idioma", unUsuario.idioma)
             params(4) = miAcceso.constructor("@nombre", unUsuario.nombre)
             params(5) = miAcceso.constructor("@apellido", unUsuario.apellido)
@@ -90,7 +92,7 @@ Public Class UsuarioM
             Dim params(6) As SqlParameter
             params(0) = miAcceso.constructor("@login", unUsuario.login)
             params(1) = miAcceso.constructor("@dni", unUsuario.DNI)
-            params(2) = miAcceso.constructor("@pass", unUsuario.pass)
+            params(2) = miAcceso.constructor("@pass", miencriptador.EncriptarMD5(unUsuario.pass))
             params(3) = miAcceso.constructor("@idioma", unUsuario.idioma)
             params(4) = miAcceso.constructor("@nombre", unUsuario.nombre)
             params(5) = miAcceso.constructor("@apellido", unUsuario.apellido)
@@ -109,7 +111,7 @@ Public Class UsuarioM
         Try
             Dim params(1) As SqlParameter
             params(0) = miAcceso.constructor("@p1", unUsuario.login)
-            params(1) = miAcceso.constructor("@p2", unUsuario.pass)
+            params(1) = miAcceso.constructor("@p2", miencriptador.EncriptarMD5(unUsuario.pass))
 
             resultado = miAcceso.Escribir("Usuario_UpdatePass", params)
             miVerificador.DigitosPorTabla("Usuario")

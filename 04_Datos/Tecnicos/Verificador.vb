@@ -5,7 +5,8 @@ Imports ent = _03_Entidades
 Public Class Verificador
     Dim miAcceso As New Acceso
     Dim miEncriptador As New Encriptador
-    Private Shared tablasBD() As String = {"Usuario", "Suceso"}
+    'Private Shared tablasBD() As String = {"Usuario", "Suceso", "Suceso_hist", "MedioPago"}
+    Private Shared tablasBD() As String = {"Usuario", "Suceso", "MedioPago"}
 
     Public Sub generarDigitos()
         Try
@@ -43,7 +44,7 @@ Public Class Verificador
                     cadenaH &= String.Concat(fila.Item(x))
                 Next
                 'Calculo md5 de toda la fila
-                digitoH = miEncriptador.AplicaMD5(cadenaH)
+                digitoH = miEncriptador.EncriptarMD5(cadenaH)
                 fila.Item("DVH") = digitoH
 
                 'Concateno los digitosH para armar el digito Vertical
@@ -54,7 +55,7 @@ Public Class Verificador
             da.Update(ds, nombreTabla)
 
             'Calculo md5 de la cadenaV para obtener el digito vertical de la tabla
-            digitoV = miEncriptador.AplicaMD5(cadenaV)
+            digitoV = miEncriptador.EncriptarMD5(cadenaV)
 
             Dim strInsertDigitV As String = "update digitosV set digitoV='" + digitoV + "' where NombreTabla='" + nombreTabla + "'"
             Dim cm As New SqlCommand(strInsertDigitV, miAcceso.cn)
@@ -137,7 +138,7 @@ Public Class Verificador
                 For Each fila As DataRow In ds.Tables(nombreTabla).Rows
                     cadenaV &= fila.Item("DVH")
                 Next
-                digitoV = miEncriptador.AplicaMD5(cadenaV)
+            digitoV = miEncriptador.EncriptarMD5(cadenaV)
                 Dim digitoVGuardado As String = ""
                 Dim strSelectDigitV As String = "select digitoV from digitosV where NombreTabla='" + nombreTabla + "'"
                 Dim cm As New SqlCommand(strSelectDigitV, miAcceso.cn)
@@ -179,7 +180,7 @@ Public Class Verificador
                     FilaErrores.Append(CStr(fila.Item(x)) + " ")
                 Next
                 'Calculo md5 de toda la fila
-                digitoH = miEncriptador.AplicaMD5(cadenaH)
+                digitoH = miEncriptador.EncriptarMD5(cadenaH)
 
                 If fila.Item("DVH") <> digitoH Then
                     FilaError = FilaErrores

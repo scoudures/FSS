@@ -49,6 +49,7 @@ C:\Users\Sol\Documents\FSS\02_Negocio\bin\Debug\02_Negocio.xml
 C:\Users\Sol\Documents\FSS\02_Negocio\bin\Debug\03_Entidades.dll
 C:\Users\Sol\Documents\FSS\02_Negocio\bin\Debug\04_Datos.dll
 C:\Users\Sol\Documents\FSS\02_Negocio\bin\Debug\03_Entidades.pdb
+C:\Users\Sol\Documents\FSS\02_Negocio\bin\Debug\03_Entidades.xml
 C:\Users\Sol\Documents\FSS\02_Negocio\bin\Debug\04_Datos.pdb
 C:\Users\Sol\Documents\FSS\02_Negocio\bin\Debug\04_Datos.xml
 C:\Users\Sol\Documents\FSS\02_Negocio\obj\Debug\02_Negocio.vbprojResolveAssemblyReference.cache

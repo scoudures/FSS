@@ -22,3 +22,11 @@ C:\FSS\03_Entidades\obj\Debug\03_Entidades.vbproj.GenerateResource.Cache
 C:\FSS\03_Entidades\obj\Debug\03_Entidades.dll
 C:\FSS\03_Entidades\obj\Debug\03_Entidades.xml
 C:\FSS\03_Entidades\obj\Debug\03_Entidades.pdb
+C:\Users\Sol\Documents\FSS\03_Entidades\bin\Debug\03_Entidades.dll
+C:\Users\Sol\Documents\FSS\03_Entidades\bin\Debug\03_Entidades.pdb
+C:\Users\Sol\Documents\FSS\03_Entidades\bin\Debug\03_Entidades.xml
+C:\Users\Sol\Documents\FSS\03_Entidades\obj\Debug\_03_Entidades.Resources.resources
+C:\Users\Sol\Documents\FSS\03_Entidades\obj\Debug\03_Entidades.vbproj.GenerateResource.Cache
+C:\Users\Sol\Documents\FSS\03_Entidades\obj\Debug\03_Entidades.dll
+C:\Users\Sol\Documents\FSS\03_Entidades\obj\Debug\03_Entidades.xml
+C:\Users\Sol\Documents\FSS\03_Entidades\obj\Debug\03_Entidades.pdb

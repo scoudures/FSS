@@ -1,5 +1,5 @@
 ﻿Imports System.Security.Cryptography
-
+Imports System.Text
 Public Class Encriptador
 
     '******************
@@ -83,24 +83,30 @@ Public Class Encriptador
     '********************
     '**** APLICA MD5 ****
     '********************
-    Public Function AplicaMD5(ByVal cadena As String) As String
-        Try
-            Dim CadenaConMd5 As String
-            CadenaConMd5 = ""
-            Dim md5 As New MD5CryptoServiceProvider
-            Dim bytValue() As Byte
-            Dim bytHash() As Byte
-            Dim i As Integer
-            bytValue = System.Text.Encoding.UTF8.GetBytes(cadena)
-            bytHash = md5.ComputeHash(bytValue)
-            md5.Clear()
-            For i = 0 To bytHash.Length - 1
-                CadenaConMd5 &= bytHash(i).ToString("x").PadLeft(2, "0")
-            Next
-            Return CadenaConMd5
-        Catch ex2 As Exception
-            Throw ex2
-        End Try
+    'Public Function AplicaMD5(ByVal cadena As String) As String
+    '    Try
+    '        Dim CadenaConMd5 As String
+    '        CadenaConMd5 = ""
+    '        Dim md5 As New MD5CryptoServiceProvider
+    '        Dim bytValue() As Byte
+    '        Dim bytHash() As Byte
+    '        Dim i As Integer
+    '        bytValue = System.Text.Encoding.UTF8.GetBytes(cadena)
+    '        bytHash = md5.ComputeHash(bytValue)
+    '        md5.Clear()
+    '        For i = 0 To bytHash.Length - 1
+    '            CadenaConMd5 &= bytHash(i).ToString("x").PadLeft(2, "0")
+    '        Next
+    '        Return CadenaConMd5
+    '    Catch ex2 As Exception
+    '        Throw ex2
+    '    End Try
+    'End Function
+    Public Function EncriptarMD5(ByVal cleanString As String) As String
+        Dim clearBytes As [Byte]()
+        clearBytes = New UnicodeEncoding().GetBytes(cleanString)
+        Dim hashedBytes As [Byte]() = CType(CryptoConfig.CreateFromName("MD5"), HashAlgorithm).ComputeHash(clearBytes)
+        Dim hashedText As String = BitConverter.ToString(hashedBytes)
+        Return hashedText
     End Function
-
 End Class
