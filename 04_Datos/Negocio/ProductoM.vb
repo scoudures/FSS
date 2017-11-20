@@ -153,8 +153,6 @@ Public Class ProductoM
             params(8).Direction = ParameterDirection.Output
             resultado = miAcceso.Escribir("Producto_Insert", params)
             unProducto.inventario = params(8).Value
-            'miVerificador.DigitosPorTabla("Producto")
-            'miVerificador.DigitosPorTabla("Producto_Precio")
         Catch ex As ent.miClaseExcepcion
             Throw ex
         Catch ex2 As Exception
@@ -175,8 +173,6 @@ Public Class ProductoM
             params(5) = miAcceso.constructor("@costo", unProducto.precio.costo)
             params(6) = miAcceso.constructor("@precio", unProducto.precio.precioUnitario)
             resultado = miAcceso.Escribir("Producto_Update", params)
-            'miVerificador.DigitosPorTabla("Producto")
-            'miVerificador.DigitosPorTabla("Producto_Precio")
         Catch ex As ent.miClaseExcepcion
             Throw ex
         Catch ex2 As Exception
@@ -197,8 +193,6 @@ Public Class ProductoM
             params(6) = miAcceso.constructor("@costo", unProducto.precio.costo)
             params(7) = miAcceso.constructor("@precio", unProducto.precio.precioUnitario)
             resultado = miAcceso.Escribir("Producto_Update2", params)
-            'miVerificador.DigitosPorTabla("Producto")
-            'miVerificador.DigitosPorTabla("Producto_Precio")
         Catch ex As ent.miClaseExcepcion
             Throw ex
         Catch ex2 As Exception
@@ -212,8 +206,6 @@ Public Class ProductoM
             Dim params(0) As SqlParameter
             params(0) = miAcceso.constructor("@inventario", unProducto.inventario)
             resultado = miAcceso.Escribir("Producto_Delete", params)
-            'miVerificador.DigitosPorTabla("Producto")
-            'miVerificador.DigitosPorTabla("Producto_Precio")
         Catch ex As ent.miClaseExcepcion
             Throw ex
         Catch ex2 As Exception
@@ -249,7 +241,6 @@ Public Class ProductoM
             params(3).Direction = ParameterDirection.Output
             miAcceso.Escribir("Producto_DescontarStock", params)
             resultado = params(3).Value
-            'miVerificador.DigitosPorTabla("Producto")
         Catch ex As ent.miClaseExcepcion
             Throw ex
         Catch ex2 As Exception
@@ -265,7 +256,6 @@ Public Class ProductoM
             params(1) = miAcceso.constructor("@talle", unProducto.talle.descripcion.ToString)
             params(2) = miAcceso.constructor("@stock", CInt(unProducto.talle.stock))
             resultado = miAcceso.Escribir("Producto_ActualizarStock", params)
-            'miVerificador.DigitosPorTabla("Producto")
         Catch ex As ent.miClaseExcepcion
             Throw ex
         Catch ex2 As Exception

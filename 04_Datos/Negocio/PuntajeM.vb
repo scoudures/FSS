@@ -17,7 +17,6 @@ Public Class PuntajeM
                 i = i + 1
             Next
             resultado = miAcceso.Escribir("Puntaje_Insert", parametros)
-            'miVerificador.DigitosPorTabla("Puntaje")
             Return resultado
         Catch ex As Entidades.miClaseExcepcion
             Throw ex
@@ -34,7 +33,7 @@ Public Class PuntajeM
             parametros(1) = miAcceso.constructor("@patinador", miPuntaje.patinador.nombre)
             parametros(2) = miAcceso.constructor("@juez", miPuntaje.juez.nombre)
             resultado = miAcceso.Escribir("Puntaje_Delete", parametros)
-            'miVerificador.DigitosPorTabla("Puntaje")
+
             Return resultado
         Catch ex2 As Exception
             Throw ex2
@@ -51,7 +50,7 @@ Public Class PuntajeM
             parametros(3) = miAcceso.constructor("@p4", miPuntaje.valorA)
             parametros(4) = miAcceso.constructor("@p5", miPuntaje.valorB)
             resultado = miAcceso.Escribir("Puntaje_Update", parametros)
-            'miVerificador.DigitosPorTabla("Puntaje")
+
             Return resultado
         Catch ex2 As Exception
             Throw ex2

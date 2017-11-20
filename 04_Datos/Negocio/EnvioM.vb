@@ -37,8 +37,6 @@ Public Class EnvioM
             params(10) = miAcceso.constructor("@provincia", unPedido.domicilio.provincia.provincia)
             params(11) = miAcceso.constructor("@codPostal", unPedido.domicilio.codigoPostal.CPA)
             resultado = miAcceso.Escribir("Envio_Insert", params)
-            'miVerificador.DigitosPorTabla("Envio")
-            'miVerificador.DigitosPorTabla("Domicilio")
             Catch ex As ent.miClaseExcepcion
                 Throw ex
             Catch ex2 As Exception

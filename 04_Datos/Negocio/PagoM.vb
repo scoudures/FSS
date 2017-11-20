@@ -20,7 +20,6 @@ Public Class PagoM
             params(8) = miAcceso.constructor("@subtotal", CDbl(unPedido.pago.total))
             resultado = miAcceso.Escribir("Pago_Insert", params)
             miVerificador.DigitosPorTabla("MedioPago")
-            'miVerificador.DigitosPorTabla("Pago")
         Catch ex As ent.miClaseExcepcion
             Throw ex
         Catch ex2 As Exception

@@ -11,9 +11,7 @@ Public Class ConsultaM
             params(0) = miAcceso.constructor("@email", unaConsulta.email.ToString)
             params(1) = miAcceso.constructor("@Nivel", unaConsulta.nivel.ToString)
             params(2) = miAcceso.constructor("@Texto", unaConsulta.texto.ToString)
-            
             resultado = miAcceso.Escribir("Consulta_Insert", params)
-            'miVerificador.DigitosPorTabla("Consulta")
         Catch ex As ent.miClaseExcepcion
             Throw ex
         Catch ex2 As Exception

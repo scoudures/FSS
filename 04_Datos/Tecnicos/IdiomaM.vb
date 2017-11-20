@@ -49,8 +49,6 @@ Public Class IdiomaM
             Dim param(0) As SqlParameter
             param(0) = miAcceso.constructor("@idioma", unIdioma.nombre)
             resultado = miAcceso.Escribir("Idioma_Insert", param)
-            miVerificador.DigitosPorTabla("Idioma")
-            miVerificador.DigitosPorTabla("Traduccion")
         Catch ex As ent.miClaseExcepcion
             Throw ex
         Catch ex2 As Exception
@@ -64,8 +62,6 @@ Public Class IdiomaM
             Dim param(0) As SqlParameter
             param(0) = miAcceso.constructor("@idioma", unIdioma.nombre)
             resultado = miAcceso.Escribir("Idioma_Delete", param)
-            miVerificador.DigitosPorTabla("Idioma")
-            miVerificador.DigitosPorTabla("Traduccion")
         Catch ex As ent.miClaseExcepcion
             Throw ex
         Catch ex2 As Exception
@@ -81,8 +77,6 @@ Public Class IdiomaM
             param(1) = miAcceso.constructor("@leyenda", unaLeyenda.tag)
             param(2) = miAcceso.constructor("@texto", unTexto)
             resultado = miAcceso.Escribir("Idioma_UpdateTraduccion", param)
-            miVerificador.DigitosPorTabla("Idioma")
-            miVerificador.DigitosPorTabla("Traduccion")
         Catch ex As ent.miClaseExcepcion
             Throw ex
         Catch ex2 As Exception
@@ -101,8 +95,6 @@ Public Class IdiomaM
                 param(2) = miAcceso.constructor("@texto", unaLeyenda.texto)
                 param(3) = miAcceso.constructor("@textodefault", unaLeyenda.textodefault)
                 resultado = miAcceso.Escribir("Idioma_InsertTraduccionNoticia", param)
-                miVerificador.DigitosPorTabla("Idioma")
-                miVerificador.DigitosPorTabla("Traduccion")
             Next
         Catch ex As ent.miClaseExcepcion
             Throw ex
@@ -122,8 +114,6 @@ Public Class IdiomaM
                 param(2) = miAcceso.constructor("@texto", unaLeyenda.texto)
                 param(3) = miAcceso.constructor("@textodefault", unaLeyenda.textodefault)
                 resultado = miAcceso.Escribir("Idioma_UpdateTraduccionNoticia", param)
-                miVerificador.DigitosPorTabla("Idioma")
-                miVerificador.DigitosPorTabla("Traduccion")
             Next
         Catch ex As ent.miClaseExcepcion
             Throw ex
@@ -139,8 +129,6 @@ Public Class IdiomaM
             Dim param(0) As SqlParameter
             param(0) = miAcceso.constructor("@noticia", unaNoticia.CodigoNoticia)
             resultado = miAcceso.Escribir("Idioma_DeleteTraduccionNoticia", param)
-            miVerificador.DigitosPorTabla("Idioma")
-            miVerificador.DigitosPorTabla("Traduccion")
         Catch ex As ent.miClaseExcepcion
             Throw ex
         Catch ex2 As Exception

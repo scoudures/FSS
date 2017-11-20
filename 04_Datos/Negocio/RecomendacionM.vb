@@ -11,7 +11,7 @@ Public Class RecomendacionM
             params(1) = miAcceso.constructor("@Nivel", unaRecomendacion.nivel.ToString)
 
             resultado = miAcceso.Escribir("Recomendacion_Insert", params)
-            'miVerificador.DigitosPorTabla("Recomendacion")
+
         Catch ex As ent.miClaseExcepcion
             Throw ex
         Catch ex2 As Exception
