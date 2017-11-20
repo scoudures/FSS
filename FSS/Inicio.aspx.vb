@@ -41,8 +41,8 @@ Public Class Inicio
             End If
         Catch ex As ent.miClaseExcepcion
             TratarErrorEnCatch("Inicio", ex)
-        Catch ex2 As Exception
-            TratarErrorEnCatch("Inicio", ex2)
+            'Catch ex2 As Exception
+            '    TratarErrorEnCatch("Inicio", ex2)
         End Try
 
     End Sub

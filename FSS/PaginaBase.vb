@@ -136,7 +136,7 @@ Public Class PaginaBase
                         If miUsuario.login = "Administrador" Then
                             Response.Redirect("~/Tecnicos/Integridad.aspx")
                         Else
-                            Response.Redirect("~/Sorry.aspx")
+                            Response.Redirect("~/Login.aspx")
                         End If
                     End If
 

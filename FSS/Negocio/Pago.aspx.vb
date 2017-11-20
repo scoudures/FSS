@@ -128,7 +128,7 @@ Public Class Pago
             Else
                 btnConfirmar.Visible = False
                 btnCancelar.Text = "Finalizar"
-                lblMsg.Text = "No se pudo procesar su Pago, por favor póngase en contacto con un vendedor."
+                lblMsg.Text = "No se pudo procesar su Pago por falta se stock, por favor póngase en contacto con un vendedor."
                 lblMsg.DataBind()
             End If
         Catch ex As ent.miClaseExcepcion
@@ -282,7 +282,7 @@ Public Class Pago
                     unProducto.inventario = prod.inventario
                     'unProducto.cantMaxPorPedido = prod.cantidad
                     unProducto.talle.descripcion = prod.talle
-                    If prodN.DameStockDe(unProducto) <= prod.cantidad Then
+                    If CInt(prodN.DameStockDe(unProducto)) <= CInt(prod.cantidad) Then
                         resultado = False
                     Else
                         resultado = True

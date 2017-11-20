@@ -121,26 +121,26 @@ Public Class Maestra
             End If
 
         End If
-        'Try
-        miUsuario.misPermisos = miUsuarioN.BuscarPermisos(miUsuario)
-        '************************************************************
-        'si no se ven los controles, comentar la siguiente linea
-        '************************************************************
-        miPresentador.ocultarTodo(Me)
-        miPresentador.mostrarPaginaPara(Me, miUsuario)
-        miTraductor.traducirPaginaPara(Me, miUsuario)
-        If Me.Autenticado = 1 Then
-            menuLogin.Visible = False
-            menuRegistro.Visible = False
-            menuSalir.Visible = True
-        Else
-            menuLogin.Visible = True
-            menuRegistro.Visible = True
-            menuSalir.Visible = False
-        End If
-        'Catch ex As Exception
-        '    TratarErrorEnCatch("Master", ex)
-        'End Try
+        Try
+            miUsuario.misPermisos = miUsuarioN.BuscarPermisos(miUsuario)
+            '************************************************************
+            'si no se ven los controles, comentar la siguiente linea
+            '************************************************************
+            miPresentador.ocultarTodo(Me)
+            miPresentador.mostrarPaginaPara(Me, miUsuario)
+            miTraductor.traducirPaginaPara(Me, miUsuario)
+            If Me.Autenticado = 1 Then
+                menuLogin.Visible = False
+                menuRegistro.Visible = False
+                menuSalir.Visible = True
+            Else
+                menuLogin.Visible = True
+                menuRegistro.Visible = True
+                menuSalir.Visible = False
+            End If
+        Catch ex As Exception
+            TratarErrorEnCatch("Master", ex)
+        End Try
     End Sub
     Protected Sub lstIdioma_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstIdioma.SelectedIndexChanged
         Try
@@ -260,7 +260,7 @@ Public Class Maestra
     End Sub
     Private Sub TratarErrorEnCatch(ByVal miPagina As String, ByRef ex As Exception)
         miMensajero.EscribirBitacora("Excepcion", "Sistema", "Ocurrió una excepción en la Pagina " & miPagina & " => " & ex.HResult.ToString & " (" & ex.Message & ")")
-        If ex.Message <> "Subproceso anulado." Then
+        If Not ex.Message.Contains("Subproceso anulado.") Then
             Response.Redirect("~/Sorry.aspx")
         End If
     End Sub
