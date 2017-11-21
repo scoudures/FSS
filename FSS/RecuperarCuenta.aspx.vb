@@ -52,19 +52,34 @@ Public Class RecuperarCuenta
     End Sub
 
     Protected Sub btnGuardarPass_Click(sender As Object, e As EventArgs) Handles btnGuardarPass.Click
-        validarPregunta()
-        modificarContrasenia()
-    End Sub
-    Private Sub validarPregunta()
         miCliente.DNI = txtDNI.Text
         miCliente.pregunta = LstPregunta.SelectedItem.Text
         miCliente.respuesta = Encriptar(TxtRespuesta.Text)
+        miCliente.pass = txtPass.Text
         clienteNeg.miCliente = miCliente
+        If validarPregunta() Then
+            modificarContrasenia()
+        End If
+    End Sub
+    Private Function validarPregunta() As Boolean
+        Dim resultado As Boolean = False
         If clienteNeg.ValidarPregunta() Then
             EnviarMensaje(Panel1, "La respuesta es correcta.", True)
+            resultado = True
         Else
             EnviarMensaje(Panel1, "Los datos ingresados no son válidos.", True)
         End If
+        Return resultado
+    End Function
+    
+    Private Sub modificarContrasenia()
+        clienteNeg.ModificarPass()
+        PanelPass.Visible = False
+        PanelPregunta.Visible = False
+        btnGuardarPass.Visible = False
+        btnCancelPass.Visible = False
+        miMensajero.EscribirBitacora("Update", miUsuario.login, "El cliente con DNI " & txtDNI.Text & " recuperó su cuenta y modificó su contraseña.")
+        EnviarMensaje(Panel1, "Su contraseña fue modificada satisfactoriamente.", True)
     End Sub
     Public Shared Function Encriptar(ByVal cleanString As String) As String
         Dim clearBytes As [Byte]()
@@ -73,16 +88,4 @@ Public Class RecuperarCuenta
         Dim hashedText As String = BitConverter.ToString(hashedBytes)
         Return hashedText
     End Function
-    Private Sub modificarContrasenia()
-        miCliente.DNI = txtDNI.Text
-        miCliente.pass = txtPass.Text
-        ClienteNeg.miCliente = miCliente
-        clienteNeg.ModificarPass()
-        PanelPass.Visible = False
-        PanelPregunta.Visible = False
-        btnGuardarPass.Visible = False
-        btnCancelPass.Visible = False
-        EnviarMensaje(Panel1, "Su contraseña fue modificada satisfactoriamente.", True)
-        miMensajero.EscribirBitacora("Update", miUsuario.login, "El cliente con DNI " & txtDNI.Text & " recuperó su cuenta y modificó su contraseña.")
-    End Sub
 End Class

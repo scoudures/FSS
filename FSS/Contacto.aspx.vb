@@ -50,13 +50,12 @@ Public Class Contacto
     End Sub
     Protected Sub btnEnviar_Click(sender As Object, e As EventArgs) Handles btnEnviar.Click
         Try
-            'implementar
-            'EnviarMensaje(Panel1, "Funcionalidad NO Implementada", True)
-
+            Dim miConsulta As New ent.Consulta
             'insert consulta
-            consultaNeg.miConsulta.email = Txtemail.Text
-            consultaNeg.miConsulta.nivel = lstNivel.SelectedValue.ToString
-            consultaNeg.miConsulta.texto = TxtMensaje.Text
+            miConsulta.email = Txtemail.Text
+            miConsulta.nivel = lstNivel.SelectedValue.ToString
+            miConsulta.texto = TxtMensaje.Text
+            consultaNeg.miConsulta = miConsulta
             consultaNeg.Nuevo()
             miMensajero.EscribirBitacora("Insert", miUsuario.login, "Se ingresó una nueva consulta: " & Txtemail.Text)
             'enviar email (en la UAI no funciona)

@@ -549,7 +549,7 @@
     </Compile>
     <Compile Include="Registro.aspx.vb">
       <DependentUpon>Registro.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Sorry.aspx.designer.vb">
       <DependentUpon>Sorry.aspx</DependentUpon>
@@ -671,11 +671,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="_Diagramas\Ajustes_btnGuardarPass_Click.sequencediagram.layout">
+      <DependentUpon>Ajustes_btnGuardarPass_Click.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Diagramas\Maestra_menuSalir_Click.sequencediagram.layout">
+      <DependentUpon>Maestra_menuSalir_Click.sequencediagram</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="_Diagramas\Login_btnAceptar_Click.sequencediagram.layout">
       <DependentUpon>Login_btnAceptar_Click.sequencediagram</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="_Diagramas\Catalogo_Page_Load.sequencediagram.layout">
-      <DependentUpon>Catalogo_Page_Load.sequencediagram</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="_Diagramas\Mensajero_EscribirBitacora.sequencediagram.layout">
       <DependentUpon>Mensajero_EscribirBitacora.sequencediagram</DependentUpon>
@@ -729,7 +732,6 @@
     <Content Include="_Diagramas\Maestra_Page_PreRender.sequencediagram" />
     <Content Include="_Diagramas\Maestra_EnlazarIdiomas.sequencediagram" />
     <Content Include="_Diagramas\Maestra_TratarErrorEnCatch.sequencediagram" />
-    <Content Include="_Diagramas\Catalogo_Page_Load.sequencediagram" />
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap-theme.min.css.map" />
     <Content Include="css\bootstrap.css.map" />
@@ -739,6 +741,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="_Diagramas\Login_btnAceptar_Click.sequencediagram" />
+    <Content Include="_Diagramas\Maestra_menuSalir_Click.sequencediagram" />
+    <Content Include="_Diagramas\Ajustes_btnGuardarPass_Click.sequencediagram" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

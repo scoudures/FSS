@@ -44,9 +44,7 @@ Public Class Login
             'Solo puede ingresar el administrador
             If txtLogin.Value = "Administrador" Then
                 'Se crea un objeto User
-                Dim usuarioBuscar As New ent.Usuario
-                usuarioBuscar.login = txtLogin.Value
-                usuarioBuscar.pass = txtPassword.Value
+                Dim usuarioBuscar As New ent.Usuario(txtLogin.Value, txtPassword.Value)
                 'Busco el Login
                 Dim miLista As List(Of ent.Usuario)
                 miLista = miUsuarioN.listar(usuarioBuscar)
@@ -54,10 +52,8 @@ Public Class Login
                     'El usuario existe
                     If miLista.Item(0).pass = Encriptar(usuarioBuscar.pass) Then
                         'la password es correcta
-                        Dim unUsuario As New ent.Usuario
-                        unUsuario.login = miLista.Item(0).login
-                        unUsuario.idioma = miLista.Item(0).idioma
-                        miUsuario = unUsuario
+                        miUsuario.login = miLista.Item(0).login
+                        miUsuario.idioma = miLista.Item(0).idioma
                         miMensajero.EscribirBitacora("Login Exitoso", miUsuario.login, "Accedio al sistema el usuario " & miUsuario.login)
                         Me.Autenticado = 1
                         miUsuario.misPermisos = miUsuarioN.BuscarPermisos(miUsuario)
@@ -79,10 +75,8 @@ Public Class Login
                         'El usuario existe
                         If miLista.Item(0).pass = Encriptar(usuarioBuscar.pass) Then
                             'la password es correcta
-                            Dim unUsuario As New ent.Usuario
-                            unUsuario.login = miLista.Item(0).login
-                            unUsuario.idioma = miLista.Item(0).idioma
-                            miUsuario = unUsuario
+                            miUsuario.login = miLista.Item(0).login
+                            miUsuario.idioma = miLista.Item(0).idioma
                             miMensajero.EscribirBitacora("Login Exitoso", miUsuario.login, "Accedio al sistema el usuario " & miUsuario.login)
                             Me.Autenticado = 1
                             'miUsuario.misPermisos = miUsuarioN.PerfilesIN(miUsuario)

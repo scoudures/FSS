@@ -185,7 +185,7 @@
                 <ContentTemplate>
                     <asp:Label ID="lblMsg" runat="server" Text="" ForeColor="Red" CssClass="subtitulo"></asp:Label>
                     <br /> <br />
-                    <asp:Button ID="btnConfirmar" CssClass="btn btn-success" runat="server" Text="Confirmar" CausesValidation="true" style="margin-left:50px" Width="90px" />&nbsp;
+                    <asp:Button ID="btnConfirmar" CssClass="btn btn-success" runat="server" Text="Confirmar" CausesValidation="true" style="margin-left:50px; height: 36px;" Width="90px" />&nbsp;
                     <asp:Button ID="btnCancelar" CssClass="btn btn-danger" runat="server"  Text="Cancelar" CausesValidation="false" style="margin-left:50px" Width="90px"/><br />
                     <br />
                 </ContentTemplate>

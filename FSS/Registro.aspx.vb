@@ -69,8 +69,8 @@ Public Class Registro
             Else
                 Dim resultado As Integer = miClienteN.Nuevo()
                 If resultado > -1 Then
-                    Response.Redirect("Login.aspx")
                     miMensajero.EscribirBitacora("Registro", miUsuario.login, "El nuevo usuario " + Name.Text + "se registró en el sistema")
+                    Response.Redirect("Login.aspx")
                 Else
                     EnviarMensaje(Panel1, "Falló la registración", True)
                     miMensajero.EscribirBitacora("Registro", miUsuario.login, "Error al registrar nuevo usuario: " & Name.Text)
