@@ -63,5 +63,25 @@ Public Class BackupM
         End Try
         Return resultado
     End Function
+    Function listarCambios() As List(Of ent.Cambio)
+        Dim lista As New List(Of ent.Cambio)
+        Try
+            Dim unCambio As ent.Cambio
+            Dim dt As DataTable = acceso.leer("Cambios_SelectAll", Nothing, False)
+            For Each fila As DataRow In dt.Rows
+                unCambio = New ent.Cambio
+                unCambio.fecha = CDate(fila("fecha"))
+                unCambio.detalle = fila("detalle").ToString
+                lista.Add(unCambio)
 
+                If True Then
+                End If
+            Next
+        Catch ex As ent.miClaseExcepcion
+            Throw ex
+        Catch ex2 As Exception
+            Throw ex2
+        End Try
+        Return lista
+    End Function
 End Class

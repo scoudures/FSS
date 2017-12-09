@@ -76,20 +76,13 @@ Public Class Backup
     Protected Sub btnRestore_Click(sender As Object, e As EventArgs) Handles btnRestore.Click
         Try
             If txtArchivo.Text.Length > 0 Then
-                miBackup.Restaurar(txtArchivo.Text)
-                miMensajero.EscribirBitacora("Restore", miUsuario.login, "Se restauro el archivo " & txtArchivo.Text)
-
-                miUsuario.idioma = "Español"
-                miUsuario.login = "Administrador"
-                'Response.Redirect("~/Inicio.aspx")
-                Response.Redirect("~/Login.aspx")
+                Session("BKP") = txtArchivo.Text
+                Response.Redirect("~/Tecnicos/Restore.aspx")
             Else
                 EnviarMensaje(Panel1, "Debe seleccionar una Copia de Seguridad.", True)
             End If
         Catch ex As ent.miClaseExcepcion
             TratarErrorEnCatch("Backup", ex)
-        Catch ex2 As Exception
-            TratarErrorEnCatch("Backup", ex2)
         End Try
     End Sub
 

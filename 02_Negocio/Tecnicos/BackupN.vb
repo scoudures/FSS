@@ -51,4 +51,13 @@ Public Class BackupN
             Throw ex2
         End Try
     End Function
+    Public Function ListarCambios() As List(Of ent.Cambio)
+        Try
+            Return miMapper.listarCambios()
+        Catch ex As ent.miClaseExcepcion
+            Throw ex
+        Catch ex2 As Exception
+            Throw ex2
+        End Try
+    End Function
 End Class

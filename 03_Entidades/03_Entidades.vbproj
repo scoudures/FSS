@@ -106,6 +106,7 @@
     <Compile Include="Negocio\Video.vb" />
     <Compile Include="Tecnicos\Backup.vb" />
     <Compile Include="Tecnicos\Bitacora.vb" />
+    <Compile Include="Tecnicos\Cambio.vb" />
     <Compile Include="Tecnicos\Familia.vb" />
     <Compile Include="Tecnicos\Idioma.vb" />
     <Compile Include="Tecnicos\Leyenda.vb" />

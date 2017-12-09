@@ -61,8 +61,8 @@
         </table>
     </asp:Panel>
     <br />
-    <asp:Button ID="btnGuardarPass" CssClass="botoncito" runat="server" Text="Guardar" CausesValidation="true" />
-    <asp:Button ID="btnCancelPass" CssClass="botoncito" runat="server" Text="Cancelar" CausesValidation="false" />
+    <asp:Button ID="btnGuardarPass" CssClass="btn btn-success" runat="server" Text="Guardar" CausesValidation="true" />
+    <asp:Button ID="btnCancelPass" CssClass="btn btn-danger" runat="server" Text="Cancelar" CausesValidation="false" />
     <br /><br />
 <asp:Panel ID="Panel1" runat="server" Width="600px" HorizontalAlign="Center"></asp:Panel><br /><br />
 </article>

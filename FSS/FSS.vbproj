@@ -233,6 +233,7 @@
     <Content Include="Tecnicos\Idioma.aspx" />
     <Content Include="Tecnicos\Integridad.aspx" />
     <Content Include="Tecnicos\Perfil.aspx" />
+    <Content Include="Tecnicos\Restore.aspx" />
     <Content Include="Tecnicos\Usuario.aspx" />
     <Content Include="Valores.aspx" />
     <Content Include="Videos.aspx" />
@@ -647,6 +648,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Tecnicos\Presentador.vb" />
+    <Compile Include="Tecnicos\Restore.aspx.designer.vb">
+      <DependentUpon>Restore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tecnicos\Restore.aspx.vb">
+      <DependentUpon>Restore.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Tecnicos\Traductor.vb" />
     <Compile Include="Tecnicos\Usuario.aspx.designer.vb">
       <DependentUpon>Usuario.aspx</DependentUpon>
