@@ -69,7 +69,7 @@
                         <asp:TextBox ID="TxtNroTarjeta" runat="server" Width="300px" text="4444555566667777"></asp:TextBox>&nbsp;&nbsp;</td>
                     <td rowspan="2" colspan="2">
                         <asp:RadioButtonList ID="rbTarjeta" runat="server" >
-                            <asp:ListItem Text="  VISA" Value="VISA" />
+                            <asp:ListItem Text="  VISA" Value="VISA" Enabled="true" />
                             <asp:ListItem Text="  Master Card" Value="Master Card" />
                         </asp:RadioButtonList>
                     </td>

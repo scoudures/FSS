@@ -33,6 +33,7 @@ Public Class Pago
                     mostrarDetalle()
                     cargarDatos()
                     TxtNroTarjeta.Text = "4444555566667777"
+                    rbTarjeta.Items(0).Selected = True
                 Else
                     Response.Redirect("~/Negocio/Cliente/Cuenta.aspx")
                 End If
@@ -111,14 +112,17 @@ Public Class Pago
                     guardarPago()
                     miMensajero.EscribirBitacora("Insert", miUsuario.login, "Se ingresó un pago en el pedido número " & unPedido.numero.ToString)
                     btnConfirmar.Visible = False
-                    lblMsg.Text = "Su Pago ha sido procesado exitosamente!!! GRACIAS POR SU COMPRA"
-                    lblMsg.DataBind()
-                    System.Threading.Thread.Sleep(4000)
+                    'lblMsg.Text = "Su Pago ha sido procesado exitosamente!!! GRACIAS POR SU COMPRA"
+                    'lblMsg.DataBind()
+                    'System.Threading.Thread.Sleep(4000)
                     facturar()
                     miMensajero.EscribirBitacora("Insert", miUsuario.login, "Se ingresó la factura del pedido número " & unPedido.numero.ToString)
                     lblMsg.Text = "Su Pago ha sido procesado exitosamente y <br/>su Factura se encuentra disponible.<br/>GRACIAS POR SU COMPRA!!!"
+                    lblMsg.ForeColor = Drawing.Color.Green
                     lblMsg.DataBind()
                     btnCancelar.Text = "Finalizar"
+                    btnCancelar.CssClass = "btn btn-Success"
+                    btnCancelar.DataBind()
                 Else
                     btnConfirmar.Visible = False
                     btnCancelar.Text = "Finalizar"
@@ -132,9 +136,9 @@ Public Class Pago
                 lblMsg.DataBind()
             End If
         Catch ex As ent.miClaseExcepcion
-            TratarErrorEnCatch("Envio", ex)
+            TratarErrorEnCatch("Pago", ex)
             'Catch ex2 As Exception
-            '    TratarErrorEnCatch("Envio", ex2)
+            '    TratarErrorEnCatch("Pago", ex2)
         End Try
     End Sub
     Private Sub cargarDatos()
