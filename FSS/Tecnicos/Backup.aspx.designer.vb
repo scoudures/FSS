@@ -23,6 +23,15 @@ Partial Public Class Backup
     Protected WithEvents menuBackup As Global.FSS.miEtiqueta
 
     '''<summary>
+    '''Control Panel1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Panel1 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
     '''Control btnBackup.
     '''</summary>
     '''<remarks>
@@ -39,15 +48,6 @@ Partial Public Class Backup
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btnRestore As Global.FSS.miBoton
-
-    '''<summary>
-    '''Control Panel1.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Panel1 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
     '''Control txtArchivo.

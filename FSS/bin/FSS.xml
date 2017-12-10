@@ -1710,6 +1710,14 @@ Control menuBackup.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+</member><member name="F:FSS.Backup.Panel1">
+	<summary>
+Control Panel1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
 </member><member name="F:FSS.Backup.btnBackup">
 	<summary>
 Control btnBackup.
@@ -1721,14 +1729,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:FSS.Backup.btnRestore">
 	<summary>
 Control btnRestore.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:FSS.Backup.Panel1">
-	<summary>
-Control Panel1.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -4017,6 +4017,14 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:FSS.CalculoCIPA.PanelCont">
 	<summary>
 Control PanelCont.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:FSS.CalculoCIPA.Label9">
+	<summary>
+Control Label9.
 </summary>
 	<remarks>
 Campo generado automáticamente.

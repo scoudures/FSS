@@ -32,6 +32,15 @@ Partial Public Class CalculoCIPA
     Protected WithEvents PanelCont As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
+    '''Control Label9.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label9 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Control menuInicio.
     '''</summary>
     '''<remarks>

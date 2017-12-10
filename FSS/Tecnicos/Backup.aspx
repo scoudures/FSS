@@ -6,17 +6,18 @@
     <fss:mietiqueta ID="menuBackup" runat="server" Text="Backup"></fss:mietiqueta>
 </asp:Content>
 <asp:Content ID="Contenido" ContentPlaceHolderID="Contenido" runat="server">
+    <asp:Panel ID="Panel1" runat="server" HorizontalAlign="Center">
     <%--<img src="../Imagenes/Backup.jpg" class="diminuta" />--%>
-    <img src="../Imagenes/Backup.jpg" class="diminuta" /><br />  <br />
+    <img src="../Imagenes/Backup.jpg" class="img-responsive center-block" /><br />  <br />
 
     <fss:miBoton ID="btnBackup" runat="server" Text="Backup" CssClass="boton"/>
     <fss:miBoton ID="btnRestore" runat="server" Text="Restore" CssClass="boton"/>
-    <asp:Panel ID="Panel1" runat="server" Width="600px" HorizontalAlign="Center"></asp:Panel><br /><br />
-    <asp:TextBox ID="txtArchivo" Width="300px" runat="server"></asp:TextBox><br /><br />
+    <br /><br />
+    <asp:TextBox ID="txtArchivo" runat="server" Width="400px" CssClass="center-block"></asp:TextBox><br /><br />
 
-    <asp:ListBox ID="lstBKP" Width="300px" runat="server" OnSelectedIndexChanged="lstBKP_SelectedIndexChanged" AutoPostBack="true"></asp:ListBox> <br /><br />
-    
-    <fss:mietiqueta ID="lblMensajeRestore" Width="300px" runat="server" visible="false" BackColor="White" Font-Bold="True"></fss:mietiqueta><br /><br />
+    <asp:ListBox ID="lstBKP" runat="server" OnSelectedIndexChanged="lstBKP_SelectedIndexChanged" AutoPostBack="true"></asp:ListBox> <br /><br />
+    </asp:Panel><br /><br />
+    <fss:mietiqueta ID="lblMensajeRestore" runat="server" visible="false" BackColor="White" Font-Bold="True"></fss:mietiqueta><br /><br />
 </asp:Content>
 <asp:Content ID="Menu" ContentPlaceHolderID="Menu" runat="server">
 </asp:Content>

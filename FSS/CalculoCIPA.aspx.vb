@@ -89,6 +89,7 @@ Public Class CalculoCIPA
             txtj5AA.Text = "7"
             txtJ5B.Text = "7"
             txtJ5BB.Text = "5"
+            TxtOrden.Text = "1"
         Catch ex As Entidades.miClaseExcepcion
             TratarErrorEnCatch("CalculoCIPA", ex)
         Catch ex2 As Exception

@@ -11,7 +11,7 @@
             <br />  <br />
             <asp:Label ID="lblDanger" runat="server" Text="Si usted realiza un restore, todos estos cambios se perderán:" CssClass="danger" ></asp:Label> <br />
             <br />
-            <asp:GridView ID="grdCambios" runat="server" CssClass="table table-responsive"></asp:GridView> <br /> <br />
+            <asp:GridView ID="grdCambios" runat="server" CssClass="table table-responsive table-bordered"></asp:GridView> <br /> <br />
             <fss:miBoton ID="btnRestoreOK" runat="server" Text="Restaurar de todas maneras" CssClass="btn btn-success"/> 
             <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" CssClass="btn btn-danger" />
             <br />

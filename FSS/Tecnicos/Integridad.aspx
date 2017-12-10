@@ -8,8 +8,8 @@
 </asp:Content>
 <asp:Content ID="Contenido" ContentPlaceHolderID="Contenido" runat="server">
     <article > 
-    <fss:miBoton ID="btnControlarDVV" runat="server" Text="Controlar Digitos" CssClass="boton"/>
-    <fss:miBoton ID="btnGenerarDVV" runat="server" Text="Generar Digitos" CssClass="boton"/><br /><br />
+    <fss:miBoton ID="btnControlarDVV" runat="server" Text="Controlar Digitos" CssClass="btn btn-default"/>
+    <fss:miBoton ID="btnGenerarDVV" runat="server" Text="Generar Digitos" CssClass="btn btn-default"/><br /><br />
         <asp:Label ID="lblDVV" runat="server" Text=""></asp:Label> <br />
         <br />
         <asp:Label ID="lblDVH" runat="server" Text=""></asp:Label> <br />

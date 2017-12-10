@@ -19,7 +19,7 @@
         <asp:DropDownList ID="listaIdioma" runat="server" AutoPostBack="false"></asp:DropDownList> &nbsp;&nbsp;
         <fss:miboton ID="btnEnviar" runat="server" Text="Listar" CssClass="boton"/>
         <br />
-        <asp:GridView ID="grdIdioma" runat="server" CssClass="grilla" AllowPaging="True" PageSize="15" AutoGenerateEditButton="True" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
+        <asp:GridView ID="grdIdioma" runat="server" CssClass="table table-bordered table-responsive" AllowPaging="True" PageSize="15" AutoGenerateEditButton="True" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
             <AlternatingRowStyle BackColor="White" />
             <Columns>
              <asp:TemplateField HeaderText="Etiqueta">
