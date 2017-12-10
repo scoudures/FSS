@@ -12,7 +12,7 @@
     </div>
     <div style="text-align:center" >
         <br /><br />
-        <asp:GridView ID="grdVendedor" runat="server" CssClass="grilla" Font-Size="Medium"  SelectedRowStyle-BackColor="Violet" autogenerateselectbutton="True"
+        <asp:GridView ID="grdVendedor" runat="server" CssClass="table table-responsive table-bordered" Font-Size="Medium"  SelectedRowStyle-BackColor="Violet" autogenerateselectbutton="True"
        selectedindex="0"
        onselectedindexchanged="grdVendedor_SelectedIndexChanged"
        onselectedindexchanging="grdVendedor_SelectedIndexChanged" AutoPostBack ="false" CellPadding="4" ForeColor="#333333" GridLines="None">

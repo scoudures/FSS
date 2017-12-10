@@ -11,7 +11,7 @@
     <asp:Panel ID="PanelProducto" runat="server" Width="600px" HorizontalAlign="Center">
     <asp:DataList id="lstProducto" RepeatColumns="1" runat="server">
         <ItemTemplate>
-            <table border="0" width="590px" style="margin:5px">
+            <table border="0" style="margin:5px" class="table table-responsive">
                 <tr>
                     <td width="25px">&nbsp</td>
                     <td valign="middle" align="right">    
@@ -29,7 +29,7 @@
         </asp:DataList>
         </asp:Panel>
         <asp:Panel ID="PanelVenta" runat="server" Width="600px" HorizontalAlign="Center">
-        <table border="0" width="590px" style="margin:5px">
+        <table border="0" style="margin:5px" class="table table-responsive">
             <tr>
                 <td><asp:Label ID="lblTalle" runat="server" Text="Talle: " CssClass="panelTexto"></asp:Label>
                     <asp:DropDownList ID="lstTalle" runat="server"></asp:DropDownList><br /><br />
@@ -48,9 +48,9 @@
             </tr>
         </table>
         </asp:Panel>
-        <table border="0" width="590px" style="margin:5px">
+        <table border="0" style="margin:5px" class="table table-responsive">
                 <td><br/><br/><asp:Label ID="lblNiveles" runat="server" Text="Se recomienda para los Niveles de Competencia: " CssClass="panelTexto"></asp:Label><br />
-                    <asp:GridView ID="grdNiveles" runat="server" CssClass="grilla" ShowHeader="false"></asp:GridView>
+                    <asp:GridView ID="grdNiveles" runat="server" CssClass="table table-bordered table-responsive" ShowHeader="false"></asp:GridView>
                     <br /><br />
                 </td>
             </tr>

@@ -12,7 +12,7 @@
     </div> 
     <asp:Panel ID="DetalleRegistro" runat="server" CssClass="panelTexto" HorizontalAlign="Left" >
     <div style="margin-left:100px">
-        <table height="100%" cellspacing="0" cellpadding="0" width="500" border="0">
+        <table height="100%" cellspacing="0" cellpadding="0" border="0" class="table table-responsive">
             <tr valign="top">
                 <td width="550">
                     <br/>
@@ -50,7 +50,7 @@
         </table>
     </div></asp:Panel>
     <asp:Panel ID="PanelPass" runat="server" CssClass="panelTexto" GroupingText="Cambiar Contraseña" Visible="false" >
-        <table>
+        <table class="table table-responsive">
             <tr>
                 <td>
                     <br /><br />
@@ -71,7 +71,7 @@
         </table>
     </asp:Panel>
     <asp:Panel ID="PanelPregunta" runat="server" CssClass="panelTexto" GroupingText="Cambiar Pregunta" Visible="false" >
-        <table>
+        <table class="table table-responsive">
             <tr>
                 <td>
                     <br /><br />

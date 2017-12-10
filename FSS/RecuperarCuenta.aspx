@@ -11,8 +11,8 @@
         <asp:Label ID="LblRecuperar" runat="server" Text="Recuperar Cuenta" style="padding-left:25px;font-size:large " CssClass="titulo"></asp:Label>
     </div> 
     <br />
-    <asp:Panel ID="PanelPregunta" runat="server" CssClass="panelTexto" GroupingText="Identifíquese" >
-        <table>
+    <asp:Panel ID="PanelPregunta" runat="server" CssClass="panelTexto" GroupingText="Identifíquese" style="margin-left:100px">
+        <table class="table table-responsive">
             <tr>
                 <td>
                     <br /><br />
@@ -43,8 +43,8 @@
         </table>
     </asp:Panel>
     <br />
-    <asp:Panel ID="PanelPass" runat="server" CssClass="panelTexto" GroupingText="Cambie su Contraseña" >
-        <table>
+    <asp:Panel ID="PanelPass" runat="server" CssClass="panelTexto" GroupingText="Cambie su Contraseña" style="margin-left:100px">
+        <table class="table table-responsive">
             <tr>
                 <td>
                     <br /><br />
@@ -59,11 +59,12 @@
                 </td>
             </tr>
         </table>
+        <asp:Button ID="btnGuardarPass" CssClass="btn btn-success" runat="server" Text="Guardar" CausesValidation="true" />
+        <asp:Button ID="btnCancelPass" CssClass="btn btn-danger" runat="server" Text="Cancelar" CausesValidation="false" />
+    <br /><br />
     </asp:Panel>
     <br />
-    <asp:Button ID="btnGuardarPass" CssClass="btn btn-success" runat="server" Text="Guardar" CausesValidation="true" />
-    <asp:Button ID="btnCancelPass" CssClass="btn btn-danger" runat="server" Text="Cancelar" CausesValidation="false" />
-    <br /><br />
+    
 <asp:Panel ID="Panel1" runat="server" Width="600px" HorizontalAlign="Center"></asp:Panel><br /><br />
 </article>
 </asp:Content>

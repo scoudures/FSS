@@ -12,7 +12,7 @@
     </div>
     <asp:Panel ID="PanelDatos" runat="server" CssClass="panelTexto">
         <div style="align-items:center"> 
-        <table>
+        <table class="table table-responsive">
             <tr>
                 <td><asp:Label ID="lblInventario" runat="server" Text="Inventario: "></asp:Label></td>
                 <td><asp:TextBox ID="txtInventario" runat="server" Enabled="false"></asp:TextBox></td>
@@ -46,10 +46,7 @@
             </div>
     </asp:Panel>
     <div style="align-items:center"> 
-        <table>
-
-        </table>
-        <br />
+                <br />
             <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" CssClass="btn btn-success" />
             &nbsp;&nbsp;
             <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" CssClass="btn btn-danger" />

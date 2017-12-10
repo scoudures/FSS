@@ -38,7 +38,7 @@
         <br /> 
         
         <%--<asp:Button ID="BtnEnviarEmail" CssClass="botonRojo" runat="server" Text="Enviar" Width="162px" Height="42px" style="margin-left:70px"/>--%>
-        <fss:miboton2 ID="btnEnviar" runat="server" Text="Enviar" CssClass="boton"></fss:miboton2><br />
+        <fss:miboton2 ID="btnEnviar" runat="server" Text="Enviar" CssClass="btn btn-success"></fss:miboton2><br />
             <asp:Label ID="LblMsg" runat="server" Text=""></asp:Label>
             </div>
         </div>

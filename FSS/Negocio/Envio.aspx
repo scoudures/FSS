@@ -9,7 +9,7 @@
 <article>
     <div style="text-align:left"><asp:Label ID="LblDatosEnvio" runat="server" cssClass="titulo" Text="Ingrese los datos de Envío:"></asp:Label></div>
     <asp:Panel runat="server" CssClass="panelTexto" HorizontalAlign="Left">
-    <table width="650" border="0">
+    <table border="0" class="table table-responsive">
         <tr><td><div style="text-align:left"> <asp:Label ID="lblControleDatos" runat="server" Text="Por Favor, controle los datos de su pedido antes de confirmar el envío." CssClass="subsubtitulo"></asp:Label></div></td></tr>
         <tr><td><asp:Panel ID="PanelDetalle" runat="server" Visible="false" CssClass="panelTexto">
                 <table>
@@ -20,7 +20,7 @@
                 </tr>
                 <tr>
                     <td colspan="3">
-                    <asp:GridView ID="grdDetalle" DataKeyNames="numeroItem" CssClass="grilla" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
+                    <asp:GridView ID="grdDetalle" DataKeyNames="numeroItem" CssClass="table table-responsive table-bordered" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
                         <AlternatingRowStyle BackColor="White" />
                             <Columns>
                                 <asp:BoundField DataField="numeroItem" HeaderText="Item" />
@@ -57,7 +57,7 @@
             <br/>
             </asp:Panel></td></tr>
         <tr><td><asp:Panel ID="PanelDireccion" runat="server" GroupingText= "Envío" CssClass="panelTexto" >
-                <table style="margin-left:15px">
+                <table style="margin-left:15px" class="table table-responsive">
                 <tr><td colspan="2"><asp:Label ID="LblFormaEnvio" runat="server" Text="Seleccione una Forma de Envío: " Font-Bold="true" CssClass="subsubtitulo"></asp:Label> &nbsp;&nbsp;&nbsp;
                                     <asp:DropDownList ID="lstFormaEnvio" runat="server" style="width:200px"></asp:DropDownList>
                 </td></tr>

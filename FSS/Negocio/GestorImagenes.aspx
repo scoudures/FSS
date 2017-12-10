@@ -13,7 +13,7 @@
  <br />
  <br />
    <asp:Panel ID="Panel1" runat="server" ScrollBars="Vertical" Width ="600px" Height="300px">
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand" CssClass="grilla" CellPadding="4" ForeColor="#333333" GridLines="None">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand" CssClass="table table-responsive table-bordered" CellPadding="4" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
                     <asp:TemplateField HeaderText="Archivo" ShowHeader="False">

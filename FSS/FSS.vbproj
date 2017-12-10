@@ -154,7 +154,6 @@
     <Content Include="Negocio\Cliente\ClienteModificar.aspx" />
     <Content Include="Negocio\Cliente\ClienteNuevo.aspx" />
     <Content Include="Negocio\Cliente\Cuenta.aspx" />
-    <Content Include="Negocio\Color.aspx" />
     <Content Include="Negocio\css\bootstrap-theme.css" />
     <Content Include="Negocio\css\bootstrap-theme.min.css" />
     <Content Include="Negocio\css\bootstrap.css" />
@@ -182,9 +181,6 @@
     <Content Include="Negocio\js\bootstrap.min.js" />
     <Content Include="Negocio\js\jquery.js" />
     <Content Include="Negocio\js\npm.js" />
-    <Content Include="Negocio\Linea.aspx" />
-    <Content Include="Negocio\Marca.aspx" />
-    <Content Include="Negocio\Nivel.aspx" />
     <Content Include="Negocio\Noticia\NoticiaModificar.aspx" />
     <Content Include="Negocio\Noticia\NoticiaNueva.aspx" />
     <Content Include="Negocio\Ordenes.aspx" />
@@ -195,9 +191,7 @@
     <Content Include="Negocio\Producto\ProductoAlta.aspx" />
     <Content Include="Negocio\Producto\ProductoModificacion.aspx" />
     <Content Include="Negocio\Producto\ProductoStock.aspx" />
-    <Content Include="Negocio\Rectificar.aspx" />
     <Content Include="Negocio\Producto.aspx" />
-    <Content Include="Negocio\Talle.aspx" />
     <Content Include="Negocio\Vendedor.aspx" />
     <Content Include="Negocio\Vendedor\VendedorModificar.aspx" />
     <Content Include="Negocio\Vendedor\VendedorNuevo.aspx" />
@@ -325,13 +319,6 @@
       <DependentUpon>Cuenta.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Negocio\Color.aspx.designer.vb">
-      <DependentUpon>Color.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Negocio\Color.aspx.vb">
-      <DependentUpon>Color.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="Negocio\Factura.aspx.designer.vb">
       <DependentUpon>Factura.aspx</DependentUpon>
     </Compile>
@@ -358,27 +345,6 @@
     </Compile>
     <Compile Include="Negocio\GestorVideos.aspx.vb">
       <DependentUpon>GestorVideos.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Negocio\Linea.aspx.designer.vb">
-      <DependentUpon>Linea.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Negocio\Linea.aspx.vb">
-      <DependentUpon>Linea.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Negocio\Marca.aspx.designer.vb">
-      <DependentUpon>Marca.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Negocio\Marca.aspx.vb">
-      <DependentUpon>Marca.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Negocio\Nivel.aspx.designer.vb">
-      <DependentUpon>Nivel.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Negocio\Nivel.aspx.vb">
-      <DependentUpon>Nivel.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Negocio\Noticia\NoticiaModificar.aspx.designer.vb">
@@ -451,25 +417,11 @@
       <DependentUpon>ProductoStock.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Negocio\Rectificar.aspx.designer.vb">
-      <DependentUpon>Rectificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Negocio\Rectificar.aspx.vb">
-      <DependentUpon>Rectificar.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="Negocio\Producto.aspx.designer.vb">
       <DependentUpon>Producto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Negocio\Producto.aspx.vb">
       <DependentUpon>Producto.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Negocio\Talle.aspx.designer.vb">
-      <DependentUpon>Talle.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Negocio\Talle.aspx.vb">
-      <DependentUpon>Talle.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Negocio\Vendedor.aspx.designer.vb">

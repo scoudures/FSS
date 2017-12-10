@@ -9,7 +9,7 @@
 <article>
     <div style="text-align:left"> <asp:Label ID="lblProdNuevo" runat="server" Text="Producto Nuevo" CssClass="titulo"></asp:Label></div>
     <asp:Panel ID="PanelDatos" runat="server" CssClass="panelTexto">
-        <table>
+        <table class="table table-responsive">
             <tr>
                 <td><asp:Label ID="lblLinea" runat="server" Text="Línea: "></asp:Label></td>
                 <td><asp:DropDownList ID="listaLinea" runat="server" AutoPostBack="false"></asp:DropDownList></td>

@@ -8,7 +8,7 @@
 <asp:Content ID="Contenido" ContentPlaceHolderID="Contenido" runat="server">
     <article>
     <div style="text-align:left"> <asp:Label ID="lblProd" runat="server" Text="Productos" CssClass="titulo"></asp:Label></div>
-    <asp:GridView ID="grdProducto" runat="server" CssClass="grilla" Font-Size="Small"  SelectedRowStyle-BackColor="Violet" autogenerateselectbutton="True"
+    <asp:GridView ID="grdProducto" runat="server" CssClass="table table-bordered table-responsive" Font-Size="Small"  SelectedRowStyle-BackColor="Violet" autogenerateselectbutton="True"
        selectedindex="0"
        onselectedindexchanged="grdCliente_SelectedIndexChanged"
        onselectedindexchanging="grdCliente_SelectedIndexChanged" AutoPostBack ="false" CellPadding="4" ForeColor="#333333" GridLines="None">

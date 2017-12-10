@@ -13,7 +13,7 @@
     </div> 
     <asp:Panel runat="server" CssClass="panelTexto" HorizontalAlign="Left">
     <div style="margin-left:100px">
-    <table height="100%" cellspacing="0" cellpadding="0" width="500" border="0">
+    <table height="100%" cellspacing="0" cellpadding="0" width="100%" border="0" class="table table-responsive">
                                         <tr valign="top">
                                             <td width="550">
                                                 <br/>

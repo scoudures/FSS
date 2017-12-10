@@ -12,7 +12,7 @@
     <table style="height:100%;width:100%;border:0" >
         <tr><td><div style="text-align:left"> <asp:Label ID="lblControleDatos" runat="server" Text="Por Favor, controle los datos de su pedido antes de confirmar el pago." CssClass="subsubtitulo"></asp:Label></div></td></tr>
         <tr><td><asp:Panel ID="PanelDetalle" runat="server" Visible="false" CssClass="panelTexto">
-                <table>
+                <table class="table table-responsive">
                 <tr>
                     <td><div style="text-align:left"> <asp:Label ID="lblDetalle" runat="server" Text="Detalle del Pedido:" CssClass="subtitulo"></asp:Label></div></td>
                     <td><div style="text-align:right"><asp:Label ID="lblPedido" runat="server" CssClass="subsubtitulo"></asp:Label></div></td>
@@ -20,7 +20,7 @@
                 </tr>
                 <tr>
                     <td colspan="3">
-                    <asp:GridView ID="grdDetalle" DataKeyNames="numeroItem" CssClass="grilla" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
+                    <asp:GridView ID="grdDetalle" DataKeyNames="numeroItem" CssClass="table table-responsive table-bordered" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
                         <AlternatingRowStyle BackColor="White" />
                             <Columns>
                                 <asp:BoundField DataField="numeroItem" HeaderText="Item" />
@@ -64,7 +64,7 @@
                 <img src="../Imagenes/credit-card-logos.png" class="img-responsive"  style="width:75%;text-align:center"/>
                 <img src="../Imagenes/codigo_tarjeta.png" class="img-responsive" style="width:90%; text-align:center"/>
                 <br />
-                <table style="margin-left:50px">
+                <table style="margin-left:50px" class="table table-responsive">
                 <tr><td><br /><asp:Label ID="LblNumeroTarjeta" runat="server" Text="Numero:"></asp:Label>&nbsp;&nbsp;
                         <asp:TextBox ID="TxtNroTarjeta" runat="server" Width="300px" text="4444555566667777"></asp:TextBox>&nbsp;&nbsp;</td>
                     <td rowspan="2" colspan="2">
