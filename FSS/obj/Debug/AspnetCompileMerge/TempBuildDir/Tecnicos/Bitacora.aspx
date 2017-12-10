@@ -39,7 +39,7 @@
     <br />
     <fss:miBoton ID="btnEnviar" runat="server" Text="Enviar" CssClass="boton"> </fss:miBoton><br />
     <br />
-    <asp:GridView ID="grdBitacora" runat="server" CssClass="grilla" AllowPaging="True" CellPadding="4" ForeColor="#333333" GridLines="None" >
+    <asp:GridView ID="grdBitacora" runat="server" CssClass="table table-responsive table-bordered" AllowPaging="True" CellPadding="4" ForeColor="#333333" GridLines="None" >
         <AlternatingRowStyle BackColor="White" />
         <EditRowStyle BackColor="#2461BF" />
         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />

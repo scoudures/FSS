@@ -67,7 +67,7 @@
              <tr>
         </HeaderTemplate>
              <ItemTemplate>
-                 &nbsp;&nbsp;<asp:HyperLink ID="LinkLinea" CssClass="botoncito" runat="server" Text='<%#DataBinder.Eval(Container.DataItem, "descripcion")%>' NavigateUrl='<%#"Catalogo.aspx?Linea=" & DataBinder.Eval(Container.DataItem, "descripcion")%>' ></asp:HyperLink>&nbsp;&nbsp;
+                 &nbsp;&nbsp;<asp:HyperLink ID="LinkLinea" CssClass="btn btn-default" runat="server" Text='<%#DataBinder.Eval(Container.DataItem, "descripcion")%>' NavigateUrl='<%#"Catalogo.aspx?Linea=" & DataBinder.Eval(Container.DataItem, "descripcion")%>' ></asp:HyperLink>&nbsp;&nbsp;
                  <%--<asp:Button ID="btnCateg" runat="server" CssClass="botoncito" Text='<%#DataBinder.Eval(Container.DataItem, "descripcion")%>'  OnClick=""/>--%>
                 <%--<td  width="100px"> <asp:Button ID="btnCateg" runat="server" CssClass="botoncito" Text='<%#DataBinder.Eval(Container.DataItem, "descripcion")%>' /> </td>--%>
             </ItemTemplate>
@@ -79,12 +79,12 @@
   <br />
   <asp:DataList id="lstProducto" RepeatColumns="2" runat="server">
     <ItemTemplate>
-            <table border="0" width="300px" style="margin:5px">
+            <table border="0" width="100%" style="margin:5px" class="table table-responsive">
                 <tr>
-                    <td width="25px">&nbsp</td>
-                    <td width="100px" valign="middle" align="right">    
+                    <td width="5%">&nbsp</td>
+                    <td width="30%" valign="middle" align="right">    
                     <img src='<%# DataBinder.Eval(Container.DataItem, "imagen")%>' width="100" height="75" border="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                    <td width="200px" valign="middle">
+                    <td width="65%" valign="middle">
                         <span class="ProductListHead"><%# DataBinder.Eval(Container.DataItem, "descripcion")%></span>           
                         <br/>
                     </td>

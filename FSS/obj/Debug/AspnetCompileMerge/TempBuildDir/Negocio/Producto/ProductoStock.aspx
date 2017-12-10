@@ -10,7 +10,7 @@
     <div style="text-align:left"> <asp:Label ID="lblStock" runat="server" Text="Actualizar Stock" CssClass="titulo"></asp:Label></div>
     <asp:Panel ID="PanelDatos" runat="server">
         <br />
-                    <asp:DataGrid id="grdDetalle" runat="server" AutoGenerateColumns="False" DataKeyField="Inventario" ShowFooter="True" Font-Size="8pt" Font-Name="Verdana" cellpadding="4" GridLines="None" Font-Names="Verdana" ForeColor="#333333" Width="548px" CellSpacing="5">
+                    <asp:DataGrid id="grdDetalle" runat="server" AutoGenerateColumns="False" DataKeyField="Inventario" ShowFooter="True" Font-Size="8pt" Font-Name="Verdana" cellpadding="4" GridLines="None" Font-Names="Verdana" ForeColor="#333333" Width="548px" CellSpacing="5" CssClass="table table-responsive table-bordered">
                     <AlternatingItemStyle CssClass="CartListItemAlt" BackColor="White" />
                     <Columns>
                     <asp:TemplateColumn HeaderText="Inventario">
@@ -20,7 +20,7 @@
                         <ItemTemplate><asp:Label ID="Talle" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "Talle")%>' width="40px"></asp:Label></ItemTemplate>
                     </asp:TemplateColumn>
                     <asp:TemplateColumn HeaderText="Stock">
-                        <ItemTemplate><asp:TextBox ID="Stock" runat="server" Columns="4" MaxLength="2" Text='<%# DataBinder.Eval(Container.DataItem, "Stock")%>' width="40px" /></ItemTemplate>
+                        <ItemTemplate><asp:TextBox ID="Stock" runat="server" Columns="4" MaxLength="4" Text='<%# DataBinder.Eval(Container.DataItem, "Stock")%>' width="40px" /></ItemTemplate>
                     </asp:TemplateColumn>
                     </Columns>
                     <EditItemStyle BackColor="#2461BF" />

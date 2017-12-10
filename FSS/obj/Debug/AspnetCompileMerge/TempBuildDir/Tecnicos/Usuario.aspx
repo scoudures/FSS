@@ -18,7 +18,7 @@
         <br /> <br /> <asp:Label ID="Label1" runat="server" Text="Seleccione un Usuario de la lista" CssClass="subsubtitulo"></asp:Label>
         <br />
     </div>        
-    <table style="vertical-align:top">
+    <table style="vertical-align:top" class="table table-responsive">
             <tr>
                 <td><fss:mietiqueta ID="lblUsuarios" runat="server" Text="Usuarios:"></fss:mietiqueta></td>
                 <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
@@ -44,14 +44,14 @@
                 <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
                 <td><asp:ListBox ID="lstPerfilDisp" runat="server" AutoPostBack="False" EnableViewState="True" Height="120px" Width="120px"></asp:ListBox></td>
                 <td>  
-                    <fss:miboton ID="btnDisp" runat="server" Text="<" CausesValidation="false" />
+                    <fss:miboton ID="btnDisp" runat="server" Text="<" CausesValidation="false" CssClass="btn btn-default"/>
                     <br />
-                    <fss:miboton ID="btnAsig" runat="server" Text=">" CausesValidation="false" />
+                    <fss:miboton ID="btnAsig" runat="server" Text=">" CausesValidation="false" CssClass="btn btn-default"/>
                 </td>
                 <td><asp:ListBox ID="lstPerfilAsig" runat="server" AutoPostBack="False" EnableViewState="True" Height="120px" Width="120px"></asp:ListBox></td>
             </tr>
             <tr>
-                <td><asp:Button ID="btnCrear" runat="server" Text="Crear Usuario" CssClass="botoncitito" Width="100px"/></td>
+                <td><asp:Button ID="btnCrear" runat="server" Text="Crear Usuario" CssClass="btn btn-default" Width="100px"/></td>
                 <td colspan="7" style="text-align:right"><fss:miLink ID="lnkPerfil" runat="server" PostBackUrl="Perfil.aspx" CssClass="linkboton" CausesValidation="false">Ver Permisos</fss:miLink></td>
             </tr>
         </table>
@@ -59,7 +59,7 @@
     <asp:Panel ID="PanelDetalle" runat="server" CssClass="panelTexto" Visible="false">
     <div style="text-align:left"><asp:Label ID="lblDetalle" runat="server" Text="Datos del Usuario seleccionado:" CssClass="subtitulo"></asp:Label></div>
     
-    <table>
+    <table class="table table-responsive">
         <tr>
             <td><asp:label ID="lblEmail" runat="server" Text="Email:"></asp:label></td>
             <td><asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
@@ -104,10 +104,10 @@
         </tr>
         <tr><td></td><td colspan="2"><asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" /></td></tr>
         <tr><td colspan="3">
-            <fss:miboton ID="btnNuevo" runat="server" Text="Nuevo" CssClass="botoncito" />
-            <fss:miboton ID="btnEliminar" runat="server" Text="Eliminar" CssClass="botoncito" OnClientClick="return confirm('Está seguro que quiere eliminar el usuario?')" CausesValidation="false"/>
-            <fss:miboton ID="btnModificar" runat="server" Text="Modificar" CssClass="botoncito"/>
-            <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" CssClass="botoncito" CausesValidation="false" />
+            <fss:miboton ID="btnNuevo" runat="server" Text="Nuevo" CssClass="btn btn-default" />
+            <fss:miboton ID="btnEliminar" runat="server" Text="Eliminar" CssClass="btn btn-default" OnClientClick="return confirm('Está seguro que quiere eliminar el usuario?')" CausesValidation="false"/>
+            <fss:miboton ID="btnModificar" runat="server" Text="Modificar" CssClass="btn btn-default"/>
+            <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" CssClass="btn btn-default" CausesValidation="false" />
             </td></tr>
         <tr><td colspan="3"><asp:Label ID="lblResult" runat="server" Text=""></asp:Label></td></tr>
     </table>

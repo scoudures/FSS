@@ -23,6 +23,9 @@
 	<section class="main container">
 		<div class="row">       
 	<asp:Panel ID="PanelCont" runat="server">
+        <%--Para ver el nombre de la pagina activa--%>
+	    <h6 class="text-right text-primary">
+            <asp:Label ID="Label9" runat="server" Text="CIPA"></asp:Label></h6>
 	<%-- header de la master --%>
 	<header>
 		<nav class="navbar navbar-custom navbar-static-top" role="navigation" id="menu">
@@ -68,16 +71,11 @@
 			<h3 class="text-primary"><fss:miEtiqueta id="encabezado" runat="server" Text="FSS La tienda on-line para el patinador" CssClass="titulo"></fss:miEtiqueta></h3>
 	</section>
 <%-------------------------------------------------------------------------------------------------------%>
-	<%-- Contenido de cada pagina --%>
+	<%-- Contenido de la pagina --%>
 	<section id="seccionCIPA"class="posts col-md-12 col-lg-12 text-primary hidden-xs hidden-sm">
     <asp:Panel ID="PanelCIPA" runat="server">
 	<div id="ContenedorCIPA">
-	    
-    </div>
-	</asp:Panel>
-    </section>
-
-        <br />
+	    <br />
         <table style="width:930px">
             <tr>
                 <td style="width:8%"></td>
@@ -88,8 +86,7 @@
         <div id="titulo" style="background-color:#0094ff;color:white ;padding:20px,10px,20px,20px;height:30px;font-size:20px;text-align:center">    
             <asp:Label ID="LblTitulo" runat="server" Text="Clasificaciones" ></asp:Label>
         </div>
-        
-        <table border="0" style="border-collapse: collapse ; width:930px;margin-right:30px" >
+        <table border="0" class="table table-responsive" >
             <tr style="height:40px">
                 <td style="width:5%"></td>
                 <td style="width:15%"><asp:Label ID="Torneo" runat="server" Text="Torneo" Font-Bold="True"></asp:Label></td>
@@ -110,7 +107,7 @@
             <tr style="height:40px">
                 <td></td>
                 <td><asp:Label ID="LblOrden" runat="server" Text="Orden" Font-Bold="True"> </asp:Label>  </td>
-                <td style="width:20% "><asp:TextBox ID="TxtOrden" runat="server" Style="width:93%" TabIndex="3" onkeydown = "return (!(event.keyCode>=65) && event.keyCode!=32);"></asp:TextBox></td>
+                <td style="width:20% "><asp:TextBox ID="TxtOrden" runat="server" TabIndex="3" onkeydown = "return (!(event.keyCode>=65) && event.keyCode!=32);"></asp:TextBox></td>
                 <td style="width:20%;text-align:right "><asp:Label ID="LblParticipante" runat="server" Text="Participante" Font-Bold="True"> </asp:Label>&nbsp;&nbsp;&nbsp; </td>
                 <td><asp:TextBox ID="txtPatinador" Style="width:93%" runat="server" TabIndex="4"></asp:TextBox>
                     &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" Text="*" ErrorMessage="Ingrese el Patinador" ControlToValidate="txtPatinador" ForeColor="Red"></asp:RequiredFieldValidator>
@@ -121,12 +118,10 @@
                 <td colspan="3"><asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" /></td>
             </tr>
         </table>
-        <hr />
-        <br />
-
+        <br /><br />
         <div id="divPuntajes" style ="text-align:center">
             <div style="display:inline-block ;width:50px">
-                <table>
+                <table class="table table-responsive">
                     <tr><td><asp:Label ID="Label4" runat="server" Text="Puntaje"></asp:Label><br /></td> </tr>
                     <tr><td><asp:Label ID="Label1" runat="server" Text="A"></asp:Label><br /></td> </tr>
                     <tr><td><asp:Label ID="Label2" runat="server" Text="B"></asp:Label><br /></td> </tr>
@@ -134,7 +129,7 @@
                 </table>  
             </div>
             <div id="divJuez1" style="display:inline-block;width:100px; text-align:center;margin-left:15px" >
-                <table style="width:auto" >
+                <table class="table table-responsive">
                     <tr><td  colspan="2"  ><asp:Label ID="LblJuez1" runat="server" Text="Juez 1" ></asp:Label></td>
                     </tr>
                     <tr>
@@ -153,7 +148,7 @@
 
 <%----------------JUEZ 2-------------------------------------------------------------------%>
  <div id="divJuez2" style="display:inline-block;width:100px; text-align:center;margin-left:15px" >
-                <table style="width:auto" >
+                <table class="table table-responsive">
                     <tr><td  colspan="2"  ><asp:Label ID="Label5" runat="server" Text="Juez 2" ></asp:Label></td>
                     </tr>
                     <tr>
@@ -172,7 +167,7 @@
 
 <%----------------JUEZ 3-------------------------------------------------------------------%>
  <div id="divJuez3" style="display:inline-block;width:100px; text-align:center;margin-left:15px" >
-                <table style="width:auto;height:100%"  >
+                <table  class="table table-responsive">
                     <tr><td  colspan="2"  ><asp:Label ID="Label6" runat="server" Text="Juez 3" ></asp:Label></td>
                     </tr>
                     <tr>
@@ -192,7 +187,7 @@
        <%----------------JUEZ 4-------------------------------------------------------------------%>
 
  <div id="divJuez4" style="display:inline-block;width:100px; text-align:center;margin-left:15px" >
-                <table style="width:auto" >
+                <table class="table table-responsive">
                     <tr><td  colspan="2"  ><asp:Label ID="Label7" runat="server" Text="Juez 4" ></asp:Label></td>
                     </tr>
                     <tr>
@@ -211,7 +206,7 @@
 
     <%----------------JUEZ 5-------------------------------------------------------------------%>
  <div id="divJuez5" style="display:inline-block;width:100px; text-align:center;margin-left:15px" >
-                <table style="width:auto""  >
+                <table class="table table-responsive">
                     <tr><td  colspan="2"  ><asp:Label ID="Label8" runat="server" Text="Juez 5" ></asp:Label></td>
                     </tr>
                     <tr>
@@ -229,21 +224,20 @@
                    
             </div>     
             <div id="divSiguiente" style="display:inline-block;width:100px; text-align:center;margin-left:15px" >
-                <table>
+                <table  class="table table-responsive">
                     <tr>
                         <td><asp:Button ID="Button1" runat="server" Text="Siguiente" Height="40px" Width="150px" TabIndex="24" cssClass="btn btn-default"  />
                             <asp:Button ID="btnLimpiar" runat="server" Text="Nueva Competencia" Height="40px" Width="150px" TabIndex="100" cssClass="btn btn-default" CausesValidation="false" />
                         </td>
                     </tr>
+
                 </table>
                 
             </div>
             
     </div>   <%--puntajes--%>
-        <hr />
-
-        <div id="divGridview" style="width:900px; align-items:center">
-                <asp:GridView ID="GridTabla" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" AllowPaging="true" style="width:100%" Visible="true">
+        <br />
+        <asp:GridView ID="GridTabla" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" AllowPaging="true"  class="table table-responsive" Visible="true">
                 <AlternatingRowStyle BackColor="White" />
                 <EditRowStyle BackColor="#2461BF" />
                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -256,13 +250,15 @@
                 <SortedDescendingCellStyle BackColor="#E9EBEF" />
                 <SortedDescendingHeaderStyle BackColor="#4870BE" />
             </asp:GridView>
-            <br />
-            <br />
-            <asp:Button ID="BtnCalcular" runat="server" Text="CALCULAR" Style="width:100%;height:50px" Font-Bold="True" cssclass="btn btn-default" CausesValidation="false"/>
-        </div> <%--divgrilla--%>
+        <br /><br />
+        <table  class="table table-responsive" style="align-items:center;width:100%">
+            <tr>
+            <td><asp:Button ID="BtnCalcular" runat="server" Text="CALCULAR" Font-Bold="True" cssclass="btn btn-default col-lg-12" CausesValidation="false" Width="100%"/></td>
+            </tr>
+        </table>
         <br />
         <asp:Panel ID="PanelResultados" runat="server" GroupingText="Podio Competencia" CssClass="titulo" style="width:100%;Height:300px">
-            <table style="width:100%;Height:100%">
+            <table class="table table-responsive">
             <tr style="width:500px">
                 <td style="width:20%; text-align:right"> <asp:Label ID="LblClasificacion" runat="server" Text="Clasificacion: " CssClass="subtitulo"></asp:Label></td>
                 <td style="width:80%"> <asp:TextBox ID="TxtClasificacion" runat="server" Style="width:100%;height:150px" Enabled="False" TextMode="multiline" BackColor="White" ForeColor="Black"></asp:TextBox></td>
@@ -280,17 +276,13 @@
             <br />
         </asp:Panel>
 <%-------------------------------------------------------------------------------------------------------%>
-</asp:Panel>
-	
-			</div>
-	</section>
-        <div class="container">
-			<div class="row">
-                <br />
-                <br />
-                <br />
-            </div>
+		</div>
+        </asp:Panel>
+	</section>        
+        </asp:Panel>
         </div>
+        </section>
+        <br /> <br />
 <%-- footer de la master --%>
 		<footer id="pie">
 		<div class="container">
@@ -309,6 +301,7 @@
 			</div>
 		</div>
 	</footer>
+        
 		<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
   </form>

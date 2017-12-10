@@ -23,7 +23,7 @@
 </asp:Content>
 <asp:Content ID="Contenido" ContentPlaceHolderID="Contenido" runat="server">
     <article>
-        <table style="align-items:initial" style="width:630px">
+        <table style="align-items:initial" class="table table-responsive">
             <tr><td><h5><fss:miEtiqueta ID="lblFamilia" runat="server" Text="Familias:"></fss:miEtiqueta></h5><br /></td>
                 <td></td>
                 <td></td>
@@ -37,15 +37,15 @@
             <tr><td></td></tr>
             <tr>
                 <td></td>
-                <td><fss:miBoton ID="btnNuevo" runat="server" Text="Nuevo" CssClass="botoncito" /><br /></td>
-                <td><fss:miBoton ID="btnEliminar" runat="server" Text="Eliminar" CssClass="botoncito" /></td>
-                <td><fss:miBoton ID="btnModificar" runat="server" Text="Modificar" CssClass="botoncito" /></td>
+                <td><fss:miBoton ID="btnNuevo" runat="server" Text="Nuevo"  CssClass="btn btn-default" /><br /></td>
+                <td><fss:miBoton ID="btnEliminar" runat="server" Text="Eliminar" CssClass="btn btn-default" /></td>
+                <td><fss:miBoton ID="btnModificar" runat="server" Text="Modificar" CssClass="btn btn-default" /></td>
             </tr>
         </table>
         <br />
         <asp:Panel ID="panelPermisos" runat="server" Visible="false" Width="635px" Height="350px">
             <br />
-            <table style="width:630px">
+            <table class="table table-responsive">
                 <tr>
                     <td style="width:15%"></td>
                     <td style="width:30%"><h5>
@@ -57,7 +57,7 @@
                 </tr>
                 </table>
                 <asp:Panel ID="panelArboles" runat="server" Visible="false" ScrollBars="Vertical" Width="630px" Height="200px">
-                <table style="width:630px">
+                <table class="table table-responsive">
                     <tr>
                     <td class="auto-style1"></td>
                     <td class="auto-style2">
@@ -88,15 +88,15 @@
             <table style="width:630px">
                 <tr>
                     <td></td>
-                    <td><fss:miBoton ID="btnTodas" runat="server" Text="Todos" CssClass="botoncitito" />
-                        <fss:miBoton ID="btnNinguna" runat="server" Text="Ninguno" CssClass="botoncitito" /></td>
+                    <td><fss:miBoton ID="btnTodas" runat="server" Text="Todos" CssClass="btn btn-default" />
+                        <fss:miBoton ID="btnNinguna" runat="server" Text="Ninguno" CssClass="btn btn-default" /></td>
                     <td></td>
-                    <td><fss:miBoton ID="btnTodos" runat="server" Text="Todos" CssClass="botoncitito" />
-                        <fss:miBoton ID="btnNinguno" runat="server" Text="Ninguno" CssClass="botoncitito" /></td>
+                    <td><fss:miBoton ID="btnTodos" runat="server" Text="Todos" CssClass="btn btn-default" />
+                        <fss:miBoton ID="btnNinguno" runat="server" Text="Ninguno" CssClass="btn btn-default" /></td>
                 </tr>
                 <tr>
-                    <td colspan="5">
-                        <fss:miBoton ID="btnActualizar" runat="server" Text="Actualizar" CssClass="botoncito" /></td>
+                    <td colspan="5" style="align-items:center">
+                        <fss:miBoton ID="btnActualizar" runat="server" Text="Actualizar" CssClass="btn btn-default" /></td>
                 </tr>
             </table>
             <br />

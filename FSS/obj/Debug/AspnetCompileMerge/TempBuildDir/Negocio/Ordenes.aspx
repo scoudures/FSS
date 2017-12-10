@@ -18,10 +18,10 @@
             <br />
             <br />
 
-            <table runat ="server" height="100%" border="0" style="width: 586px">
+            <table runat ="server" height="100%" border="0" class="table table-responsive">
                 <tr runat ="server" valign="top">
                 <td runat ="server" width="550">
-                <asp:GridView ID="grdPedidos" CssClass="grilla" runat="server" AllowPaging="true" AutoGenerateColumns="False" CellPadding="5" ForeColor="#333333" GridLines="None" PageSize="8">
+                <asp:GridView ID="grdPedidos" CssClass="table table-bordered table-responsive" runat="server" AllowPaging="true" AutoGenerateColumns="False" CellPadding="5" ForeColor="#333333" GridLines="None" PageSize="8">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:BoundField DataField="pedido" HeaderText="Numero" />
@@ -52,7 +52,7 @@
     <br />
 
         <asp:Panel ID="PanelDetalle" runat="server" Visible="false">
-            <table>
+            <table class="table table-responsive">
                 <tr>
                     <td><div style="text-align:left"> <asp:Label ID="lblDetalle" runat="server" Text="Detalle de la Orden Pedido:" CssClass="subtitulo"></asp:Label></div></td>
                     <td><div style="text-align:right"><asp:Label ID="lblPedido" runat="server" CssClass="subsubtitulo"></asp:Label></div></td>
@@ -60,7 +60,7 @@
                 </tr>
                 <tr>
                     <td colspan="3">
-                    <asp:GridView ID="grdDetalle" DataKeyNames="numeroItem" CssClass="grilla" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
+                    <asp:GridView ID="grdDetalle" DataKeyNames="numeroItem" CssClass="table table-bordered table-responsive" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
                         <AlternatingRowStyle BackColor="White" />
                             <Columns>
                                 <asp:BoundField DataField="numeroItem" HeaderText="Item" />

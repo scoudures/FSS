@@ -8,7 +8,7 @@
 <asp:Content ID="Contenido" ContentPlaceHolderID="Contenido" runat="server">
 <article>
     <br />
-    <img src="Imagenes/mision.jpg" class="center-block img-responsive img-rounded img-thumbnail" /><br /><br />
+    <img src="Imagenes/mision.jpg" class="center-block img-responsive img-rounded img-thumbnail" style="width:80%" /><br /><br />
     <h2><fss:mietiqueta2 ID="titMision" runat="server" Text="NUESTRA MISION" CssClass="titulo"></fss:mietiqueta2></h2><br /><br />
     <fss:mietiqueta2 ID="lblMision" runat="server" Text="Brindar Productos Deportivos de calidad a Patinadores de la República Argentina; confiables, a costos competitivos, acompañando las expectativas y requerimientos de nuestros clientes, dentro de un marco de crecimiento y rentabilidad.
 
@@ -20,7 +20,7 @@ Para ello deberemos consolidarnos en la Ciudad Autónoma de Buenos Aires y en el
 
 <article>
     <br />
-    <img src="Imagenes/vision.jpg" class="center-block img-responsive img-rounded img-thumbnail" style="width: 150%;"/><br /><br />
+    <img src="Imagenes/vision.jpg" class="center-block img-responsive img-rounded img-thumbnail" style="width: 50%;"/><br /><br />
     <h2><fss:mietiqueta2 ID="titVision" runat="server" Text="NUESTRA VISION" CssClass="titulo"></fss:mietiqueta2></h2><br /><br />
     <fss:mietiqueta2 ID="lblVision" runat="server" Text="Constituirnos en un referente para Patinadores Profesionales de la República Argentina, otorgando recomendaciones acordes al nivel de competencia de los mismos. Siempre disponiendo de productos de calidad y tecnología de punta, acompañado de la mano de una capacitación continua de nuestros técnicos." CssClass="panelTexto"></fss:mietiqueta2>
     <br />
@@ -28,7 +28,7 @@ Para ello deberemos consolidarnos en la Ciudad Autónoma de Buenos Aires y en el
 
 <article>
     <br />
-    <img src="Imagenes/valores.jpg" class="center-block img-responsive img-rounded img-thumbnail" style="width: 200%;" /><br /><br />
+    <img src="Imagenes/valores.jpg" class="center-block img-responsive img-rounded img-thumbnail" style="width: 50%;" /><br /><br />
     <h2><fss:mietiqueta2 ID="titValores" runat="server" Text="NUESTROS VALORES" CssClass="titulo"></fss:mietiqueta2></h2><br /><br />
             
             <br /><fss:miboton class="glyphicon glyphicon-ok"></fss:miboton>&nbsp;&nbsp;&nbsp;<fss:mietiqueta2 ID="item1" Text="Trabajo en equipo" runat="server"></fss:mietiqueta2>

@@ -11,7 +11,7 @@
     <asp:label ID="lblVideos" runat="server" Text="Videos" CssClass="supertitulo"></asp:label>
     </div>
     <div >
-       <asp:GridView HorizontalAlign="Center"   ID="grdVideos" runat="server" AutoGenerateColumns="False" CssClass="grilla" ForeColor="Black" BackColor="#FFF4D5" BorderWidth="0px" AllowPaging="True" PageSize="5" CellSpacing="5" ShowFooter="True" EmptyDataText="No se encontraron videos" ShowHeaderWhenEmpty="True">
+       <asp:GridView HorizontalAlign="Center"   ID="grdVideos" runat="server" AutoGenerateColumns="False" CssClass="table table-responsive table-bordered" ForeColor="Black" BackColor="#FFF4D5" BorderWidth="0px" AllowPaging="True" PageSize="5" CellSpacing="5" ShowFooter="True" EmptyDataText="No se encontraron videos" ShowHeaderWhenEmpty="True">
         <Columns>
             <asp:BoundField HeaderText="CódigoVideo" DataField="CodigoVideo" ItemStyle-Width="10%" Visible="false" >
                 <ItemStyle Width="10%"></ItemStyle>

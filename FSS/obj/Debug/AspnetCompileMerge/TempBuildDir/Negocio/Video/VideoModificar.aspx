@@ -9,7 +9,7 @@
     <asp:label ID="lblModVideo" runat="server" Text="Modificar Video" CssClass="supertitulo"></asp:label>
     </div>
     <asp:Panel ID="Panel1" runat="server" CssClass="panelTexto" style="text-align:center">
-                    <table style="width:90%" >
+                    <table class="table table-responsive">
                         <tr>
                             <td style="width:150px"> <asp:Label ID="LblTitulo" runat="server" Text="Titulo" Font-Bold="True"></asp:Label></td>
                             <td style="width:350px "><asp:TextBox Width="100%"  ID="TxtTitulo" runat="server" Rows="2" TextMode="MultiLine"></asp:TextBox></td>    
