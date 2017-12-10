@@ -10,7 +10,7 @@
     <div style="text-align:left">
     <asp:Label ID="lblDetalle" runat="server" Text="Detalle Pedido:" CssClass="titulo"></asp:Label></div>
     <asp:Panel ID="PanelDetalle" runat="server" CssClass="panelTexto">
-        <table runat ="server" height="100%" cellSpacing="0" cellPadding="0" border="0" style="width: 586px">
+        <table runat ="server" height="100%" cellSpacing="0" cellPadding="0" border="0" class="table table-responsive">
             <tr runat ="server" valign="top">
                 <td runat ="server" width="550">
                     <asp:DataGrid id="grdDetalle" runat="server" AutoGenerateColumns="False" DataKeyField="Cantidad" AlternatingItemStyle-CssClass="CartListItemAlt" ItemStyle-CssClass="CartListItem" FooterStyle-CssClass="CartListFooter" HeaderStyle-CssClass="CartListHead" ShowFooter="True" Font-Size="8pt" Font-Name="Verdana" cellpadding="4" GridLines="None" Font-Names="Verdana" ForeColor="#333333" Width="548px" CellSpacing="5">
